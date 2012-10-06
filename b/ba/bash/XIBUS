@@ -1,0 +1,42 @@
+name = "bash"
+version = "4.2.037"
+release = "1"
+description = "GNU Bourne Again shell"
+license = "GPL"
+url = "http://www.gnu.org/software/bash/bash.html"
+depends = ["readline>=6.1", "glibc"]
+provides = "sh"
+source = "ftp://ftp.gnu.org/pub/gnu/{0}/{1}-{2}.tar.gz".format(name, name, version[:-4])
+md5sum = "3fb927c7c33022f1c327f14a81c0d4b0"
+sha1sum = "487840ab7134eb7901fbb2e49b0ee3d22de15cb8"
+sha256sum = "a27a1179ec9c0830c65c6aa5d7dab60f7ce1a2a608618570f96bfa72e95ab3d8"
+sha512sum = "fdd3c230f4f7a687d36db1b8f7baab5e553cf55756e2d49a88ffaa4260c8cb949897dec9f48655e96608ef0093ac101b60c132060f06c711c0ab81aa3f148b5c"
+
+def build():
+    cd(name + "-" + version[:-4], 1)
+    do_patches('-p0')
+    bashcfg="""-DDEFAULT_PATH_VALUE=\'\"/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin\"\'
+               -DSTANDARD_UTILS_PATH=\'\"/usr/bin:/bin:/usr/sbin:/sbin\"\'
+               -DSYS_BASHRC=\'\"/etc/bash/bashrc\"\'
+               -DSYS_BASH_LOGOUT=\'\"/etc/bash/bash_logout\"\'"""
+    export("CFLAGS", "%s %s" % (CFLAGS, bashcfg))
+    configure_keys = "--prefix=/usr --with-curses --enable-readline \
+        --without-bash-malloc --with-installed-readline \
+        --bindir=/usr/bin --mandir=/usr/share/man --infodir=/usr/share/info"
+    configure(configure_keys)
+    make("")
+
+def package():
+    cd(name + "-" + version[:-4], 1)
+    #make("check")
+    make_install("")
+    # for now, bash is our default /bin/sh
+    cd(PKGDIR + "/usr/bin", 1)
+    ln("bash", "sh")
+    # system configs
+    install("644", FILEDIR + "system.bashrc", PKGDIR + "/etc/bash/bashrc")
+    install("644", FILEDIR + "system.bash_logout", PKGDIR + "/etc/bash/bash_logout")
+    # user configs skeletons
+    install("644", FILEDIR + "dot.bashrc", PKGDIR + "/etc/skel/.bashrc")
+    install("644", FILEDIR + "dot.bash_logout", PKGDIR + "/etc/skel/.bash_logout")
+    install("644", FILEDIR + "dot.bash_profile", PKGDIR + "/etc/skel/.bash_profile")
