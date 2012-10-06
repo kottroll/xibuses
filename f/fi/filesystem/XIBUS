@@ -1,0 +1,37 @@
+# Copyright 2012 Xilitra Linux Project
+# Maintainers: Valdos "fat0troll" Sine, Stanislav "pztrn" Nikitin, Alexander "drakmail" Masloff
+name = "filesystem"
+version = "20121007"
+release = "1"
+arch = "any"
+source = None
+description = "Filesystem Hierarchy Standard package."
+license = "custom"
+url = "http://xilitra.ru/wiki/devel/standards/fhs"
+depends = []
+"""
+This package depends on common sense
+"""
+groups = ["baselayout", "core"]
+
+def build():
+    """
+    Nothing to do here.
+    """
+
+def package():
+    cd(PKGDIR, 0)
+    # List of directories we create
+    dirlist = ["boot", "dev", "etc", "home", "media", "opt", "proc", "run", "srv", "srv/ftp", "srv/www", "srv/mail", "tmp", "usr", "usr/bin", "usr/include", "usr/lib", "usr/libexec", "usr/sbin", "usr/share", "usr/share/doc", "usr/share/license", "usr/src", "usr/local", "var", "var/tmp"]
+    if ARCH == "x86_64":
+    	dirlist.extend(["usr/bin32", "usr/lib32"])
+    for dir in dirlist:
+        mkdir(dir)
+    """
+    There is a symlink time!
+    """
+    symlinklist = [["bin", "/usr/bin"], ["lib", "/usr/lib"], ["sbin", "/usr/sbin"], ["var/lock", "/run/lock"], ["var/run", "/run"]]
+    if ARCH == "x86_64":
+        symlinklist.extend([["lib64", "/usr/lib"], ["usr/lib64", "/usr/lib"]])
+    for dir in symlinklist:
+        ln(dir[0], dir[1])
