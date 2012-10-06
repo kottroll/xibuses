@@ -1,0 +1,58 @@
+name = "shadow"
+version = "4.1.5.1"
+release = "1"
+description = "Password and account management tool suite with support for shadow files and PAM"
+arch = "all"
+license = "BSD"
+depends = ["pam", "sh", "acl"]
+url = "http://pkg-shadow.alioth.debian.org/"
+source = "http://pkg-shadow.alioth.debian.org/releases/{0}-{1}.tar.bz2".format(name, version)
+sha1sum = "81f38720b953ef9c2c100c43d02dfe19cafd6c30"
+
+def build():
+    cd(name + "-" + version, 0)
+    
+    # Here must go a regexp that change in src/Makefile.am
+    # like:
+    # '/^user\(mod\|add\)_LDADD/s|$| -lattr|'
+    
+    LDFLAGS_NEW = LDFLAGS + " -lcrypt"
+    export("LDFLAGS", LDFLAGS_NEW)
+    
+    configure_keys = """--prefix=/usr \
+    --libdir=/lib \
+    --mandir=/usr/share/man \
+    --sysconfdir=/etc \
+    --with-libpam \
+    --without-selinux"""
+    configure(configure_keys)
+    make("")
+    
+def package():
+    cd(name + "-" + version, 0)
+    make_install("")
+    install("644", FILEDIR + "/LICENSE", PKGDIR + "/usr/share/licenses/shadow/LICENSE")
+    install("755", FILEDIR + "/adduser", PKGDIR + "/usr/sbin/adduser")
+    install("644", FILEDIR + "/useradd.defaults", PKGDIR + "/etc/default/useradd")
+    install("744", FILEDIR + "/shadow.cron.daily", PKGDIR + "/etc/cron.daily/shadow")
+    install("644", FILEDIR + "/login.defs", PKGDIR + "/etc/login.defs")
+    
+    for item in ("passwd", "chgpasswd", "chpasswd", "newusers"):
+        install("644", FILEDIR + item, PKGDIR + "/etc/pam.d/" + item)
+        
+    # Config from tarball
+    install("644", "etc/pam.d/groupmems", PKGDIR + "/etc/pam.d/groupmems")
+        
+    for item in ("chage", "groupadd", "groupdel", "groupmod", "shadow", "useradd", "usermod", "userdel"):
+        install("644", FILEDIR + "/defaults.pam", PKGDIR + "/etc/pam.d/" + item)
+        
+    # Remove utilities provided by util-linux
+    for item in ("/usr/bin/chsh", "/usr/bin/chfn", "/usr/bin/sg", "/bin/login", "/bin/su", "/usr/sbin/vipw", "/usr/sbin/vigr"):
+        rm(PKGDIR + item)
+        
+    mv(PKGDIR + "/usr/bin/newgrp", PKGDIR + "/usr/bin/sg")
+        
+    chmod("755", PKGDIR + "/etc/pam.d")
+    
+    # Dirty. Needs to be fixed before putting in repo.
+    sh("""find {0}/usr/share/man '(' -name 'chsh.1' -o -name 'chfn.1' -o -name 'su.1' -o -name 'login.1' -o -name 'vipw.8' -o -name 'vigr.8' -o -name 'newgrp.1' ')' -delete""".format(PKGDIR))

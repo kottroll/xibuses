@@ -1,0 +1,40 @@
+name = "vim"
+version = "7.3"
+release = "1"
+description = "Vi Improved, a highly configurable, improved version of the vi text editor"
+arch = "all"
+license = "custom:vim"
+url = "http://www.vim.org"
+depends = ["ncurses", "sh"]
+makedeps = ["gpm", "python2", "ruby", "libxt", "desktop-file-utils", "gtk2", "lua"]
+source = "ftp://ftp.vim.org/pub/vim/unix/vim-{0}.tar.bz2".format(\
+version)
+#sha1sum = "a1c54bde75476ace5d24d4c17f7a81818e80dfda"
+
+# Other variables
+sub_version = "73"
+
+def build():
+    cd(name + sub_version, 1)
+
+    #sed("-i", """s|^.*\(#define SYS_.*VIMRC_FILE.*"\) .*$|\1|""", "src/feature.h")
+    #sed("-i", """s|^.*\(#define VIMRC_FILE.*"\) .*$|\1|""", "src/feature.h")
+    #sed("-i -e", """s|vi_cv_path_python, python|vi_cv_path_python, python2|""",\
+    #"src/configure.in")
+    
+    configure_keys = "-prefix=/usr --localstatedir=/var/lib/vim \
+    --with-features=big --with-compiledby=XilitraLinux \
+    --enable-gpm --enable-acl --with-x=no \
+    --disable-gui --enable-multibyte --enable-cscope \
+    --disable-netbeans --enable-perlinterp --disable-pythoninterp \
+    --disable-python3interp --disable-rubyinterp --disable-luainterp"
+    
+    cd("src", 1)
+    autoconf()
+    cd("..", 1)
+    configure(configure_keys)
+    make("")
+
+def package():
+    cd(name + "-" + version, 1)
+    make_install("")
