@@ -7,8 +7,8 @@ description = "A set of programs to assemble and manipulate binary and object fi
 license = "GPL"
 url = "http://www.gnu.org/software/binutils/"
 depends = ["glibc>=2.16", "zlib"]
-source = "http://ftp.gnu.org/gnu/{0}/{1}-{2}.tar.bz2".format(name, name, version)
-md5sum = "ee0f10756c84979622b992a4a61ea3f5"
+source = "http://ftp.gnu.org/gnu/{0}/{1}-{2}.tar.gz".format(name, name, version)
+md5sum = "8b3ad7090e3989810943aa19103fdb83"
 
 def build():
     mkdir("binutils-build")
