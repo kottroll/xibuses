@@ -1,0 +1,24 @@
+name = "xz"
+version = "5.0.4"
+release = "1"
+description = "Library and command line tools for XZ and LZMA compressed files"
+arch = "all"
+license = "GPL LGPL custom"
+url = "http://tukaani.org/xz/"
+depends = ["sh"]
+source = "http://tukaani.org/{0}/{0}-{1}.tar.gz".format(name,version)
+md5sum = "df3df690aef18384e1e031be7ec3a964"
+
+def build():
+    cd(name + "-" + version, 0)
+    configure("--prefix=/usr --disable-rpath --enable-werror")
+    make("")
+    
+def package():
+    cd(name + "-" + version, 0)
+    make_install("")
+    
+    # Installing LICENSE
+    mkdir(PKGDIR + "/usr/share/licenses/xz/")
+    cp(PKGDIR + "/usr/share/doc/xz/COPYING", PKGDIR + "/usr/share/licenses/xz/")
+    cp(PKGDIR + "/usr/share/doc/xz/COPYING.GPLv2", PKGDIR + "/usr/share/licenses/xz/")

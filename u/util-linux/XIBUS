@@ -1,0 +1,35 @@
+name = "util-linux"
+version = "2.21.2"
+release = "1"
+description = "Miscellaneous system utilities for Linux"
+arch = "all"
+license = "GPLv2"
+url = "http://www.kernel.org/pub/linux/utils/util-linux/"
+depends = ["pam"]
+source = "ftp://ftp.kernel.org/pub/linux/utils/{0}/v{2}/{0}-{1}.tar.xz".format(name, version, version[:4])
+md5sum = "54ba880f1d66782c2287ee2c898520e9"
+
+def build():
+    cd(name + "-" + version, 0)
+    
+    configure_keys = """--prefix=/usr --libdir=/usr/lib \
+    --enable-fs-paths-extra=/usr/bin:/usr/sbin --enable-write \
+    --enable-raw --disable-wall --enable-new-mount \
+    --enable-login-utils"""
+    
+    configure(configure_keys)
+    make("")
+    
+def package():
+    cd(name + "-" + version, 0)
+    make_install("")
+    
+    for item in ("chsh", "chfn"):
+        chmod("4755", PKGDIR + "/usr/bin/" + item)
+    
+    for item in ("bin/chkdupexe", "share/man/man1/chkdupexe.1"):
+        rm(PKGDIR + "/usr/" + item)
+        
+    install("644", FILEDIR + "/pam-common", PKGDIR + "/etc/pam.d/chfn")
+    install("644", FILEDIR + "/pam-common", PKGDIR + "/etc/pam.d/chsh")
+    install("644", FILEDIR + "/pam-login", PKGDIR + "/etc/pam.d/login")

@@ -1,0 +1,24 @@
+name = "tzdata"
+version = "2012e"
+release = "1"
+description = "Sources for time zone and daylight saving time data"
+arch = "all"
+license = "GPLv3"
+url = "http://www.iana.org/time-zones"
+source = "http://www.iana.org/time-zones/repository/releases/{0}{1}.tar.gz".format(name, version)
+md5sum = "cb74e1f7bcc9a968a891a471e72e47b8"
+
+def build():
+    # There is nothing to build, passing to packaging
+    pass
+    
+def package():
+    tz = "africa antarctica asia australasia europe northamerica southamerica pacificnew etcetera backward systemv factory solar87 solar88 solar89"
+    
+    sh("zic -y ./yearistype -d " + PKGDIR + "/usr/share/zoneinfo " + tz)
+    sh("zic -y ./yearistype -d " + PKGDIR + "/usr/share/zoneinfo/posix " + tz)
+    sh("zic -y ./yearistype -d " + PKGDIR + "/usr/share/zoneinfo/right " + tz)
+    sh("zic -y ./yearistype -d " + PKGDIR + "/usr/share/zoneinfo -p America/New_York")
+    
+    for item in ("iso3166.tab", "zone.tab"):
+        install("444", item, PKGDIR + "/usr/share/zoneinfo")

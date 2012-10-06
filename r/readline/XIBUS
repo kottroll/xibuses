@@ -1,0 +1,27 @@
+name = "readline"
+version = "6.2.001"
+patchlevel = version[-3:]
+release = "1"
+description = "GNU readline library"
+arch = "all"
+license = "GPL"
+depends = ["glibc", "ncurses"]
+url = "http://tiswww.case.edu/php/chet/readline/rltop.html"
+source = "ftp://ftp.gnu.org/pub/gnu/{0}/{0}-{1}.tar.gz".format(name, version[:-4])
+md5sum = "67948acb2ca081f23359d0256e9a271c"
+
+def build():
+    cd(name + "-" + version[:-4], 0)
+    
+    if ARCH == "x86_64":
+        CFLAGS_NEW = CFLAGS + " -fPIC"
+        export("CFLAGS", CFLAGS_NEW)
+    
+    configure("--prefix=/usr")
+    make("SHLIB_LIBS=-lncurses")
+    
+def package():
+    cd(name + "-" + version[:-4], 0)
+    make_install("")
+    
+    install("644", FILEDIR + "/inputrc", PKGDIR + "/etc/inputrc")
