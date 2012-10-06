@@ -32,6 +32,6 @@ def package():
     """
     symlinklist = [["bin", "usr/bin"], ["lib", "usr/lib"], ["sbin", "usr/sbin"], ["var/lock", "../run/lock"], ["var/run", "../run"]]
     if ARCH == "x86_64":
-        symlinklist.extend([["lib64", "/usr/lib"], ["usr/lib64", "../lib"]])
+        symlinklist.extend([["lib64", "usr/lib"], ["usr/lib64", "../lib"]])
     for dir in symlinklist:
         ln(dir[0], dir[1])
