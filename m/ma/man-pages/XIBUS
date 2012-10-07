@@ -1,0 +1,40 @@
+# Copyright 2012 Xilitra Linux Project
+# Maintainers: Valdos "fat0troll" Sine, Stanislav "pztrn" Nikitin, Alexander "drakmail" Masloff
+name = "man-pages"
+version = "3.42"
+posixversion = "2003-a"
+release = "1"
+description = "Linux man pages"
+license = "GPL"
+url = "http://man7.org/linux/man-pages/index.html"
+arch = "noarch"
+depends = []
+source = "http://www.kernel.org/pub/linux/docs/man-pages/{0}-{1}.tar.xz".format(name, version)
+source = "http://www.kernel.org/pub/linux/docs/man-pages/man-pages-posix/{0}-posix-{1}.tar.bz2".format(name, posixversion)
+groups = ["baselayout", "core", "docs"]
+#md5sum = ""
+#sha1sum = ""
+#sha256sum = ""
+#sha512sum = ""
+
+def build():
+    cd(name + "-" + version, 0)
+    mkdir("man0")
+    sect = ["0", "1", "3"]
+    for s in sect:
+        sed("-i", "/^\.so /s/man" + s + "p/man$sect/", SRCDIR + "/" + name + "-posix-" + posixversion + "/man" + s + "p/*")
+        mv(SRCDIR + "/" + name + "-posix-" + posixversion + "/man" + s + "p/*", SRCDIR + "/" + name + "-" + version + "/man" + s + "/")
+
+def package():
+    cd (name + "-" + version, 0)
+    make("prefix=" + PKGDIR + "/usr install")
+    cd(PKGDIR + "/usr/share/man", 0)
+    # these are included in coreutils
+    rmdir("man1/{chgrp,chmod,chown,cp,dir,dd,df,dircolors,du,install,ln,ls,mkdir,mkfifo,mknod,mv,rm,rmdir,touch,vdir}.1")
+    # this is included in shadow
+    rmdir("man5/passwd.5")
+    rmdir("man3/getspnam.3")
+    # this is included in diffutils
+    rmdir("man1/diff.1")
+    # this is included in xf86-input-mouse
+    rmdir("man4/mouse.4")

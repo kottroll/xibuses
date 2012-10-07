@@ -1,0 +1,26 @@
+# Copyright 2012 Xilitra Linux Project
+# Maintainers: Your Name
+name = ""
+version = ""
+release = ""
+description = ""
+license = ""
+url = ""
+arch = ""
+depends = []
+source = ""
+groups = []
+md5sum = ""
+sha1sum = ""
+sha256sum = ""
+sha512sum = ""
+
+def build():
+    """
+    Write build stuff here
+    """
+
+def package():
+    """
+    Write install stuff here
+    """
