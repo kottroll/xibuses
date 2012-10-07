@@ -29,4 +29,9 @@ def package():
     # use headers from libdrm
     rmdir(PKGDIR + "/usr/include/drm/")
     # clean-up unnecessary files generated during install
-    # fixme: do it!
+    rmlist1 = find_files(".*..install.cmd$", PKGDIR + "/usr/include/")
+    for item in rmlist1:
+        rm(item)
+    rmlist2 = find_files(".*.install$", PKGDIR + "/usr/include/")
+    for item in rmlist2:
+        rm(item)
