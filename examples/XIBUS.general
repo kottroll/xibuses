@@ -8,6 +8,7 @@ license = ""
 url = ""
 arch = ""
 depends = []
+makedepends = []
 source = ""
 groups = []
 md5sum = ""

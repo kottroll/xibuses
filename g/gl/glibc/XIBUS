@@ -1,0 +1,74 @@
+# Copyright 2012 Xilitra Linux Project
+# Maintainers: Your Name
+name = "glibc"
+version = "2.16.0"
+release = "1"
+description = "GNU C Library"
+license = ["GPL", "LGPL"]
+url = "http://www.gnu.org/software/libc"
+arch = "all"
+depends = ["linux-api-headers>=3.5", "tzdata"]
+makedepends = ["gcc>=4.7"]
+source = "http://ftp.gnu.org/gnu/libc/{0}-{1}.tar.xz".format(name, version)
+groups = ["baselayout", "core"]
+md5sum = "80b181b02ab249524ec92822c0174cf7"
+#sha1sum = ""
+#sha256sum = ""
+#sha512sum = ""
+options = ["-strip"]
+
+configs = ["etc/gai.conf", "etc/locale.gen", "etc/nscd.conf"]
+
+def build():
+    cd(name + "-" + version, 0)
+    do_patches("-p1")
+    cd(SRCDIR, 0)
+    mkdir("glibc-build")
+    cd("glibc-build", 0)
+    if ARCH == "i686":
+        # Hack to fix NPTL issues with Xen, only required on 32bit platforms
+        CFLAGS = getenv("CFLAGS")
+        export("CFLAGS", CFLAGS + " -mno-tls-direct-seg-refs")
+    write_to_file("slibdir=/usr/lib", "configparms")
+    configure_script_path = "%s/%s-%s/%s" % (SRCDIR, name, version, "configure")
+    configure_keys = "--prefix=/usr \
+        --libdir=/usr/lib --libexecdir=/usr/libexec \
+        --with-headers=/usr/include \
+        --enable-add-ons=nptl,libidn \
+        --enable-obsolete-rpc \
+        --enable-kernel=2.6.32 \
+        --enable-bind-now --disable-profile \
+        --enable-stackguard-randomization \
+        --enable-multi-arch"
+    configure("custom %s %s" %(configure_script_path, configure_keys))
+    write_to_file("build-programs=no", "configparms")
+    make("")
+    # re-enable hardening for programs
+    sed("-i", "/build-programs=/s#no#yes#", "configparms")
+    write_to_file("CC += -fstack-protector -D_FORTIFY_SOURCE=2", "configparms")
+    write_to_file("CXX += -fstack-protector -D_FORTIFY_SOURCE=2", "configparms")
+    make("")
+    # remove harding in preparation to run test-suite
+    sed("-i", "2,4d", "configparms")
+    make("check")
+
+def package():
+    cd(SRCDIR + "/glibc-build", 0)
+    mkdir(PKGDIR + "/etc")
+    write_to_file("#", PKGDIR + "/etc/ld.so.conf")
+    make("install_root=" + PKGDIR + " install")
+    rm(PKGDIR + "/etc/ld.so.{cache,conf}")
+    mkdir(PKGDIR + "/usr/{sbin,lib/{,locale,systemd/system,tmpfiles.d}}")
+    install("644", SRCDIR + "/" + name + "-" + version + "/nscd/nscd.conf", PKGDIR + "/etc/nscd.conf")
+    sed("-i -e", "s/^\tserver-user/#\tserver-user/", PKGDIR + "/etc/nscd.conf")
+    install("644", FILEDIR + "/nscd.service", PKGDIR + "/usr/lib/systemd/system")
+    install("644", FILEDIR + "/nscd.tmpfiles", PKGDIR + "/usr/lib/tmpfiles.d/nscd.conf")
+    install("644", SRCDIR + "/" + name + "-" + version + "/posix/gai.conf", PKGDIR + "/etc/gai.conf")
+    install("755", FILEDIR + "/locale-gen", PKGDIR + "/usr/sbin/locale-gen")
+    # create /etc/locale.gen
+    install("644", FILEDIR + "/locale.gen.txt", PKGDIR + "/etc/locale.gen")
+    # TODO: how do we provide locales? generated here, by installer, configurer, coded by us or something else?
+    if ARCH == "x86-64":
+        # fix paths and compilance with binary blobs...
+        sed("-i", "/RTLDLIST/s%lib64%lib%", PKGDIR + "/usr/bin/ldd")
+    # TODO: custom stripping
