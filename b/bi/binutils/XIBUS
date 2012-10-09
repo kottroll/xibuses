@@ -9,10 +9,19 @@ url = "http://www.gnu.org/software/binutils/"
 depends = ["glibc>=2.16", "zlib"]
 source = "http://ftp.gnu.org/gnu/{0}/{1}-{2}.tar.gz".format(name, name, version)
 md5sum = "8b3ad7090e3989810943aa19103fdb83"
+options = ["-libtool"]
 
 def build():
+    cd("binutils-{0}".format(version), 1)
+    do_patches("-p1")
     mkdir("binutils-build")
     cd("binutils-build", 1)
+    
+    # Disabling -Wnarrowing to get rid of some errors
+    CXXFLAGS_NEW = CFLAGS.split(" ")
+    CXXFLAGS_NEW.extend(["-Wno-narrowing", "-Wno-free-nonheap-object", "-std=c++0x"])
+    export("CXXFLAGS", " ".join(CXXFLAGS_NEW))
+    
     amd64_flags = ""
     if ARCH == "x86_64":
         amd64_flags = "--enable-64-bit-bfd --enable-multilib"
@@ -24,6 +33,7 @@ def build():
     --enable-shared \
     %s" % amd64_flags
     configure("custom %s %s" % (configure_script_path, configure_keys))
+    
     # check the host environment and makes sure all the necessary tools are available
     make("configure-host")
     make("tooldir=%s" % PKGDIR + "/usr")

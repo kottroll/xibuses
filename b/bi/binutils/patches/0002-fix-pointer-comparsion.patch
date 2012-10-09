@@ -1,0 +1,12 @@
+diff -u -d -u -p -r1.115 options.cc
+--- a/gold/options.cc  26 Sep 2011 23:42:06 -0000  1.115
++++ b/gold/options.cc  3 Oct 2011 11:59:17 -0000
+@@ -198,7 +198,7 @@ parse_uint(const char* option_name, cons
+ {
+   char* endptr;
+   *retval = strtol(arg, &endptr, 0);
+-  if (*endptr != '\0' || retval < 0)
++  if (*endptr != '\0' || *retval < 0)
+     gold_fatal(_("%s: invalid option value (expected an integer): %s"),
+                option_name, arg);
+ }
