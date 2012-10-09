@@ -18,9 +18,7 @@ def build():
     cd("binutils-build", 1)
     
     # Disabling -Wnarrowing to get rid of some errors
-    CXXFLAGS_NEW = CFLAGS.split(" ")
-    CXXFLAGS_NEW.extend(["-Wno-narrowing", "-Wno-free-nonheap-object", "-std=c++0x"])
-    export("CXXFLAGS", " ".join(CXXFLAGS_NEW))
+    add_flags("CXXFLAGS", "-Wno-narrowing -Wno-free-nonheap-object -std=c++0x")
     
     amd64_flags = ""
     if ARCH == "x86_64":
@@ -37,19 +35,27 @@ def build():
     # check the host environment and makes sure all the necessary tools are available
     make("configure-host")
     make("tooldir=%s" % PKGDIR + "/usr")
+    
     # Rebuild libiberty.a with -fPIC
     cpdir("libiberty", "libiberty-pic")
     make("-C libiberty-pic clean")
-    make("CFLAGS='%s -fPIC' -C libiberty-pic", CFLAGS)
+    # Adding CFLAG for libiberty-pic
+    add_flags("CFLAGS", "-fPIC")
+    make("-C libiberty-pic")
+    
     # Rebuild libbfd.a with -fPIC
-    # hidden visability prevent 3rd party shared libraries exporting bfd non-stable API
+    # hidden visability prevent 3rd party shared libraries exporting bfd non-stable API -fvisibility=hidden
+    # CFLAGS for libbfd
+    add_flags("CFLAGS", "-fvisibility=hidden")
     cpdir("bfd", "bfd-pic")
     make("-C bfd-pic clean")
-    make("CFLAGS='%s -fPIC -fvisibility=hidden' -C bfd-pic" % CFLAGS)
+    remove_flags("CFLAGS", "-fvisibility=hidden")
+    
+    make("-C bfd-pic")
     # Rebuild libopcodes.a with -fPIC
     cpdir("opcodes", "opcodes-pic")
     make("opcodes-pic clean")
-    make("CFLAGS='%s -fPIC' -C opcodes-pic" % CFLAGS)
+    make("-C opcodes-pic")
 
 def package():
     cd("binutils-build", 1)
