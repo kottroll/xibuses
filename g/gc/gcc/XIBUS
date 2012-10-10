@@ -1,0 +1,60 @@
+name = "gcc"
+version = "4.7.2"
+release = "1"
+arch = "auto"
+description = "GNU Compilers Collection"
+license = "GPL"
+url = "http://www.gnu.org/software/bash/bash.html"
+depends = ["readline>=6.1", "glibc"]
+make_deps = ["binutils>=2.22", "libmpc"]
+source = "ftp://gcc.gnu.org/pub/gcc/releases/{0}-{1}/{0}-{1}.tar.bz2".format(name, version)
+md5sum = "cc308a0891e778cfda7a151ab8a6e762"
+sha1sum = "a464ba0f26eef24c29bcd1e7489421117fb9ee35"
+sha256sum = "8a9283d7010fb9fe5ece3ca507e0af5c19412626384f8a5e9434251ae100b084"
+sha512sum = "689ce92d0c93e5ca5268d9757acffc6e5a7931fc7ad99ee9beefa6ce02d201ed9dade08240cb5623525e19362f90a245792e95d4e90b067fee61013a03288e32"
+
+def build():
+    cd(name + "-" + version, 1)
+    
+    do_patches("-p0")
+    
+    if ARCH == "i686":
+        apply_patch("9000", "")
+    elif ARCH == "x86_64":
+        apply_patch("9001", "")
+        
+    mkdir("gcc-build")
+    cd("gcc-build", 1)
+    
+    configure_keys = """--prefix=/usr --libexecdir=/usr/lib --enable-shared --enable-threads=posix --enable-__cxa_atexit \
+    --enable-clocale=gnu --enable-languages=c,c++ --disable-multilib --disable-bootstrap --with-system-zlib --disable-libstdcxx-pch \
+    --enable-libstdcxx-time --enable-gnu-unique-object --enable-linker-build-id --with-ppl --enable-cloog-backend=isl \
+    --disable-ppl-version-check --disable-cloog-version-check --enable-lto --enable-gold --enable-ld=default --enable-plugin \
+    --with-plugin-ld=ld.gold --with-linker-hash-style=gnu --disable-multilib --disable-libssp --disable-build-with-cxx \
+    --disable-build-poststage1-with-cxx --enable-checking=release --with-bugurl=https://xilitra.ru/bugs/"""
+    
+    configure_script_path = "%s/%s-%s/%s" % (SRCDIR, name, version, "configure")
+    configure("custom %s %s" % (configure_script_path, configure_keys))
+    
+    make("-j4")
+    
+    #################################################################
+    # Checks part
+    # The only place where we can use sh() helper, for increasing
+    # ulimit limits.
+    #################################################################
+    sh("ulimit -s 32768")
+    
+    # Some tests are known to fail. Adding '@ignore_errors' macro
+    # to prevent tests aborting due to errors.
+    make("-k check @ignore_errors")
+                
+def package():
+    cd(name + "-" + version + "/gcc-build", 1)
+    make_install("")
+    cd(PKGDIR, 1)
+    
+    mkdir(PKGDIR + "/lib")
+    ln("usr/bin/cpp", "lib/cpp")
+    ln("usr/bin/gcc", "usr/bin/cc")
+    

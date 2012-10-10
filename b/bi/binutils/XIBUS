@@ -36,6 +36,7 @@ def build():
     make("configure-host")
     make("tooldir=%s" % PKGDIR + "/usr")
     
+    
     # Rebuild libiberty.a with -fPIC
     cpdir("libiberty", "libiberty-pic")
     make("-C libiberty-pic clean")
@@ -44,7 +45,7 @@ def build():
     make("-C libiberty-pic")
     
     # Rebuild libbfd.a with -fPIC
-    # hidden visability prevent 3rd party shared libraries exporting bfd non-stable API -fvisibility=hidden
+    # hidden visability prevent 3rd party shared libraries exporting bfd non-stable API
     # CFLAGS for libbfd
     add_flags("CFLAGS", "-fvisibility=hidden")
     cpdir("bfd", "bfd-pic")

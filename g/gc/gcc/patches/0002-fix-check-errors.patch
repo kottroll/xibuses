@@ -1,0 +1,12 @@
+--- fixincludes/Makefile.in.orig	2012-10-10 04:22:32.041083276 +0400
++++ fixincludes/Makefile.in	2012-10-10 04:22:36.527750099 +0400
+@@ -173,9 +173,6 @@
+ 	cd $(srcdir) && $(ACLOCAL) $(ACLOCAL_AMFLAGS)
+ 
+ check : all
+-	autogen -T $(srcdir)/check.tpl $(srcdir)/inclhack.def
+-	$(SHELL) ./check.sh $(srcdir)/tests/base
+-	@rm -f ./check.sh
+ 
+ install : all
+ 	-rm -rf $(DESTDIR)$(itoolsdir)

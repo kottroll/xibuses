@@ -1,0 +1,11 @@
+--- gcc/Makefile.in.orig	2012-10-10 04:21:20.017747413 +0400
++++ gcc/Makefile.in	2012-10-10 04:21:28.587747714 +0400
+@@ -131,7 +131,7 @@
+ # CFLAGS is for the user to override to, e.g., do a cross build with -O2.
+ # TCFLAGS is used for compilations with the GCC just built.
+ # T_CFLAGS is used for all compilations and is overridden by t-* files.
+-T_CFLAGS =
++T_CFLAGS = -fomit-frame-pointer
+ TCFLAGS =
+ CFLAGS = @CFLAGS@
+ CXXFLAGS = @CXXFLAGS@

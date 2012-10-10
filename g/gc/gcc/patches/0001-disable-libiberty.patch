@@ -1,0 +1,11 @@
+--- libiberty/Makefile.in.orig	2012-10-10 04:19:40.767743930 +0400
++++ libiberty/Makefile.in	2012-10-10 04:19:47.991077515 +0400
+@@ -342,7 +342,7 @@
+ @MAINT@	echo stamp > stamp-functions
+ 
+ INSTALL_DEST = @INSTALL_DEST@
+-install: install_to_$(INSTALL_DEST) install-subdir
++install: install-subdir
+ install-strip: install
+ 
+ .PHONY: install install-strip
