@@ -9,6 +9,7 @@ depends = ["ncurses", "sh"]
 source = "http://www.nano-editor.org/dist/v{0}/{1}-{2}.tar.gz".format(\
 version[:3], name, version)
 md5sum = "03233ae480689a008eb98feb1b599807"
+API_VERSION = 1
 
 def build():
     cd(name + "-" + version, 1)

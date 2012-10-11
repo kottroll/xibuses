@@ -14,6 +14,7 @@ sha1sum = "8c7e19ad0dd9b3b5cc652273403423d6cf0c5edf"
 sha256sum = "ed5a815cfea525dc778df0cb37468b9c1b554aaf30d9328b1431ca705b7400ff"
 sha512sum = "fa381e75999bba626ba08d73225285b03c6d2f6cca87881b28829925d1624eaed1c9b544f75e7281cf5d8dcdd7831025a4eafc05f88f13375f9e08239a8a9303"
 options = ["-libtool"]
+API_VERSION = 1
 
 def build():
     cd("mpc-" + version, 0)

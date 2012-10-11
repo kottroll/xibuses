@@ -13,18 +13,20 @@ depends = []
 This package depends on common sense
 """
 groups = ["baselayout", "core"]
+API_VERSION = 1
 
 def build():
     """
     Nothing to do here.
     """
+    pass
 
 def package():
     cd(PKGDIR, 0)
     # List of directories we create
     dirlist = ["boot", "dev", "etc", "home", "media", "opt", "proc", "run", "srv", "srv/ftp", "srv/www", "srv/mail", "tmp", "usr", "usr/bin", "usr/include", "usr/lib", "usr/libexec", "usr/sbin", "usr/share", "usr/share/doc", "usr/share/license", "usr/src", "usr/local", "var", "var/tmp"]
     if ARCH == "x86_64":
-    	dirlist.extend(["usr/bin32", "usr/lib32"])
+        dirlist.extend(["usr/bin32", "usr/lib32"])
     for dir in dirlist:
         mkdir(dir)
     """

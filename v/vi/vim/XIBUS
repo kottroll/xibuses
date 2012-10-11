@@ -10,6 +10,7 @@ makedeps = ["gpm", "python2", "ruby", "libxt", "desktop-file-utils", "gtk2", "lu
 source = "ftp://ftp.vim.org/pub/vim/unix/vim-{0}.tar.bz2".format(\
 version)
 #sha1sum = "a1c54bde75476ace5d24d4c17f7a81818e80dfda"
+API_VERSION = 1
 
 # Other variables
 sub_version = "73"

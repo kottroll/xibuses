@@ -8,6 +8,7 @@ url = "http://www.kernel.org/pub/linux/utils/util-linux/"
 depends = ["pam"]
 source = "ftp://ftp.kernel.org/pub/linux/utils/{0}/v{2}/{0}-{1}.tar.xz".format(name, version, version[:4])
 md5sum = "54ba880f1d66782c2287ee2c898520e9"
+API_VERSION = 1
 
 def build():
     cd(name + "-" + version, 0)

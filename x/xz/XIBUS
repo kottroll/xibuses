@@ -8,6 +8,7 @@ url = "http://tukaani.org/xz/"
 depends = ["sh"]
 source = "http://tukaani.org/{0}/{0}-{1}.tar.gz".format(name,version)
 md5sum = "df3df690aef18384e1e031be7ec3a964"
+API_VERSION = 1
 
 def build():
     cd(name + "-" + version, 0)

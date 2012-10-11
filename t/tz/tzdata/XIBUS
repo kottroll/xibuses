@@ -15,6 +15,7 @@ sha1sum = "9fd8f90f8167b0a2a916edd9f681ed23b5fb605b"
 sha256sum = "afe95a49a445ee55391d2d4beccd4be6d61a090d5d8069c407390ff1502c26cc"
 sha512sum = "b8db53f82967472c3aa191a04f0a97473d4331c72d03834749a0c8a9d9a934fb1285917e3f5b6fc7a166a39371913650501feb88ebfc40bc6a64e3393d0ead5d"
 groups = ["baselayout", "core"]
+API_VERSION = 1
 
 def build():
     # There is nothing to build, passing to packaging

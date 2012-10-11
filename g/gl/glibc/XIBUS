@@ -16,8 +16,8 @@ md5sum = "80b181b02ab249524ec92822c0174cf7"
 #sha256sum = ""
 #sha512sum = ""
 options = ["-strip"]
-
 configs = ["etc/gai.conf", "etc/locale.gen", "etc/nscd.conf"]
+API_VERSION = 1
 
 def build():
     cd(name + "-" + version, 0)

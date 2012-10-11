@@ -8,6 +8,7 @@ depends = ["glibc", "sh"]
 url = "http://www.gnu.org/software/tar/tar.html"
 source = "ftp://ftp.gnu.org/gnu/{0}/{0}-{1}.tar.xz".format(name, version)
 md5sum = "0ced6f20b9fa1bea588005b5ad4b52c1"
+API_VERSION = 1
 
 def build():
     cd(name + "-" + version, 0)

@@ -15,6 +15,7 @@ md5sum = ["2392bb23db94f344f493c4beca41398f", "7c78aff03c0a6767ba483d34f19e4b09"
 #sha1sum = ""
 #sha256sum = ""
 #sha512sum = ""
+API_VERSION = 1
 
 def build():
     cd(name + "-" + version, 0)

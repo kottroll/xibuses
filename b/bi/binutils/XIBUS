@@ -10,6 +10,7 @@ depends = ["glibc>=2.16", "zlib"]
 source = "http://ftp.gnu.org/gnu/{0}/{1}-{2}.tar.gz".format(name, name, version)
 md5sum = "8b3ad7090e3989810943aa19103fdb83"
 options = ["-libtool"]
+API_VERSION = 1
 
 def build():
     cd("binutils-{0}".format(version), 1)

@@ -15,6 +15,7 @@ sha1sum = "df8ffe8759ec8cd85a98dc98e858563ea2555f64"
 sha256sum = "c70ae29a28c0585f541d5916fc3248c3e91baa481f63d7ccec53d1534cbcc9b7"
 sha512sum = "a3f740e1a950f84ae53ef477ff255370050b52dd39fa309c8b8c4b0dc061e96fce585eb4a587037003509c01cd067d49e5193f1d0905e5c28347223a15aa271b"
 options = ["-libtool"]
+API_VERSION = 1
 
 def build():
     cd(name + "-" + version, 0)

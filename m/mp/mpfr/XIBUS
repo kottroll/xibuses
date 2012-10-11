@@ -16,6 +16,7 @@ sha256sum = "49d5acc32dbeec30a8e26af9c19845763d63feacb8bf97b12876008419f5a17a"
 sha512sum = "4fcc87e19a08622b3211a33807e708b78da6c8659f391003703a9e170c485f56e6ebfff48d42afca7b4edb14fd9487684c4d8fd6c9f805ed62b6d5259d5721a8"
 options = ["-libtool"]
 subpackages = ["mpfr_doc"]
+API_VERSION = 1
 
 def build():
     cd(name + "-" + version, 0)

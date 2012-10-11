@@ -8,6 +8,7 @@ depends = ["sh", "acl"]
 url = "http://www.gnu.org/software/sed"
 source = "ftp://ftp.gnu.org/pub/gnu/{0}/{0}-{1}.tar.gz".format(name, version)
 md5sum = "f0fd4d7da574d4707e442285fd2d3b86"
+API_VERSION = 1
 
 def build():
     cd(name + "-" + version, 0)

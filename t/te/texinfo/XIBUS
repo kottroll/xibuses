@@ -8,6 +8,7 @@ url = "http://www.gnu.org/software/texinfo/"
 depends = ["ncurses", "findutils", "gzip"]
 source = "ftp://ftp.gnu.org/pub/gnu/{0}/{0}-{1}.tar.gz".format(name, version)
 md5sum = "71ba711519209b5fb583fed2b3d86fcb"
+API_VERSION = 1
 
 def build():
     cd(name + "-" + version[:4], 0)

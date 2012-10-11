@@ -8,6 +8,7 @@ url = "http://www.zlib.net/"
 depends = ["glibc"]
 source = "http://zlib.net/current/zlib-{0}.tar.gz".format(version)
 md5sum = "60df6a37c56e7c1366cca812414f7b85"
+API_VERSION = 1
 
 def build():
     cd(name + "-" + version, 0)

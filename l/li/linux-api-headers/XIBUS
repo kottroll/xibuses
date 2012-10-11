@@ -17,6 +17,7 @@ md5sum = "fd63e1de6533b3d5531b25760a41d403"
 sha1sum = "8e32c6c3bdfa50c6e232dba0bf50a67628b7d6c3"
 sha256sum = "62b4626bd2df2ede757eacb2971ab1ee7e9317f2fab6e4e14559fb9c073a437f"
 sha512sum = "f8cac4b68e2d1fb519704ddcdcc0ffb8c8504d141b3118fb2f536c263d1d88260496e06528037da2d0148e9dced0fe8f08f53cd1e0c9b8f0702d307f940286b6"
+API_VERSION = 1
 
 def build():
     cd(pname + "-" + version, 0)
