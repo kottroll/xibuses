@@ -27,8 +27,11 @@ def build():
     cd("glibc-build", 0)
     if ARCH == "i686":
         # Hack to fix NPTL issues with Xen, only required on 32bit platforms
-        CFLAGS = getenv("CFLAGS")
-        export("CFLAGS", CFLAGS + " -mno-tls-direct-seg-refs")
+        add_flags("CFLAGS", "-mno-tls-direct-seg-refs")
+        
+    # Removing CFLAG that cause glibc build fail
+    remove_flags("CFLAGS", "-fstack-protector")
+    
     write_to_file("slibdir=/usr/lib", "configparms")
     configure_script_path = "%s/%s-%s/%s" % (SRCDIR, name, version, "configure")
     configure_keys = "--prefix=/usr \
@@ -57,8 +60,13 @@ def package():
     mkdir(PKGDIR + "/etc")
     write_to_file("#", PKGDIR + "/etc/ld.so.conf")
     make("install_root=" + PKGDIR + " install")
-    rm(PKGDIR + "/etc/ld.so.{cache,conf}")
-    mkdir(PKGDIR + "/usr/{sbin,lib/{,locale,systemd/system,tmpfiles.d}}")
+    rm(PKGDIR + "/etc/ld.so.cache")
+    rm(PKGDIR + "/etc/ld.so.conf")
+    
+    dirs = ["/usr/lib/locale", "/usr/lib/systemd/system", "/usr/lib/tmpfiles.d"]
+    for dir in dirs:
+        mkdir(PKGDIR + dir)
+        
     install("644", SRCDIR + "/" + name + "-" + version + "/nscd/nscd.conf", PKGDIR + "/etc/nscd.conf")
     sed("-i -e", "s/^\tserver-user/#\tserver-user/", PKGDIR + "/etc/nscd.conf")
     install("644", FILEDIR + "/nscd.service", PKGDIR + "/usr/lib/systemd/system")

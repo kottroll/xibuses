@@ -1,0 +1,32 @@
+# Copyright 2012 Xilitra Linux Project
+# Maintainers: Your Name
+name = "gmp"
+version = "5.0.5"
+release = "1"
+description = "A free library for arbitrary precision arithmetic"
+license = "custom"
+url = "http://gmplib.org/"
+arch = "all"
+depends = ["gcc", "sh"]
+source = "ftp://ftp.gnu.org/gnu/{0}/{0}-{1}.tar.xz".format(name, version)
+groups = ["baselayout", "core"]
+md5sum = "8aef50959acec2a1ad41d144ffe0f3b5"
+sha1sum = "4e006dd5e473f21d414b88997630122662ddc2be"
+sha256sum = "e87015a825a2445e169931ee27849d52576a2d9e338d1383dcb36fed68d0006f"
+sha512sum = "79f69ed7959af18e626d4b21b5707ebd7701261ebc2cc9f78fa03c5efa9eb1c1aef2ba8728cdbc34fb09ba333aeba0f88ba7e4d87d6a93b21f936f9d8ee1174a"
+options = ["-libtool"]
+
+def build():
+    cd(name + "-" + version, 0)
+    
+    if ARCH == "i686":
+        export("ABI", "32")
+        
+    configure("--prefix=/usr --infodir=/usr/share/info --enable-cxx --enable-mpbsd")
+    make("")
+    make("check")
+    
+def package():
+    cd(name + "-" + version, 0)
+    make_install("")
+    

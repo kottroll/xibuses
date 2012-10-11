@@ -4,9 +4,9 @@ release = "1"
 arch = "auto"
 description = "GNU Compilers Collection"
 license = "GPL"
-url = "http://www.gnu.org/software/bash/bash.html"
+url = "http://gcc.gnu.org/"
 depends = ["readline>=6.1", "glibc"]
-make_deps = ["binutils>=2.22", "libmpc"]
+makedepends = ["binutils>=2.22", "libmpc"]
 source = "ftp://gcc.gnu.org/pub/gcc/releases/{0}-{1}/{0}-{1}.tar.bz2".format(name, version)
 md5sum = "cc308a0891e778cfda7a151ab8a6e762"
 sha1sum = "a464ba0f26eef24c29bcd1e7489421117fb9ee35"

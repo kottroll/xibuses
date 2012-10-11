@@ -1,0 +1,40 @@
+# Copyright 2012 Xilitra Linux Project
+# Maintainers: Your Name
+name = "mpfr"
+version = "3.1.1"
+release = "1"
+description = "Multiple-precision floating-point library"
+license = "LGPL"
+url = "http://www.mpfr.org/"
+arch = "all"
+depends = ["gmp>=5.0"]
+source = "http://www.mpfr.org/mpfr-current/{0}-{1}.tar.xz".format(name, version)
+groups = ["core", "build-tools"]
+md5sum = "91d51c41fcf2799e4ee7a7126fc95c17"
+sha1sum = "7527c322b91fe8e6055ead551e1b46b9f1712ccd"
+sha256sum = "49d5acc32dbeec30a8e26af9c19845763d63feacb8bf97b12876008419f5a17a"
+sha512sum = "4fcc87e19a08622b3211a33807e708b78da6c8659f391003703a9e170c485f56e6ebfff48d42afca7b4edb14fd9487684c4d8fd6c9f805ed62b6d5259d5721a8"
+options = ["-libtool"]
+subpackages = ["mpfr_doc"]
+
+def build():
+    cd(name + "-" + version, 0)
+    configure("--prefix=/usr --enable-thread-safe --docdir=/usr/share/doc/mpfr-3.1.1")
+    make("")
+    make("check")
+    
+def package():
+    cd(name + "-" + version, 0)
+    make_install("")
+
+def build_mpfr_doc():
+    name = "mpfr-doc"
+    description = "Documentation for MPFR, multiple-precision floating-point library"
+    groups = ["doc"]
+                
+    cd("mpfr-" + version, 0)
+    make("html")
+    
+def package_mpfr_doc():
+    cd(name + "-" + version, 0)
+    make("DESTDIR={0} install-html".format(PKGDIR))

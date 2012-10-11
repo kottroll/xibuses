@@ -1,0 +1,26 @@
+# Copyright 2012 Xilitra Linux Project
+# Maintainers: Your Name
+name = "libmpc"
+version = "1.0.1"
+release = "1"
+description = "Library for the arithmetic of complex numbers with arbitrarily high precision"
+license = "LGPL"
+url = "http://www.multiprecision.org/"
+arch = "all"
+depends = ["mpfr>=3.0"]
+source = "http://www.multiprecision.org/mpc/download/mpc-{0}.tar.gz".format(version)
+md5sum = "b32a2e1a3daa392372fbd586d1ed3679"
+sha1sum = "8c7e19ad0dd9b3b5cc652273403423d6cf0c5edf"
+sha256sum = "ed5a815cfea525dc778df0cb37468b9c1b554aaf30d9328b1431ca705b7400ff"
+sha512sum = "fa381e75999bba626ba08d73225285b03c6d2f6cca87881b28829925d1624eaed1c9b544f75e7281cf5d8dcdd7831025a4eafc05f88f13375f9e08239a8a9303"
+options = ["-libtool"]
+
+def build():
+    cd("mpc-" + version, 0)
+    configure("--prefix=/usr")
+    make("")
+    make("check")
+    
+def package():
+    cd("mpc-" + version, 0)
+    make_install("")

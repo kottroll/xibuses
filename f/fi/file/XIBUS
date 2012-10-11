@@ -1,0 +1,28 @@
+# Copyright 2012 Xilitra Linux Project
+# Maintainers: Your Name
+name = "file"
+version = "5.11"
+release = "1"
+description = "File type identification utility"
+license = "custom"
+url = "http://www.darwinsys.com/file/"
+arch = "all"
+depends = ["glibc", "zlib"]
+source = "ftp://ftp.astron.com/pub/{0}/{0}-{1}.tar.gz".format(name, version)
+groups = ["baselayout", "core"]
+md5sum = "16a407bd66d6c7a832f3a5c0d609c27b"
+sha1sum = "df8ffe8759ec8cd85a98dc98e858563ea2555f64"
+sha256sum = "c70ae29a28c0585f541d5916fc3248c3e91baa481f63d7ccec53d1534cbcc9b7"
+sha512sum = "a3f740e1a950f84ae53ef477ff255370050b52dd39fa309c8b8c4b0dc061e96fce585eb4a587037003509c01cd067d49e5193f1d0905e5c28347223a15aa271b"
+options = ["-libtool"]
+
+def build():
+    cd(name + "-" + version, 0)
+    configure("--prefix=/usr --datadir=/usr/share/file")
+    make("")
+    make("check")    
+    
+def package():
+    cd(name + "-" + version, 0)
+    make_install("")
+    
