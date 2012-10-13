@@ -1,0 +1,25 @@
+name = "findutils"
+version = "4.4.2"
+release = "1"
+arch = "auto"
+description = "GNU utilities to locate files"
+license = "GPL3"
+url = "http://www.gnu.org/software/findutils"
+depends=["sh", "glibc"]
+source = "ftp://ftp.gnu.org/gnu/{0}/{0}-{1}.tar.gz".format(name, version)
+md5sum = "351cc4adb07d54877fa15f75fb77d39f"
+sha1sum = "e8dd88fa2cc58abffd0bfc1eddab9020231bb024"
+sha256sum = "434f32d171cbc0a5e72cfc5372c6fc4cb0e681f8dce566a0de5b6fccd702b62a"
+sha512sum = "262d0a8301158e6541b9f24e4e043d8d8c1b196b18dbe59c3bedcf17b50c95708e33ab23a07e3bfb947ad495faafffdca3c296fb525794ca60f2dfd682f228c1"
+API_VERSION = 1
+
+def build():
+    cd(name + "-" + version, 1)
+    
+    configure("--prefix=/usr --libexecdir=/usr/lib/findutils --localstatedir=/var/lib/locate")
+    make("")
+    make("check")
+    
+def package():
+    cd(name + "-" + version, 1)
+    make_install("")

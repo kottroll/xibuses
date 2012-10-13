@@ -1,0 +1,36 @@
+# Rebuild with new gcc version
+name = "libtool"
+version = "2.4.2"
+release = "1"
+arch = "auto"
+description = "A generic library support script"
+license = "GPL"
+url = "http://www.gnu.org/software/libtool"
+depends=["sh", "libltdl={0}".format(version), "tar", "gcc=4.7.2"]
+source = "ftp://ftp.gnu.org/pub/gnu/{0}/{0}-{1}.tar.xz".format(name, version)
+md5sum = "2ec8997e0c07249eb4cbd072417d70fe"
+sha1sum = "4671f3323f2fbc712a70afce57602ce906a82a15"
+sha256sum = "1d7b6862c1ed162e327f083a6f78f40eae29218f0db8c38393d61dab764c4407"
+sha512sum = "34f2d4a32beb4d85cfefd9c2c4ff33b0117e9e89c6599c303a7b850c43be5ed090b2f530388b8c8154e8f3f693abd2079180dca9afc948feb800b2e009bed169"
+API_VERSION = 1
+options = ["-libtool"]
+subpackages = ["libltdl"]
+
+def build():
+    cd(name + "-" + version, 1)
+    configure("--prefix=/usr")
+    make("")
+    make("check")
+    
+def package():
+    cd(name + "-" + version, 1)
+    make_install("")
+
+def build_libltdl():
+    name = "libltdl"
+    description = "A system independent dlopen wrapper for GNU libtool"
+    
+def package_libltdl():
+    cd("libtool-" + version, 1)
+    install_keys = "install-libLTLIBRARIES install-includeHEADERS install-ltdlincludeHEADERS install-data-local"
+    make_install(install_keys)

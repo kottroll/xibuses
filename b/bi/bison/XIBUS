@@ -1,6 +1,7 @@
 name = "bison"
 version = "2.6.2"
 release = "1"
+arch = "auto"
 description = "The GNU general-purpose parser generator"
 license = "GPL"
 url = "http://www.gnu.org/software/bison/bison.html"

@@ -1,0 +1,35 @@
+name = "gawk"
+version = "4.0.1"
+release = "1"
+arch = "auto"
+description = "GNU version of awk"
+license = "GPL"
+url = "http://www.gnu.org/directory/GNU/gawk.html"
+depends=["sh", "glibc"]
+source = "ftp://ftp.gnu.org/gnu/{0}/{0}-{1}.tar.xz".format(name, version)
+md5sum = "a601b032c39cd982f34272664f8afa49"
+sha1sum = "9be956d124e0c0794836055846aea78d2dc547ad"
+sha256sum = "ae0cb9a0ac80686df316fcd126d0da7d1fb6a0acfe043320511c1f212f2ecb47"
+sha512sum = "45b4265ca09e281f003ba5d6e489f6c7c2885b2ad1eaf70f23aefb43f442631d1d81b01342c71e9f83b9b371da9f79a102f53dad3e0e776cac817b3d32a721e6"
+API_VERSION = 1
+subpackages = ["gawk_doc"]
+
+def build():
+    cd(name + "-" + version, 1)
+    
+    configure("--prefix=/usr --libexecdir=/usr/lib")
+    make("")
+    make("check")
+    
+def package():
+    cd(name + "-" + version, 1)
+    make_install("")
+
+def build_gawk_doc():
+    name = "gawk-doc"
+    description = "GNU awk documentation"
+    groups = ["doc"]
+    
+def package_gawk_doc():
+    cd("gawk-" + version, 1)
+    cpdir("doc/", PKGDIR + "/usr/share/doc/{0}-{1}".format(name, version))

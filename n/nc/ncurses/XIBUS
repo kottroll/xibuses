@@ -1,0 +1,39 @@
+name = "ncurses"
+version = "5.9"
+release = "1"
+arch = "auto"
+description = "System V Release 4.0 curses emulation library"
+license = "MIT"
+url = "http://www.gnu.org/software/ncurses/"
+depends = ["glibc"]
+source = "ftp://ftp.gnu.org/pub/gnu/{0}/{0}-{1}.tar.gz".format(name, version)
+md5sum = "8cb9c412e5f2d96bc6f459aa8c6282a1"
+sha1sum = "3e042e5f2c7223bffdaac9646a533b8c758b65b5"
+sha256sum = "9046298fb440324c9d4135ecea7879ffed8546dd1b58e59430ea07a4633f563b"
+sha512sum = "d7c5e54b6d4d8b9211f0006ca8786f7609d180cc1aaebf4f25e7e35e12959779cf66447359a602daed625621ca32b0d910d67aef3eb8b6fdc3c373819a88faa1"
+API_VERSION = 1
+
+def build():
+    cd(name + "-" + version, 1)
+    
+    configure_keys = """-prefix=/usr --mandir=/usr/share/man --with-shared --without-debug --enable-widec"""
+    configure(configure_keys)
+    
+    make("")
+    
+def package():
+    cd(name + "-" + version, 1)
+    make_install("")
+
+    cd(PKGDIR, 1)
+    items = ["ncurses", "form", "panel", "menu"]
+    for item in items:
+        #rm("usr/lib/lib{0}.so".format(item))
+        write_to_file("INPUT(-l{0}w)".format(item), "usr/lib/lib{0}.so".format(item))
+    
+    ln("libncurses++w.a", "usr/lib/libncurses++.a")
+    #rm("usr/lib/libcursesw.so")
+    write_to_file("INPUT(-lncursesw)", "usr/lib/libcursesw.so")
+    ln("libncurses.so", "usr/lib/libcurses.so")
+    ln("libncursesw.a", "usr/lib/libcursesw.a")
+    ln("libncurses.a", "usr/lib/libcurses.a")

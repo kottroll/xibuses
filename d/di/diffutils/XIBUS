@@ -1,0 +1,26 @@
+name = "diffutils"
+version = "3.2"
+release = "1"
+arch = "auto"
+description = "Utility programs used for creating patch files"
+license = "GPL3"
+url = "http://www.perl.org"
+depends=["sh", "glibc"]
+source = "ftp://ftp.gnu.org/gnu/{0}/{0}-{1}.tar.xz".format(name, version)
+md5sum = "26ff64c332429c830c154be46b393382"
+sha1sum = "59b9742e96e2512d4d6f9af7964d71b6ea5a9ef0"
+sha256sum = "ab4fb75d0ef35f3c8c9a148cd3526ba6f4db71d10467a041eb45006436079149"
+sha512sum = "94609c31564fc0c0afee0237a4b24fb0a94c0e7576205dd4156d83e74566e7165d958dbb761759b056ee1df784809795fb997f905f9540a8f76b5ab4ad6d5149"
+API_VERSION = 1
+
+def build():
+    cd(name + "-" + version, 1)
+    sed("-i", "/gets is a/d", "lib/stdio.in.h")
+    
+    configure("--prefix=/usr")
+    make("")
+    make("check")
+    
+def package():
+    cd(name + "-" + version, 1)
+    make_install("")

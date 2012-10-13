@@ -1,0 +1,23 @@
+name = "procps"
+version = "3.2.8"
+release = "1"
+arch = "auto"
+description = "Utilities for monitoring your system and processes on your system"
+license = ["GPL", "LGPL"]
+url = "http://procps.sourceforge.net/"
+depends = ["ncurses"]
+source = "http://procps.sourceforge.net/{0}-{1}.tar.gz".format(name, version)
+md5sum = "9532714b6846013ca9898984ba4cd7e0"
+sha1sum = "a0c86790569dec26b5d9037e8868ca907acc9829"
+sha256sum = "11ed68d8a4433b91cd833deb714a3aa849c02aea738c42e6b4557982419c1535"
+sha512sum = "00db8da277fec58fa603ff95e3c5a9e4efc6d8d4a705b20f08a08048b213a585197b2cb48ec6a25941c02d54212059bc02e8946d5801c0b9afa83a8bb88ddf64"
+API_VERSION = 1
+
+def build():
+    cd(name + "-" + version, 1)
+    sed("-i", "s@\*/module.mk@proc/module.mk ps/module.mk@", "Makefile")
+    make("")
+    
+def package():
+    cd(name + "-" + version, 1)
+    make_install("ldconfig=/bin/true")

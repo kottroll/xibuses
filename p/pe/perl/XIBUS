@@ -1,0 +1,30 @@
+name = "perl"
+version = "5.16.1"
+release = "1"
+arch = "auto"
+description = "A highly capable, feature-rich programming language"
+license = ["GPL", "PerlArtistic"]
+url = "http://www.perl.org"
+depends=["coreutils", "gdbm", "sh", "db", "glibc"]
+source = "http://www.cpan.org/src/5.0//{0}-{1}.tar.bz2".format(name, version)
+md5sum = "b87358e2c461a898cfd7c334e7dd8993"
+sha1sum = "14955f9869eef5029fea7fcc48d0b2afabb16d1e"
+sha256sum = "0704b1421fe50015becd32c8b7ed05843e8b6c188a8c16cb0c11d76986375fd0"
+sha512sum = "df221f3d0bf3877e4fdf724bc8c10d6d3dd6cd7d762cc164d4fe67636806831ba14d2c52d30d927b87091a1004af68f730ed6f32cd06c29af5fa42d35212415c"
+API_VERSION = 1
+
+def build():
+    cd(name + "-" + version, 1)
+    sed("-i", "s|BUILD_ZLIB\s*= True|BUILD_ZLIB = False|", "cpan/Compress-Raw-Zlib/config.in")
+    sed("-i", "s|INCLUDE\s*= ./zlib-src|INCLUDE    = /usr/include|", "cpan/Compress-Raw-Zlib/config.in")
+    sed("-i", "s|LIB\s*= ./zlib-src|LIB        = /usr/lib|", "cpan/Compress-Raw-Zlib/config.in")
+
+    configure_keys = """-Dprefix=/usr -Dvendorprefix=/usr -Dman1dir=/usr/share/man/man1 \
+    -Dman3dir=/usr/share/man/man3 -Dpager='/usr/bin/less -isR' -Duseshrplib"""
+    configure("custom {0} {1}".format("/bin/bash Configure -des", configure_keys))
+    make("")
+    make("-k test")
+    
+def package():
+    cd(name + "-" + version, 1)
+    make_install("")

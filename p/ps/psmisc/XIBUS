@@ -1,0 +1,23 @@
+name = "psmisc"
+version = "22.19"
+release = "1"
+arch = "auto"
+description = "Miscellaneous procfs tools"
+license = "GPL"
+url = "http://psmisc.sourceforge.net/index.html"
+depends = ["ncurses"]
+source = "http://downloads.sourceforge.net/psmisc/{0}-{1}.tar.gz".format(name, version)
+md5sum = "38563b4760ffce54b0eadf99cb5b16e8"
+sha1sum = "4c8fb774449f966f78c4c6e1d77d1a24b4187410"
+sha256sum = "e112ccadd4694c98f5ea4a02cd6944fdc5a2a1985f20e2b3f74f4dbca83a2a31"
+sha512sum = "8f4526e53c80a3bc19430b5721610b733f59a330ee0230a3a285d104f99969c092421cb59b4e535aff3337c4de2118c148e2ea2e7019b704a28b22eff40b19d3"
+API_VERSION = 1
+
+def build():
+    cd(name + "-" + version, 1)
+    configure("--prefix=/usr")
+    make("")
+    
+def package():
+    cd(name + "-" + version, 1)
+    make_install("")

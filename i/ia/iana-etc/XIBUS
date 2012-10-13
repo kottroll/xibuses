@@ -1,0 +1,29 @@
+name = "iana-etc"
+version = "2.30"
+release = "1"
+arch = "auto"
+description = "/etc/protocols and /etc/services provided by IANA"
+license = "custom"
+url = "http://sethwklein.net/iana-etc.html"
+source = "http://sethwklein.net/{0}-{1}.tar.bz2".format(name, version)
+md5sum = "3ba3afb1d1b261383d247f46cb135ee8"
+sha1sum = "218593bcb9264014c4e397d838b2c218eac9df06"
+sha256sum = "b9a6874fb20012836efef75452ef2acae624022d680feeb1994d73facba3f20d"
+sha512sum = "d841b9c177fb0675bab10c9b0ebc4d3c2b743754c615e3fabcaebb29ffefaf2491278d0e672b99af3cbc9b300138700f56c1026f6d41659783150aea97583936"
+API_VERSION = 1
+configs = ["/etc/services", "/etc/protocols"]
+
+def build():
+    cd(name + "-" + version, 1)
+    do_patches("-p1")
+    make("get")
+    make("")
+    
+    make("test")
+    
+def package():
+    cd(name + "-" + version, 1)
+    make_install("")
+    
+    install("644", "port-numbers.iana", PKGDIR + "/usr/share/iana-etc/port-numbers.iana")
+    install("644", "protocol-numbers.iana", PKGDIR + "/usr/share/iana-etc/protocol-numbers.iana")

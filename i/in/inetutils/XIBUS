@@ -1,0 +1,42 @@
+name = "inetutils"
+version = "1.9.1"
+release = "1"
+arch = "auto"
+description = "A collection of common network programs"
+license = "GPL3"
+url = "http://www.gnu.org/software/inetutils/"
+depends=["readline", "pam", "ncurses"]
+source = "ftp://ftp.gnu.org/gnu/{0}/{0}-{1}.tar.gz".format(name, version)
+md5sum = "944f7196a2b3dba2d400e9088576000c"
+sha1sum = "86b7eb11cfdaefb1d4e9bfc10620beaf8f09bc90"
+sha256sum = "02a9ebde8a198cb85f87545b9d88fb103a183958139864a85fe9e027ad79ff2b"
+sha512sum = "69267bfa3cae34f6145caad668dc2e9385701fb52a144640e9893fa7f0b7694eacd1fe579de3fb7190e8485b26c00337ded136488694c399b0fc290f7eec303c"
+API_VERSION = 1
+configs = ["/etc/conf.d/ftpd", "/etc/xinetd.d/telnet", "/etc/xinetd.d/talk", "/etc/xinetd.d/rlogin", "/etc/xinetd.d/rsh"]
+subpackages = ["inetutils_doc"]
+
+def build():
+    cd(name + "-" + version, 1)
+    sed("-i", "/gets is a/d", "lib/stdio.in.h")
+    
+    configure_keys = """--prefix=/usr --libexecdir=/usr/sbin --localstatedir=/var \
+    --disable-ifconfig --disable-logger --disable-syslogd --disable-whois --disable-servers"""
+    configure(configure_keys)
+    make("")
+    make("check")
+    
+def package():
+    cd(name + "-" + version, 1)
+    make_install("")
+
+def build_inetutils_doc():
+    name = "inetutils-doc"
+    description = "Documentation from inetutils package"
+    groups = ["doc"]
+    
+    cd("inetutils-" + version, 1)
+    make("-C doc html")
+    
+def package_inetutils_doc():
+    cd("inetutils-" + version, 1)
+    make_install("-C doc install-html docdir=/usr/share/doc/inetutils-1.9.1")

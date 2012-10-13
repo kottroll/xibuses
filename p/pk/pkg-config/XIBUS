@@ -1,0 +1,28 @@
+name = "pkg-config"
+version = "0.27.1"
+release = "1"
+arch = "auto"
+description = "A system for managing library compile/link flags"
+license = "GPL"
+url = "http://pkgconfig.freedesktop.org/wiki/"
+depends = ["glib2"]
+provides = "pkgconfig"
+source = "http://pkgconfig.freedesktop.org/releases/{0}-{1}.tar.gz".format(name, version)
+md5sum = "5392b4e3372879c5bf856173b418d6a2"
+sha1sum = "08249417a51c0a7a940e4276105b142b77e576b5"
+sha256sum = "4f63d0df3035101b12949250da5231af49e3c3afcd8fb18554fa7c3cb92d8c17"
+sha512sum = "f9c6d013848c3d9868e99a2cbf16e6735ca6ca12ff5a0b18d536a135aadd72dc2be1afcc962c866bc3c7301150e805d1630ea510d0e4ee222cb5c9f70b8fd675"
+API_VERSION = 1
+
+def build():
+    cd(name + "-" + version, 1)
+    
+    configure_keys = """--prefix=/usr --with-internal-glib --docdir=/usr/share/doc/pkg-config-0.27"""
+    configure(configure_keys)
+    
+    make("")
+    make("check")
+    
+def package():
+    cd(name + "-" + version, 1)
+    make_install("")

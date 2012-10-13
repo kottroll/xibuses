@@ -1,0 +1,27 @@
+name = "m4"
+version = "1.4.16"
+release = "1"
+arch = "auto"
+description = "The GNU macro processor"
+license = "GPL3"
+url = "http://www.gnu.org/software/m4"
+depends = ["glibc", "bash"]
+source = "ftp://ftp.gnu.org/gnu/{0}/{0}-{1}.tar.bz2".format(name, version)
+md5sum = "8a7cef47fecab6272eb86a6be6363b2f"
+sha1sum = "0390c77780ab4cd65b07fe4e2d23e4e39769f967"
+sha256sum = "42500c1fddd90bcb161e6b58de931d769929c495c124112d67428a23543db90c"
+sha512sum = "ae86978b2eb23e0afd9ae551db997a0c57faffbca95a5bac71480e24237d7ddd17d7bc00c59b3f5cdcc8af61dd75569af240c8aa0481cca3eb156e1aa4112e07"
+API_VERSION = 1
+
+def build():
+    cd(name + "-" + version, 1)
+    sed("-i", "/gets is a/d", "lib/stdio.in.h")
+    configure("--prefix=/usr")
+    make("")
+    
+    sed("-i", "41s/ENOENT/& || errno == EINVAL/", "tests/test-readlink.h")
+    make("check")
+    
+def package():
+    cd(name + "-" + version, 1)
+    make_install("")

@@ -1,0 +1,33 @@
+name = "e2fsprogs"
+version = "1.42.5"
+release = "1"
+arch = "auto"
+description = "Ext2/3/4 filesystem utilities"
+license = ["GPL", "LGPL", "MIT"]
+url = "http://e2fsprogs.sourceforge.net"
+depends = ["util-linux", "sh"]
+source = "http://downloads.sourceforge.net/sourceforge/{0}/{0}-{1}.tar.gz".format(name, version)
+md5sum = "aca828bb4bcca20991a442deb950b670"
+sha1sum = "41bc6d247238eac65864193e6de941956da493cb"
+sha256sum = "76edaad8eb7464356e1317d60eb19952728091dad358f1f939239874cc1871ce"
+sha512sum = "536fa81071c828ae62b2238a33fa7a60d0a731ef7f4b51022e99d50cf4946509b4dd8d94b5c200759c69895879ac985587b40010af4282ff5196193c9926274f"
+API_VERSION = 1
+
+def build():
+    mkdir(name + "-" + version + "/build")
+    cd(name + "-" + version + "/build", 1)
+    
+    configure_keys="""--prefix=/usr --with-root-prefix="" --enable-elf-shlibs --disable-libblkid \
+    --disable-libuuid --disable-uuidd --disable-fsck"""
+    configure("custom {0} {1}".format("../configure", configure_keys))
+    make("")
+    make("-k check")
+    
+def package():
+    cd(name + "-" + version + "/build", 1)
+    make_install("")
+    make_install("install-libs")
+    
+    # Removing build dir references
+    sed("-i", """s#^SS_DIR=.*#SS_DIR="/usr/share/ss"#""", "{0}/usr/bin/mk_cmds".format(PKGDIR))
+    sed("-i", """s#^SS_DIR=.*#SS_DIR="/usr/share/ss"#""", "{0}/usr/bin/compile_et".format(PKGDIR))
