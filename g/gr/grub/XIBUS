@@ -1,0 +1,23 @@
+# Copyright 2012 Xilitra Linux Project
+# Maintainers: Valdos "fat0troll" Sine, Stanislav "pztrn" Nikitin
+name = "grub"
+version = "2.00"
+release = "1"
+description = "GRand Unified Bootloader v.2"
+license = "GPL3"
+url = "https://www.gnu.org/software/grub/"
+arch = "all"
+depends = []
+makedepends = ["xz", "bdf-unifont", "ttf-dejavu", "python", "autogen", "texinfo", "help2man", "gettext", "device-mapper", "fuse"]
+source = "http://ftp.gnu.org/gnu/grub/grub-${0}.tar.xz".format(version)
+groups = ["core"]
+sha1sum = "274d91e96b56a5b9dd0a07accff69dbb6dfb596b"
+API_VERSION = 1
+
+def build():
+    # ниасилил, дальше сами, ок?
+
+def package():
+    """
+    Write install stuff here
+    """
