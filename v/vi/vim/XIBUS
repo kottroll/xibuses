@@ -37,5 +37,5 @@ def build():
     make("")
 
 def package():
-    cd(name + "-" + version, 1)
+    cd(name + "-" + sub_version, 1)
     make_install("")
