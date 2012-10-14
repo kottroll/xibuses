@@ -39,6 +39,6 @@ def package():
     cd("binutils-{0}".format(version) + "/binutils-build", 1)
     make_install("prefix=/usr tooldir=/usr")
 
-    unneeded_mans = ["windres", "windmc"]
+    unneeded_mans = ["dlltool", "nlmconv", "windres", "windmc"]
     for man in unneeded_mans:
          rm(PKGDIR + "/usr/share/man/man1/" + man + ".1")
