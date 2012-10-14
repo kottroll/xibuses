@@ -17,10 +17,8 @@ def build():
     do_patches("-p1")
     mkdir("binutils-build")
     cd("binutils-build", 1)
-    
     # Disabling -Wnarrowing to get rid of some errors
     add_flags("CXXFLAGS", "-Wno-narrowing -Wno-free-nonheap-object -std=c++0x")
-    
     amd64_flags = ""
     if ARCH == "x86_64":
         amd64_flags = "--enable-64-bit-bfd --enable-multilib"
@@ -31,36 +29,35 @@ def build():
     --enable-plugins --enable-threads \
     --enable-shared \
     %s" % amd64_flags
-    configure("custom %s %s" % (configure_script_path, configure_keys))
-    
+    configure("custom %s %s" % (configure_script_path, configure_keys))    
     # check the host environment and makes sure all the necessary tools are available
     make("configure-host")
     make("tooldir=%s" % PKGDIR + "/usr")
-    
-    
+
+# Do we really need this stuff?
     # Rebuild libiberty.a with -fPIC
-    cpdir("libiberty", "libiberty-pic")
-    make("-C libiberty-pic clean")
+    #cpdir("libiberty", "libiberty-pic")
+    #make("-C libiberty-pic clean")
     # Adding CFLAG for libiberty-pic
-    add_flags("CFLAGS", "-fPIC")
-    make("-C libiberty-pic")
-    
+    #add_flags("CFLAGS", "-fPIC")
+    #make("-C libiberty-pic")
     # Rebuild libbfd.a with -fPIC
     # hidden visability prevent 3rd party shared libraries exporting bfd non-stable API
     # CFLAGS for libbfd
-    add_flags("CFLAGS", "-fvisibility=hidden")
-    cpdir("bfd", "bfd-pic")
-    make("-C bfd-pic clean")
-    remove_flags("CFLAGS", "-fvisibility=hidden")
-    
-    make("-C bfd-pic")
+    #add_flags("CFLAGS", "-fvisibility=hidden")
+    #cpdir("bfd", "bfd-pic")
+    #make("-C bfd-pic clean")
+    #make("-C bfd-pic")
+    #remove_flags("CFLAGS", "-fvisibility=hidden")
     # Rebuild libopcodes.a with -fPIC
-    cpdir("opcodes", "opcodes-pic")
-    make("opcodes-pic clean")
-    make("-C opcodes-pic")
+    #cpdir("opcodes", "opcodes-pic")
+    #make("opcodes-pic clean")
+    #sh("rm -rf bfd/")
+    #sh("cp -Rv bfd-pic/ bfd/")
+    #make("-C opcodes-pic")
 
 def package():
-    cd("binutils-build", 1)
+    cd("binutils-{0}".format(version) + "/binutils-build", 1)
     make_install("prefix=%s/usr tooldir=%s/usr" % (PKGDIR, PKGDIR))
     # Add some useful headers
     install("644", SRCDIR + "binutils/include/libiberty.h", PKGDIR + "/usr/include")
@@ -70,7 +67,11 @@ def package():
     install("644", "opcodes-pic/libopcodes.a", PKGDIR + "/usr/lib")
     install("644", "bfd-pic/libbfd.a", PKGDIR + "/usr/lib")
     # Remove Windows/Novell specific man pages
-    rm(PKGDIR + "/usr/share/man/man1/{dlltool,nlmconv,windres,windmc}*")
+    cd(PKGDIR + "/usr/share/man/man1/", 1)
+    sh("ls -la")
+    unneeded_mans = ["dlltool", "nlmconv", "windres", "windmc"]
+    for man in unneeded_mans:
+         rm(PKGDIR + "/usr/share/man/man1/" + man + ".*")
     # Remove these symlinks, they are not ABI stable.
     # Programs should compile static to the .a file.
     write_to_file("INPUT ( /usr/lib/libbfd.a -liberty -lz )", PKGDIR + "/usr/lib/libbfd.so")
