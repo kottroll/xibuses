@@ -18,10 +18,9 @@ sub_version = "73"
 def build():
     cd(name + sub_version, 1)
 
-    #sed("-i", """s|^.*\(#define SYS_.*VIMRC_FILE.*"\) .*$|\1|""", "src/feature.h")
-    #sed("-i", """s|^.*\(#define VIMRC_FILE.*"\) .*$|\1|""", "src/feature.h")
-    #sed("-i -e", """s|vi_cv_path_python, python|vi_cv_path_python, python2|""",\
-    #"src/configure.in")
+    sed("-i", """s|^.*\(#define SYS_.*VIMRC_FILE.*"\) .*$|\1|""", "src/feature.h")
+    sed("-i", """s|^.*\(#define VIMRC_FILE.*"\) .*$|\1|""", "src/feature.h")
+    sed("-i -e", """s|vi_cv_path_python, python|vi_cv_path_python, python2|""", "src/configure.in")
     
     configure_keys = "-prefix=/usr --localstatedir=/var/lib/vim \
     --with-features=big --with-compiledby=XilitraLinux \
@@ -37,5 +36,5 @@ def build():
     make("")
 
 def package():
-    cd(name + "-" + sub_version, 1)
+    cd(name  + sub_version, 1)
     make_install("")
