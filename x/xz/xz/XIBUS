@@ -12,14 +12,9 @@ API_VERSION = 1
 
 def build():
     cd(name + "-" + version, 0)
-    configure("--prefix=/usr --disable-rpath --enable-werror")
+    configure("--prefix=/usr --libdir=/usr/lib --docdir=/usr/share/doc/%s-%s --disable-rpath --enable-werror" % (name, version))
     make("")
     
 def package():
     cd(name + "-" + version, 0)
-    make_install("")
-    
-    # Installing LICENSE
-    mkdir(PKGDIR + "/usr/share/licenses/xz/")
-    cp(PKGDIR + "/usr/share/doc/xz/COPYING", PKGDIR + "/usr/share/licenses/xz/")
-    cp(PKGDIR + "/usr/share/doc/xz/COPYING.GPLv2", PKGDIR + "/usr/share/licenses/xz/")
+    make_install("pkgconfigdir=/usr/lib/pkgconfig")
