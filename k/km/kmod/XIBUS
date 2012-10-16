@@ -1,0 +1,49 @@
+# Copyright 2012 Xilitra Linux Project
+# Maintainers: Your Name
+name = "kmod"
+version = "10"
+release = "1"
+description = "Linux kernel module handling"
+license = "GPL2"
+url = "http://git.kernel.org/?p=utils/kernel/kmod/kmod.git;a=summary"
+arch = "all"
+depends = ["glibc", "zlib"]
+#makedepends = ["gtk-doc"]
+source = "ftp://ftp.kernel.org/pub/linux/utils/kernel/{0}/{0}-{1}.tar.xz".format(name, version)
+md5sum = "e2a883c4df15a50f78a7a61d5b64089f"
+sha1sum = "6da4fa76fc5a4feed7926663587d9d41b0412d97"
+sha256sum = "deb80df9e6aa34f965ecf329fd07db462b57ce515b9077eae5cdfac5197a7bff"
+sha512sum = "eb3a875db0ee6882a5b91f0202060a7589048eba0a6ba6627c7640dfde3e74b8bfa631f32cabf9b9c690358e3d61930300d0893ad29ea9a69a22ec609aefdb2e"
+API_VERSION = 1
+
+def build():
+    cd(name + "-" + version, 0)
+    
+    # Fix test suite fails in i686 machines
+    if ARCH == "i686":
+        apply_patch("9000", "-p1")
+    
+    configure("--prefix=/usr --bindir=/bin --libdir=/lib --sysconfdir=/etc --with-xz --with-zlib")
+    make("")
+    make("check")
+    
+def package():
+    cd(name + "-" + version, 0)
+    make_install("")
+    
+    # Installing directories
+    dirs = ["/etc/depmod.d", "/etc/modprobe.d", "/usr/lib/depmod.d", "/usr/lib/modprobe.d", "/sbin"]
+    for dir in dirs:
+        mkdir(PKGDIR + dir)
+
+    # Make some useful symlinks
+    cd(PKGDIR, 1)
+    ln("bin/kmod", "sbin/modprobe")
+    ln("bin/kmod", "sbin/depmod")
+    
+    tools = ["insmod", "lsmod", "rmmod"]
+    for tool in tools:
+        ln("bin/kmod", "bin/" + tool)
+
+    # Search.conf
+    install("644", FILEDIR + "/depmod-search.conf", PKGDIR + "/usr/lib/depmod.d/search.conf")

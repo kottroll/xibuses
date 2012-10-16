@@ -1,0 +1,28 @@
+# Copyright 2012 Xilitra Linux Project
+# Maintainers: Your Name
+name = "kbd"
+version = "1.15.3"
+release = "1"
+description = "Keytable files and keyboard utilities"
+license = "GPL"
+url = "http://www.kbd-project.org"
+arch = "all"
+depends = ["glibc"]
+source = "ftp://ftp.altlinux.org/pub/people/legion/{0}/{0}-{1}.tar.gz".format(name, version)
+md5sum = "8143e179a0f3c25646ce5085e8777200"
+sha1sum = "1da0c02cb802d2e68b34b1ba68839929b4255cde"
+sha256sum = "86505713c3bb81b1517203c5bd1ad8ffacf90ef211214ee26d12ea1ed21194ed"
+sha512sum = "11b41eada434644bc1def1c896bb6f10a1cd5a4e7ab285348d7f70e7c950ab0f4e4a99e3d45137ea44dbaeb098da733677b4399eb8bb271ffc32e45545db58f3"
+API_VERSION = 1
+
+def build():
+    cd(name + "-" + version, 0)
+    #sed("-i", "s/\(RESIZECONS_PROGS=\)yes/\1no/", "configure")
+    #sed("-i", "s/resizecons.8 //", "man/man8/Makefile.in")
+    do_patches("-p1")
+    configure("--prefix=/usr --datadir=/usr/lib/kbd")
+    make("KEYCODES_PROGS=yes RESIZECONS_PROGS=yes")
+    
+def package():
+    cd(name + "-" + version, 0)
+    make_install("KEYCODES_PROGS=yes RESIZECONS_PROGS=yes")

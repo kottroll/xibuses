@@ -1,0 +1,34 @@
+# Copyright 2012 Xilitra Linux Project
+# Maintainers: Your Name
+name = "iproute2"
+version = "3.6.0"
+release = "1"
+description = "IP Routing Utilities"
+license = "GPL2"
+url = "http://www.linuxfoundation.org/collaborate/workgroups/networking/iproute2"
+arch = "all"
+depends = ["glibc", "iptables", "db"]
+source = "http://www.kernel.org/pub/linux/utils/net/{0}/{0}-{1}.tar.gz".format(name, version)
+md5sum = "dea1fe31482dae5a95244a9e3c2e2679"
+sha1sum = "1570a0c5d65428a611609f1d0a1e437688fe7b12"
+sha256sum = "cfc302c6e71df1eeb9c336cb723da4fa5b37367231c3a97de0135bb7392667b7"
+sha512sum = "a974249c31db8f3fce63e3ba6f4032204c3687d5066fb010f0b393cdce53d5e1c322a330caad12b9a84e07242cf14f91b73c06f7ade7f4010b1ff5e3660b7272"
+options = ["-makeflags"]
+API_VERSION = 1
+configs = ["etc/iproute2/ematch_map", "etc/iproute2/rt_dsfield", "etc/iproute2/rt_protos", "etc/iproute2/rt_realms"
+            "etc/iproute2/rt_scopes", "etc/iproute2/rt_tables"]
+
+def build():
+    cd(name + "-" + version, 0)
+    do_patches("-p1")
+    configure("")
+    make("")
+    make("check")
+    
+def package():
+    cd(name + "-" + version, 0)
+    make_install("")
+
+    # libnetlink installation
+    install("644", "include/libnetlink.h", PKGDIR + "/usr/include/libnetlink.h")
+    install("644", "lib/libnetlink.a", PKGDIR + "/usr/lib/libnetlink.a")

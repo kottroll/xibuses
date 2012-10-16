@@ -1,0 +1,28 @@
+# Copyright 2012 Xilitra Linux Project
+# Maintainers: Your Name
+name = "libpipeline"
+version = "1.2.2"
+release = "1"
+description = "a C library for manipulating pipelines of subprocesses in a flexible and convenient way"
+license = "GPL"
+url = "http://libpipeline.nongnu.org/"
+arch = "all"
+depends = ["mpfr>=3.0"]
+source = "http://download.savannah.gnu.org/releases/{0}/{0}-{1}.tar.gz".format(name, version)
+md5sum = "4367a3f598d171fd43dfa8620ed16d55"
+sha1sum = "89ec6f9beccb9a18b3ed6c8f1296762c54aed0cd"
+sha256sum = "6b0e6be44479051196f80baeefeefa5fbdac428a7149b3858998769f461ba198"
+sha512sum = "463e50fb42f52f52c2c82f8f0c084e3ad04a45d507f4a616d71fab9da9803eb86bdc006a5b9b84f25a5558f48b1d8534c2c0a52b2663a38d9d505270052293a5"
+options = ["-libtool"]
+API_VERSION = 1
+
+def build():
+    cd(name + "-" + version, 0)
+    sed("-i", "/gets is a/d", "gnulib/lib/stdio.in.h")
+    configure("--prefix=/usr")
+    make("")
+    make("check")
+    
+def package():
+    cd(name + "-" + version, 0)
+    make_install("")
