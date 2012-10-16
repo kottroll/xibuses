@@ -1,0 +1,27 @@
+# Copyright 2012 Xilitra Linux Project
+# Maintainers: Your Name
+name = "make"
+version = "3.82"
+release = "1"
+description = "GNU make utility to maintain groups of programs"
+license = "GPL3"
+url = "http://www.gnu.org/software/make"
+arch = "all"
+depends = ["glibc", "sh"]
+source = "ftp://ftp.gnu.org/gnu/{0}/{0}-{1}.tar.bz2".format(name, version)
+md5sum = "1a11100f3c63fcf5753818e59d63088f"
+sha1sum = "b8a8a99e4cb636a213aad3816dda827a92b9bbed"
+sha256sum = "e2c1a73f179c40c71e2fe8abf8a8a0688b8499538512984da4a76958d0402966"
+sha512sum = "3260be0d1a9a7c5eb0dbb87179a9a9521fdfc7809ca51f13ee5a37ba5e63d21ad50a4249ec7d3929a9d0ce8c8f6cf302558743964f0f7ff742efe283b91df9de"
+API_VERSION = 1
+
+def build():
+    cd(name + "-" + version, 0)
+
+    configure("--prefix=/usr")
+    make("")
+    make("check")
+    
+def package():
+    cd(name + "-" + version, 0)
+    make_install("")
