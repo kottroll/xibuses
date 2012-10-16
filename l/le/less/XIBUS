@@ -1,0 +1,25 @@
+name = "less"
+version = "451"
+release = "1"
+description = "A terminal based program for viewing text files"
+license = "GPL3"
+url = "http://www.greenwoodsoftware.com/less/"
+arch = "all"
+depends = ["glibc", "ncurses"]
+makedepends = []
+source = "http://www.greenwoodsoftware.com/less/less-{0}.tar.gz".format(version)
+groups = ["utils"]
+md5sum = "765f082658002b2b46b86af4a0da1842"
+sha1sum = "ee95be670e8fcc97ac87d02dd1980209130423d0"
+sha256sum = "9fe8287c647afeafb4149c5dedaeacfd20971ed7c26c7553794bb750536b5f57"
+sha512sum = "6a9a0853e802306c9f6695e8a71f2bcfd38479c80a4f814852fd012caf4823f448d9f203ca52bc356f31aa368bf96e773938ee2be5ff20804dce3ee1a28bf42d"
+API_VERSION = 1
+ 
+def build():
+    cd(name + "-" + version, 0)
+    configure("--prefix=/usr --sysconfdir=/etc")
+    make("")
+                        
+def package():
+    cd(name + "-" + version, 0)
+    make_install("")
