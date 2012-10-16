@@ -9,15 +9,26 @@ url = "https://www.gnu.org/software/grub/"
 arch = "all"
 depends = []
 makedepends = ["xz", "bdf-unifont", "ttf-dejavu", "python", "autogen", "texinfo", "help2man", "gettext", "device-mapper", "fuse"]
-source = "http://ftp.gnu.org/gnu/grub/grub-${0}.tar.xz".format(version)
+source = "http://ftp.gnu.org/gnu/{0}/{0}-{1}.tar.xz".format(name, version)
 groups = ["core"]
+md5sum = "a1043102fbc7bcedbf53e7ee3d17ab91"
 sha1sum = "274d91e96b56a5b9dd0a07accff69dbb6dfb596b"
+sha256sum = "784ec38e7edc32239ad75b8e66df04dc8bfb26d88681bc9f627133a6eb85c458"
+sha512sum = "f0dbfc90639491e5c671d2df206dec0139171bf096a99ee236f7ebf21cdafc6e6d39a9607e14ad2a6aee7c199ecc63f0a39573d969318e1a0cd32f989aa6b44a"
 API_VERSION = 1
 
 def build():
-    # ниасилил, дальше сами, ок?
+    cd(name + "-" + version, 1)
+    sed("-i", "/gets is a/d", "grub-core/gnulib/stdio.in.h")
+    
+    # NO FLAGS ALLOWED!
+    export("CFLAGS", "")
+    export("CXXFLAGS", "")
+    
+    configure_keys = """--prefix=/usr --sysconfdir=/etc --disable-grub-emu-usb --disable-efiemu --disable-werror"""
+    configure(configure_keys)
+    make("")
 
 def package():
-    """
-    Write install stuff here
-    """
+    cd(name + "-" + version, 1)
+    make_install("")

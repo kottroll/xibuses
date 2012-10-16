@@ -1,0 +1,26 @@
+# Copyright 2012 Xilitra Linux Project
+name = "gzip"
+version = "1.5"
+release = "1"
+description = "GNU compression utility"
+license = "GPL3"
+url = "https://www.gnu.org/software/gzip/"
+arch = "all"
+depends = ["bash", "glibc"]
+source = "http://ftp.gnu.org/gnu/{0}/{0}-{1}.tar.xz".format(name, version)
+groups = ["core"]
+md5sum = "2a431e169b6f62f7332ef6d47cc53bae"
+sha1sum = "473aaac6a48445221fd5b03fde52f0236c7486ab"
+sha256sum = "9ac20a3841a1246a8bedd800ea1fb93ef76521535d89cb59397d267026b6a173"
+sha512sum = "27b1b9c1ab75331b5368abb54541f3f251009a3bc6e49e42cda13bc088673d9f8c89c55caa63da60c1ea70fac2e6de24203b7aeaaaad4bc54302edbe275f46ea"
+API_VERSION = 1
+
+def build():
+    cd(name + "-" + version, 1)
+    configure("--prefix=/usr")
+    make("")
+    make("check")
+
+def package():
+    cd(name + "-" + version, 1)
+    make_install("")
