@@ -1,0 +1,24 @@
+name = "patch"
+version = "2.7.1"
+release = "1"
+description = "A utility to apply patch files to original sources"
+license = "GPL"
+url = "http://www.gnu.org/software/patch/patch.html"
+depends = ["glibc"]
+makedepends = ["ed"]
+source = "ftp://ftp.gnu.org/gnu/{0}/{0}-{1}.tar.xz".format(name, version)
+md5sum = "e9ae5393426d3ad783a300a338c09b72"
+sha1sum = "433184d0ca43770f28b3de1d5e9da518a7ac7c50"
+sha256sum = "9124ba46db0abd873d0995c2ca880e81252676bb6c03e0a37dfc5f608a9b0ceb"
+sha512sum = "e10274bd59875d4ec5b02960d23f54e5b2a94ac19554c4a013fdb1df48f01012ce418627c74f7a6bd0a416527dd2ead347642878a057048ede9ee2d9c76a51b0"
+API_VERSION = 1
+
+def build():
+    cd(name + "-" + version, 1)
+    configure("--prefix=/usr")
+    make("")
+    make("check")
+
+def package():
+    cd(name + "-" + version, 1)
+    make_install("")
