@@ -2,7 +2,7 @@
 # Maintainers: Valdos "fat0troll" Sine, Stanislav "pztrn" Nikitin, Alexander "drakmail" Masloff
 name = "linux-api-headers"
 pname = name[:-12]
-version = "3.5.5"
+version = "3.6.2"
 release = "1"
 arch = "noarch"
 source = "http://www.kernel.org/pub/linux/kernel/v3.x/linux-{0}.tar.xz".format(version)
