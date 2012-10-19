@@ -20,17 +20,22 @@ API_VERSION = 1
 def build():
     cd(name + "-" + version, 0)
     mkdir("man0")
-    sect = ["0", "1", "3"]
+    cd("../" + name + "-posix-" + posixversion, 0)
+    apply_patch("9000", "-p1")
+    sect = ["0", "1", "2"]
     for s in sect:
-        sed("-i", "/^\.so /s/man" + s + "p/man$sect/", SRCDIR + "/" + name + "-posix-" + posixversion + "/man" + s + "p/*")
-        mv(SRCDIR + "/" + name + "-posix-" + posixversion + "/man" + s + "p/*", SRCDIR + "/" + name + "-" + version + "/man" + s + "/")
+        moveable = ls(SRCDIR + "/" + name + "-posix-" + posixversion + "/man" + s + "p/")
+        for file in moveable:
+            mv(file, SRCDIR + "/" + name + "-" + version + "/man" + s + "/")
 
 def package():
     cd (name + "-" + version, 0)
     make("prefix=" + PKGDIR + "/usr install")
     cd(PKGDIR + "/usr/share/man", 0)
-    # these are included in coreutils
-    rmdir("man1/{chgrp,chmod,chown,cp,dir,dd,df,dircolors,du,install,ln,ls,mkdir,mkfifo,mknod,mv,rm,rmdir,touch,vdir}.1")
+    # they are included in coreutils
+    dublicates_coreutils = ["chgrp", "chmod", "chown", "cp", "dir", "dd", "df", "dircolors", "du", "install", "ln", "ls", "mkdir", "mkfifo", "mknod", "mv", "rm", "rmdir", "touch", "vdir"
+    for man in dublicates_coreutils:
+         rmdir("man1/" + man + ".1")
     # this is included in shadow
     rmdir("man5/passwd.5")
     rmdir("man3/getspnam.3")
