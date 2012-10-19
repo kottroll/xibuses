@@ -1,0 +1,26 @@
+name = "cmake"
+version = "2.8.9"
+release = "1"
+description = "A cross-platform open-source make system"
+arch = "all"
+license = "custom"
+depends = ["curl","libarchive"]
+url = "http://www.cmake.org"
+source = "http://www.cmake.org/files/v2.8/{0}-{1}.tar.gz".format(name, version)
+md5sum = "801f4c87f8b604f727df5bf1f05a59e7"
+API_VERSION = 1
+
+def build():
+    cd(name + "-" + version, 0)
+    configure("custom ./bootstrap --prefix=/usr \
+    --mandir=/share/man \
+    --docdir=/share/doc/cmake-2.8 \
+    --system-libs")
+    make("-j3")
+    make("check")
+    
+def package():
+    cd(name + "-" + version, 0)
+    make_install("")
+    install("644", "Copyright.txt", PKGDIR + "/usr/share/licenses/" + name + "-" + version + "/COPYING")
+
