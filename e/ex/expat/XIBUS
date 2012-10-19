@@ -1,0 +1,32 @@
+# Copyright 2012 Xilitra Linux Project
+# Maintainers: Valdos "fat0troll" Sine
+name = "expat"
+version = "2.1.0"
+release = "1"
+description = "An XML parser library"
+license = "custom"
+url = "http://expat.sourceforge.net"
+arch = "all"
+depends = ["glibc"]
+makedepends = []
+source = "http://downloads.sourceforge.net/sourceforge/{0}/{1}-{2}.tar.gz".format(name, name, version)
+groups = []
+md5sum = "dd7dab7a5fea97d2a6a43f511449b7cd"
+#sha1sum = ""
+#sha256sum = ""
+#sha512sum = ""
+options = ["-libtool"]
+API_VERSION = 1
+
+def build():
+    cd(name + "-" + version, 1)
+    configure("--prefix=/usr \
+        --mandir=/usr/share/man")
+    make("")
+    make("check")
+
+def package():
+    cd(name + "-" + version, 1)
+    make_install("")
+    # LICENSE
+    install("644", "COPYING", PKGDIR + "/usr/share/licenses/" + name + "-" + version + "/COPYING")
