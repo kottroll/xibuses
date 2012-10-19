@@ -1,19 +1,19 @@
 # Copyright 2012 Xilitra Linux Project
 # Maintainers: Valdos "fat0troll Sine
-name = "attr"
-version = "2.4.46"
+name = "acl"
+version = "2.2.51"
 release = "1"
-description = "Extended attribute support library for ACL support"
+description = "Access control list utilities, libraries and headers"
 license = "LGPL"
-url = "http://savannah.nongnu.org/projects/attr"
+url = "http://savannah.nongnu.org/projects/acl"
 arch = "all"
-depends = ["glibc"]
-makedepends = ["gettext"]
+depends = ["attr>=2.4.46"]
+makedepends = []
 source = "http://download.savannah.gnu.org/releases/{0}/{1}-{2}.src.tar.gz".format(name, name, version)
 groups = []
 #md5sum = ""
 #sha1sum = ""
-sha256sum = "dcd69bdca7ff166bc45141eddbcf21967999a6b66b0544be12a1cc2fd6340e1f"
+sha256sum = "06854521cf5d396801af7e54b9636680edf8064355e51c07657ec7442a185225"
 #sha512sum = ""
 options = ["-libtool"]
 API_VERSION = 1
@@ -30,7 +30,5 @@ def build():
 def package():
     make("-C %s-%s DIST_ROOT=" % (name, version) + PKGDIR + " install install-lib install-dev")
     # tidy up
-    rm(PKGDIR + "/usr/lib/libattr.a")
-    chmod("0755", PKGDIR + "/usr/lib/libattr.so.1.1.0")
-    # remove conflicting manpages
-    rmdir(PKGDIR + "/usr/share/man/man2")
+    rm(PKGDIR + "/usr/lib/libacl.a")
+    chmod("0755", PKGDIR + "/usr/lib/libacl.so.1.1.0")
