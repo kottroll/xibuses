@@ -16,7 +16,7 @@ groups = ["baselayout", "core"]
 md5sum = "c40c4f4ebbd10f4b9e4138957d42d62d"
 sha1sum = "b49aa2eabce107b159779482ef51df7e37f915a5"
 sha256sum = "6079c78878f7c154165849f82e0b541fc8e85675e28bd859677225807bcd9db2"
-sha512sum = "865f984a0edd294073d29516cc722853d32e0863d506a545c5e03686fc3f14ed55c244ac0f5bdac195e5524feaa2e4c60e2a3"
+#sha512sum = ""
 API_VERSION = 1
 
 def build():
