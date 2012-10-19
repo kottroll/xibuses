@@ -11,7 +11,7 @@ arch = "noarch"
 depends = []
 source = ["http://www.kernel.org/pub/linux/docs/man-pages/{0}-{1}.tar.xz".format(name, version), "http://www.kernel.org/pub/linux/docs/man-pages/man-pages-posix/{0}-posix-{1}.tar.bz2".format(name, posixversion)]
 groups = ["baselayout", "core", "docs"]
-md5sum = ["2392bb23db94f344f493c4beca41398f", "7c78aff03c0a6767ba483d34f19e4b09"]
+#md5sum = ["2392bb23db94f344f493c4beca41398f", "7c78aff03c0a6767ba483d34f19e4b09"]
 #sha1sum = ""
 #sha256sum = ""
 #sha512sum = ""
@@ -22,24 +22,26 @@ def build():
     mkdir("man0")
     cd("../" + name + "-posix-" + posixversion, 0)
     apply_patch("9000", "-p1")
-    sect = ["0", "1", "2"]
+    sect = ["0", "1", "3"]
     for s in sect:
-        moveable = ls(SRCDIR + "/" + name + "-posix-" + posixversion + "/man" + s + "p/")
+        orig_dir = SRCDIR + "/" + name + "-posix-" + posixversion + "/man" + s + "p/"
+        dest_dir = SRCDIR + "/" + name + "-" + version + "/man" + s + "/"
+        moveable = ls(orig_dir)
         for file in moveable:
-            mv(file, SRCDIR + "/" + name + "-" + version + "/man" + s + "/")
+            mv(orig_dir + "/" + file, dest_dir + file[:-1])
 
 def package():
     cd (name + "-" + version, 0)
     make("prefix=" + PKGDIR + "/usr install")
     cd(PKGDIR + "/usr/share/man", 0)
     # they are included in coreutils
-    dublicates_coreutils = ["chgrp", "chmod", "chown", "cp", "dir", "dd", "df", "dircolors", "du", "install", "ln", "ls", "mkdir", "mkfifo", "mknod", "mv", "rm", "rmdir", "touch", "vdir"
+    dublicates_coreutils = ["chgrp", "chmod", "chown", "cp", "dd", "df", "du", "ln", "ls", "mkdir", "mkfifo", "mv", "rm", "rmdir", "touch"]
     for man in dublicates_coreutils:
-         rmdir("man1/" + man + ".1")
+        rm("man1/" + man + ".1")
     # this is included in shadow
-    rmdir("man5/passwd.5")
-    rmdir("man3/getspnam.3")
+    rm("man5/passwd.5")
+    rm("man3/getspnam.3")
     # this is included in diffutils
-    rmdir("man1/diff.1")
+    rm("man1/diff.1")
     # this is included in xf86-input-mouse
-    rmdir("man4/mouse.4")
+    rm("man4/mouse.4")
