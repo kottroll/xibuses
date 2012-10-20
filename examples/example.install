@@ -1,0 +1,27 @@
+#!/bin/bash
+# Copyright (C) 2012 Xilitra Linux Project
+# $version - version being installed/removed
+# $oldversion - version being upgraded
+preinstall () {
+    # preinstall actions
+}
+
+postinstall () {
+    # postinstall actions
+}
+
+preremove () {
+    # preremove actions
+}
+
+postremove () {
+    # postremove actions
+}
+
+preupgrade () {
+    # preupgrade actions
+}
+
+postupgrade () {
+    # postupgrade actions
+}

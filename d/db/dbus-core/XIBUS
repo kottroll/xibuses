@@ -1,0 +1,50 @@
+# Copyright 2012 Xilitra Linux Project
+# Maintainers: Valdos "fat0troll" Sine
+name = "dbus-core"
+pname = name[:-5]
+version = "1.6.8"
+release = "1"
+description = "Freedesktop.org message bus system"
+license = "custom"
+url = "http://www.freedesktop.org/Software/dbus"
+arch = "all"
+depends = ["expat", "coreutils", "filesystem", "systemd", "shadow"]
+makedepends = ["libx11"]
+source = "http://dbus.freedesktop.org/releases/dbus/dbus-{0}.tar.gz".format(version)
+groups = []
+md5sum = "3bf059c7dd5eda5f539a1b7cfe7a14a2"
+#sha1sum = ""
+#sha256sum = ""
+#sha512sum = ""
+API_VERSION = 1
+
+def build():
+    cd(pname + "-" + version, 1)
+    configure("--prefix=/usr \
+        --sysconfdir=/etc \
+        --localstatedir=/var \
+        --libexecdir=/usr/lib/dbus-1.0 \
+        --with-dbus-user=81 \
+        --with-system-pid-file=/run/dbus/pid \
+        --with-system-socket=/run/dbus/system_bus_socket \
+        --with-console-auth-dir=/run/console/ \
+        --enable-inotify \
+        --disable-dnotify \
+        --disable-verbose-mode \
+        --disable-static \
+        --disable-tests \
+        --disable-asserts \
+        --with-systemdsystemunitdir=/usr/lib/systemd/system \
+        --enable-systemd")
+    make("")
+
+def package():
+    cd(pname + "-" + version, 1)
+    make_install("")
+    rm(PKGDIR + "/usr/bin/dbus-launch")
+    rm(PKGDIR + "/usr/share/man/man1/dbus-launch.1")
+    rmdir(PKGDIR + "/var/run")
+    # Fix configuration
+    sed("-i -e", "s|<user>81</user>|<user>dbus</user>|", PKGDIR + "/etc/dbus-1/system.conf")
+    # LICENSE
+    install("644", "COPYING", PKGDIR + "/usr/share/licenses/" + name + "-" + version + "/COPYING")
