@@ -1,0 +1,2694 @@
+diff -Naur man-pages-posix-2003-a.orig/man0p/ipc.h.0p man-pages-posix-2003-a/man0p/ipc.h.0p
+--- man-pages-posix-2003-a.orig/man0p/ipc.h.0p	2012-10-20 02:12:42.405247736 +0400
++++ man-pages-posix-2003-a/man0p/ipc.h.0p	2012-10-20 02:15:30.058571909 +0400
+@@ -1 +1 @@
+-.so man0p/sys_ipc.h.0p
++.so man0/sys_ipc.h.0p
+diff -Naur man-pages-posix-2003-a.orig/man0p/mman.h.0p man-pages-posix-2003-a/man0p/mman.h.0p
+--- man-pages-posix-2003-a.orig/man0p/mman.h.0p	2012-10-20 02:12:42.405247736 +0400
++++ man-pages-posix-2003-a/man0p/mman.h.0p	2012-10-20 02:15:30.065238575 +0400
+@@ -1 +1 @@
+-.so man0p/sys_mman.h.0p
++.so man0/sys_mman.h.0p
+diff -Naur man-pages-posix-2003-a.orig/man0p/msg.h.0p man-pages-posix-2003-a/man0p/msg.h.0p
+--- man-pages-posix-2003-a.orig/man0p/msg.h.0p	2012-10-20 02:12:42.405247736 +0400
++++ man-pages-posix-2003-a/man0p/msg.h.0p	2012-10-20 02:15:30.065238575 +0400
+@@ -1 +1 @@
+-.so man0p/sys_msg.h.0p
++.so man0/sys_msg.h.0p
+diff -Naur man-pages-posix-2003-a.orig/man0p/resource.h.0p man-pages-posix-2003-a/man0p/resource.h.0p
+--- man-pages-posix-2003-a.orig/man0p/resource.h.0p	2012-10-20 02:12:42.405247736 +0400
++++ man-pages-posix-2003-a/man0p/resource.h.0p	2012-10-20 02:15:30.068571909 +0400
+@@ -1 +1 @@
+-.so man0p/sys_resource.h.0p
++.so man0/sys_resource.h.0p
+diff -Naur man-pages-posix-2003-a.orig/man0p/select.h.0p man-pages-posix-2003-a/man0p/select.h.0p
+--- man-pages-posix-2003-a.orig/man0p/select.h.0p	2012-10-20 02:12:42.405247736 +0400
++++ man-pages-posix-2003-a/man0p/select.h.0p	2012-10-20 02:15:30.068571909 +0400
+@@ -1 +1 @@
+-.so man0p/sys_select.h.0p
++.so man0/sys_select.h.0p
+diff -Naur man-pages-posix-2003-a.orig/man0p/sem.h.0p man-pages-posix-2003-a/man0p/sem.h.0p
+--- man-pages-posix-2003-a.orig/man0p/sem.h.0p	2012-10-20 02:12:42.405247736 +0400
++++ man-pages-posix-2003-a/man0p/sem.h.0p	2012-10-20 02:15:30.068571909 +0400
+@@ -1 +1 @@
+-.so man0p/sys_sem.h.0p
++.so man0/sys_sem.h.0p
+diff -Naur man-pages-posix-2003-a.orig/man0p/shm.h.0p man-pages-posix-2003-a/man0p/shm.h.0p
+--- man-pages-posix-2003-a.orig/man0p/shm.h.0p	2012-10-20 02:12:42.405247736 +0400
++++ man-pages-posix-2003-a/man0p/shm.h.0p	2012-10-20 02:15:30.068571909 +0400
+@@ -1 +1 @@
+-.so man0p/sys_shm.h.0p
++.so man0/sys_shm.h.0p
+diff -Naur man-pages-posix-2003-a.orig/man0p/socket.h.0p man-pages-posix-2003-a/man0p/socket.h.0p
+--- man-pages-posix-2003-a.orig/man0p/socket.h.0p	2012-10-20 02:12:42.405247736 +0400
++++ man-pages-posix-2003-a/man0p/socket.h.0p	2012-10-20 02:15:30.071905242 +0400
+@@ -1 +1 @@
+-.so man0p/sys_socket.h.0p
++.so man0/sys_socket.h.0p
+diff -Naur man-pages-posix-2003-a.orig/man0p/stat.h.0p man-pages-posix-2003-a/man0p/stat.h.0p
+--- man-pages-posix-2003-a.orig/man0p/stat.h.0p	2012-10-20 02:12:42.405247736 +0400
++++ man-pages-posix-2003-a/man0p/stat.h.0p	2012-10-20 02:15:30.071905242 +0400
+@@ -1 +1 @@
+-.so man0p/sys_stat.h.0p
++.so man0/sys_stat.h.0p
+diff -Naur man-pages-posix-2003-a.orig/man0p/statvfs.h.0p man-pages-posix-2003-a/man0p/statvfs.h.0p
+--- man-pages-posix-2003-a.orig/man0p/statvfs.h.0p	2012-10-20 02:12:42.405247736 +0400
++++ man-pages-posix-2003-a/man0p/statvfs.h.0p	2012-10-20 02:15:30.071905242 +0400
+@@ -1 +1 @@
+-.so man0p/sys_statvfs.h.0p
++.so man0/sys_statvfs.h.0p
+diff -Naur man-pages-posix-2003-a.orig/man0p/timeb.h.0p man-pages-posix-2003-a/man0p/timeb.h.0p
+--- man-pages-posix-2003-a.orig/man0p/timeb.h.0p	2012-10-20 02:12:42.405247736 +0400
++++ man-pages-posix-2003-a/man0p/timeb.h.0p	2012-10-20 02:15:30.085238574 +0400
+@@ -1 +1 @@
+-.so man0p/sys_timeb.h.0p
++.so man0/sys_timeb.h.0p
+diff -Naur man-pages-posix-2003-a.orig/man0p/times.h.0p man-pages-posix-2003-a/man0p/times.h.0p
+--- man-pages-posix-2003-a.orig/man0p/times.h.0p	2012-10-20 02:12:42.405247736 +0400
++++ man-pages-posix-2003-a/man0p/times.h.0p	2012-10-20 02:15:30.085238574 +0400
+@@ -1 +1 @@
+-.so man0p/sys_times.h.0p
++.so man0/sys_times.h.0p
+diff -Naur man-pages-posix-2003-a.orig/man0p/types.h.0p man-pages-posix-2003-a/man0p/types.h.0p
+--- man-pages-posix-2003-a.orig/man0p/types.h.0p	2012-10-20 02:12:42.405247736 +0400
++++ man-pages-posix-2003-a/man0p/types.h.0p	2012-10-20 02:15:30.088571907 +0400
+@@ -1 +1 @@
+-.so man0p/sys_types.h.0p
++.so man0/sys_types.h.0p
+diff -Naur man-pages-posix-2003-a.orig/man0p/uio.h.0p man-pages-posix-2003-a/man0p/uio.h.0p
+--- man-pages-posix-2003-a.orig/man0p/uio.h.0p	2012-10-20 02:12:42.405247736 +0400
++++ man-pages-posix-2003-a/man0p/uio.h.0p	2012-10-20 02:15:30.088571907 +0400
+@@ -1 +1 @@
+-.so man0p/sys_uio.h.0p
++.so man0/sys_uio.h.0p
+diff -Naur man-pages-posix-2003-a.orig/man0p/un.h.0p man-pages-posix-2003-a/man0p/un.h.0p
+--- man-pages-posix-2003-a.orig/man0p/un.h.0p	2012-10-20 02:12:42.405247736 +0400
++++ man-pages-posix-2003-a/man0p/un.h.0p	2012-10-20 02:15:30.088571907 +0400
+@@ -1 +1 @@
+-.so man0p/sys_un.h.0p
++.so man0/sys_un.h.0p
+diff -Naur man-pages-posix-2003-a.orig/man0p/utsname.h.0p man-pages-posix-2003-a/man0p/utsname.h.0p
+--- man-pages-posix-2003-a.orig/man0p/utsname.h.0p	2012-10-20 02:12:42.405247736 +0400
++++ man-pages-posix-2003-a/man0p/utsname.h.0p	2012-10-20 02:15:30.091905241 +0400
+@@ -1 +1 @@
+-.so man0p/sys_utsname.h.0p
++.so man0/sys_utsname.h.0p
+diff -Naur man-pages-posix-2003-a.orig/man0p/wait.h.0p man-pages-posix-2003-a/man0p/wait.h.0p
+--- man-pages-posix-2003-a.orig/man0p/wait.h.0p	2012-10-20 02:12:42.405247736 +0400
++++ man-pages-posix-2003-a/man0p/wait.h.0p	2012-10-20 02:15:30.091905241 +0400
+@@ -1 +1 @@
+-.so man0p/sys_wait.h.0p
++.so man0/sys_wait.h.0p
+diff -Naur man-pages-posix-2003-a.orig/man3p/acosf.3p man-pages-posix-2003-a/man3p/acosf.3p
+--- man-pages-posix-2003-a.orig/man3p/acosf.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/acosf.3p	2012-10-20 02:15:30.288571897 +0400
+@@ -1 +1 @@
+-.so man3p/acos.3p
++.so man3/acos.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/acoshf.3p man-pages-posix-2003-a/man3p/acoshf.3p
+--- man-pages-posix-2003-a.orig/man3p/acoshf.3p	2012-10-20 02:12:42.415247736 +0400
++++ man-pages-posix-2003-a/man3p/acoshf.3p	2012-10-20 02:15:30.288571897 +0400
+@@ -1 +1 @@
+-.so man3p/acosh.3p
++.so man3/acosh.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/acoshl.3p man-pages-posix-2003-a/man3p/acoshl.3p
+--- man-pages-posix-2003-a.orig/man3p/acoshl.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/acoshl.3p	2012-10-20 02:15:30.288571897 +0400
+@@ -1 +1 @@
+-.so man3p/acosh.3p
++.so man3/acosh.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/acosl.3p man-pages-posix-2003-a/man3p/acosl.3p
+--- man-pages-posix-2003-a.orig/man3p/acosl.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/acosl.3p	2012-10-20 02:15:30.288571897 +0400
+@@ -1 +1 @@
+-.so man3p/acos.3p
++.so man3/acos.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/asctime_r.3p man-pages-posix-2003-a/man3p/asctime_r.3p
+--- man-pages-posix-2003-a.orig/man3p/asctime_r.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/asctime_r.3p	2012-10-20 02:15:30.291905230 +0400
+@@ -1 +1 @@
+-.so man3p/asctime.3p
++.so man3/asctime.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/asinf.3p man-pages-posix-2003-a/man3p/asinf.3p
+--- man-pages-posix-2003-a.orig/man3p/asinf.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/asinf.3p	2012-10-20 02:15:30.291905230 +0400
+@@ -1 +1 @@
+-.so man3p/asin.3p
++.so man3/asin.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/asinhf.3p man-pages-posix-2003-a/man3p/asinhf.3p
+--- man-pages-posix-2003-a.orig/man3p/asinhf.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/asinhf.3p	2012-10-20 02:15:30.291905230 +0400
+@@ -1 +1 @@
+-.so man3p/asinh.3p
++.so man3/asinh.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/asinhl.3p man-pages-posix-2003-a/man3p/asinhl.3p
+--- man-pages-posix-2003-a.orig/man3p/asinhl.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/asinhl.3p	2012-10-20 02:15:30.291905230 +0400
+@@ -1 +1 @@
+-.so man3p/asinh.3p
++.so man3/asinh.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/asinl.3p man-pages-posix-2003-a/man3p/asinl.3p
+--- man-pages-posix-2003-a.orig/man3p/asinl.3p	2012-10-20 02:12:42.418581069 +0400
++++ man-pages-posix-2003-a/man3p/asinl.3p	2012-10-20 02:15:30.291905230 +0400
+@@ -1 +1 @@
+-.so man3p/asin.3p
++.so man3/asin.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/atan2f.3p man-pages-posix-2003-a/man3p/atan2f.3p
+--- man-pages-posix-2003-a.orig/man3p/atan2f.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/atan2f.3p	2012-10-20 02:15:30.291905230 +0400
+@@ -1 +1 @@
+-.so man3p/atan2.3p
++.so man3/atan2.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/atan2l.3p man-pages-posix-2003-a/man3p/atan2l.3p
+--- man-pages-posix-2003-a.orig/man3p/atan2l.3p	2012-10-20 02:12:42.421914402 +0400
++++ man-pages-posix-2003-a/man3p/atan2l.3p	2012-10-20 02:15:30.291905230 +0400
+@@ -1 +1 @@
+-.so man3p/atan2.3p
++.so man3/atan2.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/atanf.3p man-pages-posix-2003-a/man3p/atanf.3p
+--- man-pages-posix-2003-a.orig/man3p/atanf.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/atanf.3p	2012-10-20 02:15:30.291905230 +0400
+@@ -1 +1 @@
+-.so man3p/atan.3p
++.so man3/atan.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/atanhf.3p man-pages-posix-2003-a/man3p/atanhf.3p
+--- man-pages-posix-2003-a.orig/man3p/atanhf.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/atanhf.3p	2012-10-20 02:15:30.291905230 +0400
+@@ -1 +1 @@
+-.so man3p/atanh.3p
++.so man3/atanh.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/atanhl.3p man-pages-posix-2003-a/man3p/atanhl.3p
+--- man-pages-posix-2003-a.orig/man3p/atanhl.3p	2012-10-20 02:12:42.441914401 +0400
++++ man-pages-posix-2003-a/man3p/atanhl.3p	2012-10-20 02:15:30.291905230 +0400
+@@ -1 +1 @@
+-.so man3p/atanh.3p
++.so man3/atanh.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/atanl.3p man-pages-posix-2003-a/man3p/atanl.3p
+--- man-pages-posix-2003-a.orig/man3p/atanl.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/atanl.3p	2012-10-20 02:15:30.291905230 +0400
+@@ -1 +1 @@
+-.so man3p/atan.3p
++.so man3/atan.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/atoll.3p man-pages-posix-2003-a/man3p/atoll.3p
+--- man-pages-posix-2003-a.orig/man3p/atoll.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/atoll.3p	2012-10-20 02:15:30.295238563 +0400
+@@ -1 +1 @@
+-.so man3p/atol.3p
++.so man3/atol.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/cabsf.3p man-pages-posix-2003-a/man3p/cabsf.3p
+--- man-pages-posix-2003-a.orig/man3p/cabsf.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/cabsf.3p	2012-10-20 02:15:30.298571896 +0400
+@@ -1 +1 @@
+-.so man3p/cabs.3p
++.so man3/cabs.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/cabsl.3p man-pages-posix-2003-a/man3p/cabsl.3p
+--- man-pages-posix-2003-a.orig/man3p/cabsl.3p	2012-10-20 02:12:42.428581068 +0400
++++ man-pages-posix-2003-a/man3p/cabsl.3p	2012-10-20 02:15:30.298571896 +0400
+@@ -1 +1 @@
+-.so man3p/cabs.3p
++.so man3/cabs.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/cacosf.3p man-pages-posix-2003-a/man3p/cacosf.3p
+--- man-pages-posix-2003-a.orig/man3p/cacosf.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/cacosf.3p	2012-10-20 02:15:30.298571896 +0400
+@@ -1 +1 @@
+-.so man3p/cacos.3p
++.so man3/cacos.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/cacoshf.3p man-pages-posix-2003-a/man3p/cacoshf.3p
+--- man-pages-posix-2003-a.orig/man3p/cacoshf.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/cacoshf.3p	2012-10-20 02:15:30.298571896 +0400
+@@ -1 +1 @@
+-.so man3p/cacosh.3p
++.so man3/cacosh.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/cacoshl.3p man-pages-posix-2003-a/man3p/cacoshl.3p
+--- man-pages-posix-2003-a.orig/man3p/cacoshl.3p	2012-10-20 02:12:42.405247736 +0400
++++ man-pages-posix-2003-a/man3p/cacoshl.3p	2012-10-20 02:15:30.298571896 +0400
+@@ -1 +1 @@
+-.so man3p/cacosh.3p
++.so man3/cacosh.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/cacosl.3p man-pages-posix-2003-a/man3p/cacosl.3p
+--- man-pages-posix-2003-a.orig/man3p/cacosl.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/cacosl.3p	2012-10-20 02:15:30.298571896 +0400
+@@ -1 +1 @@
+-.so man3p/cacos.3p
++.so man3/cacos.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/cargf.3p man-pages-posix-2003-a/man3p/cargf.3p
+--- man-pages-posix-2003-a.orig/man3p/cargf.3p	2012-10-20 02:12:42.428581068 +0400
++++ man-pages-posix-2003-a/man3p/cargf.3p	2012-10-20 02:15:30.298571896 +0400
+@@ -1 +1 @@
+-.so man3p/carg.3p
++.so man3/carg.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/cargl.3p man-pages-posix-2003-a/man3p/cargl.3p
+--- man-pages-posix-2003-a.orig/man3p/cargl.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/cargl.3p	2012-10-20 02:15:30.298571896 +0400
+@@ -1 +1 @@
+-.so man3p/carg.3p
++.so man3/carg.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/casinf.3p man-pages-posix-2003-a/man3p/casinf.3p
+--- man-pages-posix-2003-a.orig/man3p/casinf.3p	2012-10-20 02:12:42.405247736 +0400
++++ man-pages-posix-2003-a/man3p/casinf.3p	2012-10-20 02:15:30.298571896 +0400
+@@ -1 +1 @@
+-.so man3p/casin.3p
++.so man3/casin.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/casinhf.3p man-pages-posix-2003-a/man3p/casinhf.3p
+--- man-pages-posix-2003-a.orig/man3p/casinhf.3p	2012-10-20 02:12:42.441914401 +0400
++++ man-pages-posix-2003-a/man3p/casinhf.3p	2012-10-20 02:15:30.298571896 +0400
+@@ -1 +1 @@
+-.so man3p/casinh.3p
++.so man3/casinh.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/casinhl.3p man-pages-posix-2003-a/man3p/casinhl.3p
+--- man-pages-posix-2003-a.orig/man3p/casinhl.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/casinhl.3p	2012-10-20 02:15:30.298571896 +0400
+@@ -1 +1 @@
+-.so man3p/casinh.3p
++.so man3/casinh.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/casinl.3p man-pages-posix-2003-a/man3p/casinl.3p
+--- man-pages-posix-2003-a.orig/man3p/casinl.3p	2012-10-20 02:12:42.411914402 +0400
++++ man-pages-posix-2003-a/man3p/casinl.3p	2012-10-20 02:15:30.298571896 +0400
+@@ -1 +1 @@
+-.so man3p/casin.3p
++.so man3/casin.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/catanf.3p man-pages-posix-2003-a/man3p/catanf.3p
+--- man-pages-posix-2003-a.orig/man3p/catanf.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/catanf.3p	2012-10-20 02:15:30.298571896 +0400
+@@ -1 +1 @@
+-.so man3p/catan.3p
++.so man3/catan.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/catanhf.3p man-pages-posix-2003-a/man3p/catanhf.3p
+--- man-pages-posix-2003-a.orig/man3p/catanhf.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/catanhf.3p	2012-10-20 02:15:30.301905229 +0400
+@@ -1 +1 @@
+-.so man3p/catanh.3p
++.so man3/catanh.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/catanhl.3p man-pages-posix-2003-a/man3p/catanhl.3p
+--- man-pages-posix-2003-a.orig/man3p/catanhl.3p	2012-10-20 02:12:42.441914401 +0400
++++ man-pages-posix-2003-a/man3p/catanhl.3p	2012-10-20 02:15:30.301905229 +0400
+@@ -1 +1 @@
+-.so man3p/catanh.3p
++.so man3/catanh.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/catanl.3p man-pages-posix-2003-a/man3p/catanl.3p
+--- man-pages-posix-2003-a.orig/man3p/catanl.3p	2012-10-20 02:12:42.418581069 +0400
++++ man-pages-posix-2003-a/man3p/catanl.3p	2012-10-20 02:15:30.301905229 +0400
+@@ -1 +1 @@
+-.so man3p/catan.3p
++.so man3/catan.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/cbrtf.3p man-pages-posix-2003-a/man3p/cbrtf.3p
+--- man-pages-posix-2003-a.orig/man3p/cbrtf.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/cbrtf.3p	2012-10-20 02:15:30.301905229 +0400
+@@ -1 +1 @@
+-.so man3p/cbrt.3p
++.so man3/cbrt.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/cbrtl.3p man-pages-posix-2003-a/man3p/cbrtl.3p
+--- man-pages-posix-2003-a.orig/man3p/cbrtl.3p	2012-10-20 02:12:42.415247736 +0400
++++ man-pages-posix-2003-a/man3p/cbrtl.3p	2012-10-20 02:15:30.301905229 +0400
+@@ -1 +1 @@
+-.so man3p/cbrt.3p
++.so man3/cbrt.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/ccosf.3p man-pages-posix-2003-a/man3p/ccosf.3p
+--- man-pages-posix-2003-a.orig/man3p/ccosf.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/ccosf.3p	2012-10-20 02:15:30.301905229 +0400
+@@ -1 +1 @@
+-.so man3p/ccos.3p
++.so man3/ccos.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/ccoshf.3p man-pages-posix-2003-a/man3p/ccoshf.3p
+--- man-pages-posix-2003-a.orig/man3p/ccoshf.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/ccoshf.3p	2012-10-20 02:15:30.301905229 +0400
+@@ -1 +1 @@
+-.so man3p/ccosh.3p
++.so man3/ccosh.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/ccoshl.3p man-pages-posix-2003-a/man3p/ccoshl.3p
+--- man-pages-posix-2003-a.orig/man3p/ccoshl.3p	2012-10-20 02:12:42.418581069 +0400
++++ man-pages-posix-2003-a/man3p/ccoshl.3p	2012-10-20 02:15:30.301905229 +0400
+@@ -1 +1 @@
+-.so man3p/ccosh.3p
++.so man3/ccosh.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/ccosl.3p man-pages-posix-2003-a/man3p/ccosl.3p
+--- man-pages-posix-2003-a.orig/man3p/ccosl.3p	2012-10-20 02:12:42.418581069 +0400
++++ man-pages-posix-2003-a/man3p/ccosl.3p	2012-10-20 02:15:30.301905229 +0400
+@@ -1 +1 @@
+-.so man3p/ccos.3p
++.so man3/ccos.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/ceilf.3p man-pages-posix-2003-a/man3p/ceilf.3p
+--- man-pages-posix-2003-a.orig/man3p/ceilf.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/ceilf.3p	2012-10-20 02:15:30.301905229 +0400
+@@ -1 +1 @@
+-.so man3p/ceil.3p
++.so man3/ceil.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/ceill.3p man-pages-posix-2003-a/man3p/ceill.3p
+--- man-pages-posix-2003-a.orig/man3p/ceill.3p	2012-10-20 02:12:42.415247736 +0400
++++ man-pages-posix-2003-a/man3p/ceill.3p	2012-10-20 02:15:30.301905229 +0400
+@@ -1 +1 @@
+-.so man3p/ceil.3p
++.so man3/ceil.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/cexpf.3p man-pages-posix-2003-a/man3p/cexpf.3p
+--- man-pages-posix-2003-a.orig/man3p/cexpf.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/cexpf.3p	2012-10-20 02:15:30.301905229 +0400
+@@ -1 +1 @@
+-.so man3p/cexp.3p
++.so man3/cexp.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/cexpl.3p man-pages-posix-2003-a/man3p/cexpl.3p
+--- man-pages-posix-2003-a.orig/man3p/cexpl.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/cexpl.3p	2012-10-20 02:15:30.301905229 +0400
+@@ -1 +1 @@
+-.so man3p/cexp.3p
++.so man3/cexp.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/cimagf.3p man-pages-posix-2003-a/man3p/cimagf.3p
+--- man-pages-posix-2003-a.orig/man3p/cimagf.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/cimagf.3p	2012-10-20 02:15:30.311905229 +0400
+@@ -1 +1 @@
+-.so man3p/cimag.3p
++.so man3/cimag.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/cimagl.3p man-pages-posix-2003-a/man3p/cimagl.3p
+--- man-pages-posix-2003-a.orig/man3p/cimagl.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/cimagl.3p	2012-10-20 02:15:30.311905229 +0400
+@@ -1 +1 @@
+-.so man3p/cimag.3p
++.so man3/cimag.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/clock_getres.3p man-pages-posix-2003-a/man3p/clock_getres.3p
+--- man-pages-posix-2003-a.orig/man3p/clock_getres.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/clock_getres.3p	2012-10-20 02:15:30.311905229 +0400
+@@ -1 +1 @@
+-.so man3p/clock_gettime.3p
++.so man3/clock_gettime.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/clock_settime.3p man-pages-posix-2003-a/man3p/clock_settime.3p
+--- man-pages-posix-2003-a.orig/man3p/clock_settime.3p	2012-10-20 02:12:42.415247736 +0400
++++ man-pages-posix-2003-a/man3p/clock_settime.3p	2012-10-20 02:15:30.311905229 +0400
+@@ -1 +1 @@
+-.so man3p/clock_gettime.3p
++.so man3/clock_gettime.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/clogf.3p man-pages-posix-2003-a/man3p/clogf.3p
+--- man-pages-posix-2003-a.orig/man3p/clogf.3p	2012-10-20 02:12:42.441914401 +0400
++++ man-pages-posix-2003-a/man3p/clogf.3p	2012-10-20 02:15:30.311905229 +0400
+@@ -1 +1 @@
+-.so man3p/clog.3p
++.so man3/clog.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/clogl.3p man-pages-posix-2003-a/man3p/clogl.3p
+--- man-pages-posix-2003-a.orig/man3p/clogl.3p	2012-10-20 02:12:42.411914402 +0400
++++ man-pages-posix-2003-a/man3p/clogl.3p	2012-10-20 02:15:30.311905229 +0400
+@@ -1 +1 @@
+-.so man3p/clog.3p
++.so man3/clog.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/closelog.3p man-pages-posix-2003-a/man3p/closelog.3p
+--- man-pages-posix-2003-a.orig/man3p/closelog.3p	2012-10-20 02:12:42.418581069 +0400
++++ man-pages-posix-2003-a/man3p/closelog.3p	2012-10-20 02:15:30.315238562 +0400
+@@ -1 +1 @@
+-.so man3p/syslog.3p
++.so man3/syslog.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/conjf.3p man-pages-posix-2003-a/man3p/conjf.3p
+--- man-pages-posix-2003-a.orig/man3p/conjf.3p	2012-10-20 02:12:42.441914401 +0400
++++ man-pages-posix-2003-a/man3p/conjf.3p	2012-10-20 02:15:30.315238562 +0400
+@@ -1 +1 @@
+-.so man3p/conj.3p
++.so man3/conj.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/conjl.3p man-pages-posix-2003-a/man3p/conjl.3p
+--- man-pages-posix-2003-a.orig/man3p/conjl.3p	2012-10-20 02:12:42.428581068 +0400
++++ man-pages-posix-2003-a/man3p/conjl.3p	2012-10-20 02:15:30.315238562 +0400
+@@ -1 +1 @@
+-.so man3p/conj.3p
++.so man3/conj.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/copysignf.3p man-pages-posix-2003-a/man3p/copysignf.3p
+--- man-pages-posix-2003-a.orig/man3p/copysignf.3p	2012-10-20 02:12:42.421914402 +0400
++++ man-pages-posix-2003-a/man3p/copysignf.3p	2012-10-20 02:15:30.315238562 +0400
+@@ -1 +1 @@
+-.so man3p/copysign.3p
++.so man3/copysign.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/copysignl.3p man-pages-posix-2003-a/man3p/copysignl.3p
+--- man-pages-posix-2003-a.orig/man3p/copysignl.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/copysignl.3p	2012-10-20 02:15:30.315238562 +0400
+@@ -1 +1 @@
+-.so man3p/copysign.3p
++.so man3/copysign.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/cosf.3p man-pages-posix-2003-a/man3p/cosf.3p
+--- man-pages-posix-2003-a.orig/man3p/cosf.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/cosf.3p	2012-10-20 02:15:30.315238562 +0400
+@@ -1 +1 @@
+-.so man3p/cos.3p
++.so man3/cos.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/coshf.3p man-pages-posix-2003-a/man3p/coshf.3p
+--- man-pages-posix-2003-a.orig/man3p/coshf.3p	2012-10-20 02:12:42.418581069 +0400
++++ man-pages-posix-2003-a/man3p/coshf.3p	2012-10-20 02:15:30.315238562 +0400
+@@ -1 +1 @@
+-.so man3p/cosh.3p
++.so man3/cosh.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/coshl.3p man-pages-posix-2003-a/man3p/coshl.3p
+--- man-pages-posix-2003-a.orig/man3p/coshl.3p	2012-10-20 02:12:42.428581068 +0400
++++ man-pages-posix-2003-a/man3p/coshl.3p	2012-10-20 02:15:30.315238562 +0400
+@@ -1 +1 @@
+-.so man3p/cosh.3p
++.so man3/cosh.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/cosl.3p man-pages-posix-2003-a/man3p/cosl.3p
+--- man-pages-posix-2003-a.orig/man3p/cosl.3p	2012-10-20 02:12:42.418581069 +0400
++++ man-pages-posix-2003-a/man3p/cosl.3p	2012-10-20 02:15:30.315238562 +0400
+@@ -1 +1 @@
+-.so man3p/cos.3p
++.so man3/cos.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/cpowf.3p man-pages-posix-2003-a/man3p/cpowf.3p
+--- man-pages-posix-2003-a.orig/man3p/cpowf.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/cpowf.3p	2012-10-20 02:15:30.318571895 +0400
+@@ -1 +1 @@
+-.so man3p/cpow.3p
++.so man3/cpow.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/cpowl.3p man-pages-posix-2003-a/man3p/cpowl.3p
+--- man-pages-posix-2003-a.orig/man3p/cpowl.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/cpowl.3p	2012-10-20 02:15:30.318571895 +0400
+@@ -1 +1 @@
+-.so man3p/cpow.3p
++.so man3/cpow.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/cprojf.3p man-pages-posix-2003-a/man3p/cprojf.3p
+--- man-pages-posix-2003-a.orig/man3p/cprojf.3p	2012-10-20 02:12:42.415247736 +0400
++++ man-pages-posix-2003-a/man3p/cprojf.3p	2012-10-20 02:15:30.318571895 +0400
+@@ -1 +1 @@
+-.so man3p/cproj.3p
++.so man3/cproj.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/cprojl.3p man-pages-posix-2003-a/man3p/cprojl.3p
+--- man-pages-posix-2003-a.orig/man3p/cprojl.3p	2012-10-20 02:12:42.411914402 +0400
++++ man-pages-posix-2003-a/man3p/cprojl.3p	2012-10-20 02:15:30.318571895 +0400
+@@ -1 +1 @@
+-.so man3p/cproj.3p
++.so man3/cproj.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/crealf.3p man-pages-posix-2003-a/man3p/crealf.3p
+--- man-pages-posix-2003-a.orig/man3p/crealf.3p	2012-10-20 02:12:42.441914401 +0400
++++ man-pages-posix-2003-a/man3p/crealf.3p	2012-10-20 02:15:30.318571895 +0400
+@@ -1 +1 @@
+-.so man3p/creal.3p
++.so man3/creal.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/creall.3p man-pages-posix-2003-a/man3p/creall.3p
+--- man-pages-posix-2003-a.orig/man3p/creall.3p	2012-10-20 02:12:42.428581068 +0400
++++ man-pages-posix-2003-a/man3p/creall.3p	2012-10-20 02:15:30.318571895 +0400
+@@ -1 +1 @@
+-.so man3p/creal.3p
++.so man3/creal.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/csinf.3p man-pages-posix-2003-a/man3p/csinf.3p
+--- man-pages-posix-2003-a.orig/man3p/csinf.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/csinf.3p	2012-10-20 02:15:30.318571895 +0400
+@@ -1 +1 @@
+-.so man3p/csin.3p
++.so man3/csin.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/csinhf.3p man-pages-posix-2003-a/man3p/csinhf.3p
+--- man-pages-posix-2003-a.orig/man3p/csinhf.3p	2012-10-20 02:12:42.415247736 +0400
++++ man-pages-posix-2003-a/man3p/csinhf.3p	2012-10-20 02:15:30.318571895 +0400
+@@ -1 +1 @@
+-.so man3p/csinh.3p
++.so man3/csinh.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/csinhl.3p man-pages-posix-2003-a/man3p/csinhl.3p
+--- man-pages-posix-2003-a.orig/man3p/csinhl.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/csinhl.3p	2012-10-20 02:15:30.318571895 +0400
+@@ -1 +1 @@
+-.so man3p/csinh.3p
++.so man3/csinh.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/csinl.3p man-pages-posix-2003-a/man3p/csinl.3p
+--- man-pages-posix-2003-a.orig/man3p/csinl.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/csinl.3p	2012-10-20 02:15:30.318571895 +0400
+@@ -1 +1 @@
+-.so man3p/csin.3p
++.so man3/csin.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/csqrtf.3p man-pages-posix-2003-a/man3p/csqrtf.3p
+--- man-pages-posix-2003-a.orig/man3p/csqrtf.3p	2012-10-20 02:12:42.441914401 +0400
++++ man-pages-posix-2003-a/man3p/csqrtf.3p	2012-10-20 02:15:30.318571895 +0400
+@@ -1 +1 @@
+-.so man3p/csqrt.3p
++.so man3/csqrt.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/csqrtl.3p man-pages-posix-2003-a/man3p/csqrtl.3p
+--- man-pages-posix-2003-a.orig/man3p/csqrtl.3p	2012-10-20 02:12:42.441914401 +0400
++++ man-pages-posix-2003-a/man3p/csqrtl.3p	2012-10-20 02:15:30.318571895 +0400
+@@ -1 +1 @@
+-.so man3p/csqrt.3p
++.so man3/csqrt.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/ctanf.3p man-pages-posix-2003-a/man3p/ctanf.3p
+--- man-pages-posix-2003-a.orig/man3p/ctanf.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/ctanf.3p	2012-10-20 02:15:30.318571895 +0400
+@@ -1 +1 @@
+-.so man3p/ctan.3p
++.so man3/ctan.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/ctanhf.3p man-pages-posix-2003-a/man3p/ctanhf.3p
+--- man-pages-posix-2003-a.orig/man3p/ctanhf.3p	2012-10-20 02:12:42.415247736 +0400
++++ man-pages-posix-2003-a/man3p/ctanhf.3p	2012-10-20 02:15:30.321905228 +0400
+@@ -1 +1 @@
+-.so man3p/ctanh.3p
++.so man3/ctanh.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/ctanhl.3p man-pages-posix-2003-a/man3p/ctanhl.3p
+--- man-pages-posix-2003-a.orig/man3p/ctanhl.3p	2012-10-20 02:12:42.428581068 +0400
++++ man-pages-posix-2003-a/man3p/ctanhl.3p	2012-10-20 02:15:30.321905228 +0400
+@@ -1 +1 @@
+-.so man3p/ctanh.3p
++.so man3/ctanh.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/ctanl.3p man-pages-posix-2003-a/man3p/ctanl.3p
+--- man-pages-posix-2003-a.orig/man3p/ctanl.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/ctanl.3p	2012-10-20 02:15:30.321905228 +0400
+@@ -1 +1 @@
+-.so man3p/ctan.3p
++.so man3/ctan.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/ctime_r.3p man-pages-posix-2003-a/man3p/ctime_r.3p
+--- man-pages-posix-2003-a.orig/man3p/ctime_r.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/ctime_r.3p	2012-10-20 02:15:30.321905228 +0400
+@@ -1 +1 @@
+-.so man3p/ctime.3p
++.so man3/ctime.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/daylight.3p man-pages-posix-2003-a/man3p/daylight.3p
+--- man-pages-posix-2003-a.orig/man3p/daylight.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/daylight.3p	2012-10-20 02:15:30.321905228 +0400
+@@ -1 +1 @@
+-.so man3p/tzset.3p
++.so man3/tzset.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/dbm_clearerr.3p man-pages-posix-2003-a/man3p/dbm_clearerr.3p
+--- man-pages-posix-2003-a.orig/man3p/dbm_clearerr.3p	2012-10-20 02:12:42.425247735 +0400
++++ man-pages-posix-2003-a/man3p/dbm_clearerr.3p	2012-10-20 02:15:30.321905228 +0400
+@@ -1 +1 @@
+-.so man3p/dbm_open.3p
++.so man3/dbm_open.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/dbm_close.3p man-pages-posix-2003-a/man3p/dbm_close.3p
+--- man-pages-posix-2003-a.orig/man3p/dbm_close.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/dbm_close.3p	2012-10-20 02:15:30.321905228 +0400
+@@ -1 +1 @@
+-.so man3p/dbm_open.3p
++.so man3/dbm_open.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/dbm_delete.3p man-pages-posix-2003-a/man3p/dbm_delete.3p
+--- man-pages-posix-2003-a.orig/man3p/dbm_delete.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/dbm_delete.3p	2012-10-20 02:15:30.321905228 +0400
+@@ -1 +1 @@
+-.so man3p/dbm_open.3p
++.so man3/dbm_open.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/dbm_error.3p man-pages-posix-2003-a/man3p/dbm_error.3p
+--- man-pages-posix-2003-a.orig/man3p/dbm_error.3p	2012-10-20 02:12:42.418581069 +0400
++++ man-pages-posix-2003-a/man3p/dbm_error.3p	2012-10-20 02:15:30.321905228 +0400
+@@ -1 +1 @@
+-.so man3p/dbm_open.3p
++.so man3/dbm_open.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/dbm_fetch.3p man-pages-posix-2003-a/man3p/dbm_fetch.3p
+--- man-pages-posix-2003-a.orig/man3p/dbm_fetch.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/dbm_fetch.3p	2012-10-20 02:15:30.321905228 +0400
+@@ -1 +1 @@
+-.so man3p/dbm_open.3p
++.so man3/dbm_open.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/dbm_firstkey.3p man-pages-posix-2003-a/man3p/dbm_firstkey.3p
+--- man-pages-posix-2003-a.orig/man3p/dbm_firstkey.3p	2012-10-20 02:12:42.441914401 +0400
++++ man-pages-posix-2003-a/man3p/dbm_firstkey.3p	2012-10-20 02:15:30.321905228 +0400
+@@ -1 +1 @@
+-.so man3p/dbm_open.3p
++.so man3/dbm_open.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/dbm_nextkey.3p man-pages-posix-2003-a/man3p/dbm_nextkey.3p
+--- man-pages-posix-2003-a.orig/man3p/dbm_nextkey.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/dbm_nextkey.3p	2012-10-20 02:15:30.321905228 +0400
+@@ -1 +1 @@
+-.so man3p/dbm_open.3p
++.so man3/dbm_open.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/dbm_store.3p man-pages-posix-2003-a/man3p/dbm_store.3p
+--- man-pages-posix-2003-a.orig/man3p/dbm_store.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/dbm_store.3p	2012-10-20 02:15:30.321905228 +0400
+@@ -1 +1 @@
+-.so man3p/dbm_open.3p
++.so man3/dbm_open.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/dup2.3p man-pages-posix-2003-a/man3p/dup2.3p
+--- man-pages-posix-2003-a.orig/man3p/dup2.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/dup2.3p	2012-10-20 02:15:30.325238561 +0400
+@@ -1 +1 @@
+-.so man3p/dup.3p
++.so man3/dup.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/endgrent.3p man-pages-posix-2003-a/man3p/endgrent.3p
+--- man-pages-posix-2003-a.orig/man3p/endgrent.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/endgrent.3p	2012-10-20 02:15:30.325238561 +0400
+@@ -1 +1 @@
+-.so man3p/getgrent.3p
++.so man3/getgrent.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/endhostent.3p man-pages-posix-2003-a/man3p/endhostent.3p
+--- man-pages-posix-2003-a.orig/man3p/endhostent.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/endhostent.3p	2012-10-20 02:15:30.325238561 +0400
+@@ -1 +1 @@
+-.so man3p/gethostent.3p
++.so man3/gethostent.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/endnetent.3p man-pages-posix-2003-a/man3p/endnetent.3p
+--- man-pages-posix-2003-a.orig/man3p/endnetent.3p	2012-10-20 02:12:42.425247735 +0400
++++ man-pages-posix-2003-a/man3p/endnetent.3p	2012-10-20 02:15:30.325238561 +0400
+@@ -1 +1 @@
+-.so man3p/getnetent.3p
++.so man3/getnetent.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/endprotoent.3p man-pages-posix-2003-a/man3p/endprotoent.3p
+--- man-pages-posix-2003-a.orig/man3p/endprotoent.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/endprotoent.3p	2012-10-20 02:15:30.325238561 +0400
+@@ -1 +1 @@
+-.so man3p/getprotoent.3p
++.so man3/getprotoent.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/endpwent.3p man-pages-posix-2003-a/man3p/endpwent.3p
+--- man-pages-posix-2003-a.orig/man3p/endpwent.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/endpwent.3p	2012-10-20 02:15:30.325238561 +0400
+@@ -1 +1 @@
+-.so man3p/getpwent.3p
++.so man3/getpwent.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/endservent.3p man-pages-posix-2003-a/man3p/endservent.3p
+--- man-pages-posix-2003-a.orig/man3p/endservent.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/endservent.3p	2012-10-20 02:15:30.325238561 +0400
+@@ -1 +1 @@
+-.so man3p/getservent.3p
++.so man3/getservent.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/endutxent.3p man-pages-posix-2003-a/man3p/endutxent.3p
+--- man-pages-posix-2003-a.orig/man3p/endutxent.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/endutxent.3p	2012-10-20 02:15:30.325238561 +0400
+@@ -1 +1 @@
+-.so man3p/getutxid.3p
++.so man3/getutxid.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/environ.3p man-pages-posix-2003-a/man3p/environ.3p
+--- man-pages-posix-2003-a.orig/man3p/environ.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/environ.3p	2012-10-20 02:15:30.328571894 +0400
+@@ -1 +1 @@
+-.so man3p/exec.3p
++.so man3/exec.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/erand48.3p man-pages-posix-2003-a/man3p/erand48.3p
+--- man-pages-posix-2003-a.orig/man3p/erand48.3p	2012-10-20 02:12:42.418581069 +0400
++++ man-pages-posix-2003-a/man3p/erand48.3p	2012-10-20 02:15:30.328571894 +0400
+@@ -1 +1 @@
+-.so man3p/drand48.3p
++.so man3/drand48.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/erfcf.3p man-pages-posix-2003-a/man3p/erfcf.3p
+--- man-pages-posix-2003-a.orig/man3p/erfcf.3p	2012-10-20 02:12:42.415247736 +0400
++++ man-pages-posix-2003-a/man3p/erfcf.3p	2012-10-20 02:15:30.328571894 +0400
+@@ -1 +1 @@
+-.so man3p/erfc.3p
++.so man3/erfc.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/erfcl.3p man-pages-posix-2003-a/man3p/erfcl.3p
+--- man-pages-posix-2003-a.orig/man3p/erfcl.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/erfcl.3p	2012-10-20 02:15:30.328571894 +0400
+@@ -1 +1 @@
+-.so man3p/erfc.3p
++.so man3/erfc.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/erff.3p man-pages-posix-2003-a/man3p/erff.3p
+--- man-pages-posix-2003-a.orig/man3p/erff.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/erff.3p	2012-10-20 02:15:30.328571894 +0400
+@@ -1 +1 @@
+-.so man3p/erf.3p
++.so man3/erf.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/erfl.3p man-pages-posix-2003-a/man3p/erfl.3p
+--- man-pages-posix-2003-a.orig/man3p/erfl.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/erfl.3p	2012-10-20 02:15:30.328571894 +0400
+@@ -1 +1 @@
+-.so man3p/erf.3p
++.so man3/erf.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/execl.3p man-pages-posix-2003-a/man3p/execl.3p
+--- man-pages-posix-2003-a.orig/man3p/execl.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/execl.3p	2012-10-20 02:15:30.328571894 +0400
+@@ -1 +1 @@
+-.so man3p/exec.3p
++.so man3/exec.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/execle.3p man-pages-posix-2003-a/man3p/execle.3p
+--- man-pages-posix-2003-a.orig/man3p/execle.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/execle.3p	2012-10-20 02:15:30.328571894 +0400
+@@ -1 +1 @@
+-.so man3p/exec.3p
++.so man3/exec.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/execlp.3p man-pages-posix-2003-a/man3p/execlp.3p
+--- man-pages-posix-2003-a.orig/man3p/execlp.3p	2012-10-20 02:12:42.411914402 +0400
++++ man-pages-posix-2003-a/man3p/execlp.3p	2012-10-20 02:15:30.328571894 +0400
+@@ -1 +1 @@
+-.so man3p/exec.3p
++.so man3/exec.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/execv.3p man-pages-posix-2003-a/man3p/execv.3p
+--- man-pages-posix-2003-a.orig/man3p/execv.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/execv.3p	2012-10-20 02:15:30.331905227 +0400
+@@ -1 +1 @@
+-.so man3p/exec.3p
++.so man3/exec.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/execve.3p man-pages-posix-2003-a/man3p/execve.3p
+--- man-pages-posix-2003-a.orig/man3p/execve.3p	2012-10-20 02:12:42.421914402 +0400
++++ man-pages-posix-2003-a/man3p/execve.3p	2012-10-20 02:15:30.331905227 +0400
+@@ -1 +1 @@
+-.so man3p/exec.3p
++.so man3/exec.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/execvp.3p man-pages-posix-2003-a/man3p/execvp.3p
+--- man-pages-posix-2003-a.orig/man3p/execvp.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/execvp.3p	2012-10-20 02:15:30.331905227 +0400
+@@ -1 +1 @@
+-.so man3p/exec.3p
++.so man3/exec.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/_exit.3p man-pages-posix-2003-a/man3p/_exit.3p
+--- man-pages-posix-2003-a.orig/man3p/_exit.3p	2012-10-20 02:12:42.405247736 +0400
++++ man-pages-posix-2003-a/man3p/_exit.3p	2012-10-20 02:15:30.331905227 +0400
+@@ -1 +1 @@
+-.so man3p/exit.3p
++.so man3/exit.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/_Exit.3p man-pages-posix-2003-a/man3p/_Exit.3p
+--- man-pages-posix-2003-a.orig/man3p/_Exit.3p	2012-10-20 02:12:42.418581069 +0400
++++ man-pages-posix-2003-a/man3p/_Exit.3p	2012-10-20 02:15:30.331905227 +0400
+@@ -1 +1 @@
+-.so man3p/exit.3p
++.so man3/exit.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/exp2f.3p man-pages-posix-2003-a/man3p/exp2f.3p
+--- man-pages-posix-2003-a.orig/man3p/exp2f.3p	2012-10-20 02:12:42.418581069 +0400
++++ man-pages-posix-2003-a/man3p/exp2f.3p	2012-10-20 02:15:30.331905227 +0400
+@@ -1 +1 @@
+-.so man3p/exp2.3p
++.so man3/exp2.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/exp2l.3p man-pages-posix-2003-a/man3p/exp2l.3p
+--- man-pages-posix-2003-a.orig/man3p/exp2l.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/exp2l.3p	2012-10-20 02:15:30.331905227 +0400
+@@ -1 +1 @@
+-.so man3p/exp2.3p
++.so man3/exp2.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/expf.3p man-pages-posix-2003-a/man3p/expf.3p
+--- man-pages-posix-2003-a.orig/man3p/expf.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/expf.3p	2012-10-20 02:15:30.331905227 +0400
+@@ -1 +1 @@
+-.so man3p/exp.3p
++.so man3/exp.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/expl.3p man-pages-posix-2003-a/man3p/expl.3p
+--- man-pages-posix-2003-a.orig/man3p/expl.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/expl.3p	2012-10-20 02:15:30.331905227 +0400
+@@ -1 +1 @@
+-.so man3p/exp.3p
++.so man3/exp.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/expm1f.3p man-pages-posix-2003-a/man3p/expm1f.3p
+--- man-pages-posix-2003-a.orig/man3p/expm1f.3p	2012-10-20 02:12:42.411914402 +0400
++++ man-pages-posix-2003-a/man3p/expm1f.3p	2012-10-20 02:15:30.331905227 +0400
+@@ -1 +1 @@
+-.so man3p/expm1.3p
++.so man3/expm1.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/expm1l.3p man-pages-posix-2003-a/man3p/expm1l.3p
+--- man-pages-posix-2003-a.orig/man3p/expm1l.3p	2012-10-20 02:12:42.441914401 +0400
++++ man-pages-posix-2003-a/man3p/expm1l.3p	2012-10-20 02:15:30.331905227 +0400
+@@ -1 +1 @@
+-.so man3p/expm1.3p
++.so man3/expm1.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/fabsf.3p man-pages-posix-2003-a/man3p/fabsf.3p
+--- man-pages-posix-2003-a.orig/man3p/fabsf.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/fabsf.3p	2012-10-20 02:15:30.331905227 +0400
+@@ -1 +1 @@
+-.so man3p/fabs.3p
++.so man3/fabs.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/fabsl.3p man-pages-posix-2003-a/man3p/fabsl.3p
+--- man-pages-posix-2003-a.orig/man3p/fabsl.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/fabsl.3p	2012-10-20 02:15:30.331905227 +0400
+@@ -1 +1 @@
+-.so man3p/fabs.3p
++.so man3/fabs.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/fcvt.3p man-pages-posix-2003-a/man3p/fcvt.3p
+--- man-pages-posix-2003-a.orig/man3p/fcvt.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/fcvt.3p	2012-10-20 02:15:30.335238561 +0400
+@@ -1 +1 @@
+-.so man3p/ecvt.3p
++.so man3/ecvt.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/FD_CLR.3p man-pages-posix-2003-a/man3p/FD_CLR.3p
+--- man-pages-posix-2003-a.orig/man3p/FD_CLR.3p	2012-10-20 02:12:42.415247736 +0400
++++ man-pages-posix-2003-a/man3p/FD_CLR.3p	2012-10-20 02:15:30.335238561 +0400
+@@ -1 +1 @@
+-.so man3p/select.3p
++.so man3/select.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/fdimf.3p man-pages-posix-2003-a/man3p/fdimf.3p
+--- man-pages-posix-2003-a.orig/man3p/fdimf.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/fdimf.3p	2012-10-20 02:15:30.338571894 +0400
+@@ -1 +1 @@
+-.so man3p/fdim.3p
++.so man3/fdim.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/fdiml.3p man-pages-posix-2003-a/man3p/fdiml.3p
+--- man-pages-posix-2003-a.orig/man3p/fdiml.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/fdiml.3p	2012-10-20 02:15:30.338571894 +0400
+@@ -1 +1 @@
+-.so man3p/fdim.3p
++.so man3/fdim.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/FD_ISSET.3p man-pages-posix-2003-a/man3p/FD_ISSET.3p
+--- man-pages-posix-2003-a.orig/man3p/FD_ISSET.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/FD_ISSET.3p	2012-10-20 02:15:30.338571894 +0400
+@@ -1 +1 @@
+-.so man3p/select.3p
++.so man3/select.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/FD_SET.3p man-pages-posix-2003-a/man3p/FD_SET.3p
+--- man-pages-posix-2003-a.orig/man3p/FD_SET.3p	2012-10-20 02:12:42.428581068 +0400
++++ man-pages-posix-2003-a/man3p/FD_SET.3p	2012-10-20 02:15:30.338571894 +0400
+@@ -1 +1 @@
+-.so man3p/select.3p
++.so man3/select.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/FD_ZERO.3p man-pages-posix-2003-a/man3p/FD_ZERO.3p
+--- man-pages-posix-2003-a.orig/man3p/FD_ZERO.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/FD_ZERO.3p	2012-10-20 02:15:30.338571894 +0400
+@@ -1 +1 @@
+-.so man3p/select.3p
++.so man3/select.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/fesetenv.3p man-pages-posix-2003-a/man3p/fesetenv.3p
+--- man-pages-posix-2003-a.orig/man3p/fesetenv.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/fesetenv.3p	2012-10-20 02:15:30.341905227 +0400
+@@ -1 +1 @@
+-.so man3p/fegetenv.3p
++.so man3/fegetenv.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/fesetexceptflag.3p man-pages-posix-2003-a/man3p/fesetexceptflag.3p
+--- man-pages-posix-2003-a.orig/man3p/fesetexceptflag.3p	2012-10-20 02:12:42.441914401 +0400
++++ man-pages-posix-2003-a/man3p/fesetexceptflag.3p	2012-10-20 02:15:30.341905227 +0400
+@@ -1 +1 @@
+-.so man3p/fegetexceptflag.3p
++.so man3/fegetexceptflag.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/fesetround.3p man-pages-posix-2003-a/man3p/fesetround.3p
+--- man-pages-posix-2003-a.orig/man3p/fesetround.3p	2012-10-20 02:12:42.428581068 +0400
++++ man-pages-posix-2003-a/man3p/fesetround.3p	2012-10-20 02:15:30.341905227 +0400
+@@ -1 +1 @@
+-.so man3p/fegetround.3p
++.so man3/fegetround.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/floorf.3p man-pages-posix-2003-a/man3p/floorf.3p
+--- man-pages-posix-2003-a.orig/man3p/floorf.3p	2012-10-20 02:12:42.421914402 +0400
++++ man-pages-posix-2003-a/man3p/floorf.3p	2012-10-20 02:15:30.345238560 +0400
+@@ -1 +1 @@
+-.so man3p/floor.3p
++.so man3/floor.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/floorl.3p man-pages-posix-2003-a/man3p/floorl.3p
+--- man-pages-posix-2003-a.orig/man3p/floorl.3p	2012-10-20 02:12:42.418581069 +0400
++++ man-pages-posix-2003-a/man3p/floorl.3p	2012-10-20 02:15:30.345238560 +0400
+@@ -1 +1 @@
+-.so man3p/floor.3p
++.so man3/floor.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/fmaf.3p man-pages-posix-2003-a/man3p/fmaf.3p
+--- man-pages-posix-2003-a.orig/man3p/fmaf.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/fmaf.3p	2012-10-20 02:15:30.345238560 +0400
+@@ -1 +1 @@
+-.so man3p/fma.3p
++.so man3/fma.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/fmal.3p man-pages-posix-2003-a/man3p/fmal.3p
+--- man-pages-posix-2003-a.orig/man3p/fmal.3p	2012-10-20 02:12:42.415247736 +0400
++++ man-pages-posix-2003-a/man3p/fmal.3p	2012-10-20 02:15:30.345238560 +0400
+@@ -1 +1 @@
+-.so man3p/fma.3p
++.so man3/fma.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/fmaxf.3p man-pages-posix-2003-a/man3p/fmaxf.3p
+--- man-pages-posix-2003-a.orig/man3p/fmaxf.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/fmaxf.3p	2012-10-20 02:15:30.345238560 +0400
+@@ -1 +1 @@
+-.so man3p/fmax.3p
++.so man3/fmax.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/fmaxl.3p man-pages-posix-2003-a/man3p/fmaxl.3p
+--- man-pages-posix-2003-a.orig/man3p/fmaxl.3p	2012-10-20 02:12:42.421914402 +0400
++++ man-pages-posix-2003-a/man3p/fmaxl.3p	2012-10-20 02:15:30.345238560 +0400
+@@ -1 +1 @@
+-.so man3p/fmax.3p
++.so man3/fmax.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/fminf.3p man-pages-posix-2003-a/man3p/fminf.3p
+--- man-pages-posix-2003-a.orig/man3p/fminf.3p	2012-10-20 02:12:42.405247736 +0400
++++ man-pages-posix-2003-a/man3p/fminf.3p	2012-10-20 02:15:30.345238560 +0400
+@@ -1 +1 @@
+-.so man3p/fmin.3p
++.so man3/fmin.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/fminl.3p man-pages-posix-2003-a/man3p/fminl.3p
+--- man-pages-posix-2003-a.orig/man3p/fminl.3p	2012-10-20 02:12:42.441914401 +0400
++++ man-pages-posix-2003-a/man3p/fminl.3p	2012-10-20 02:15:30.345238560 +0400
+@@ -1 +1 @@
+-.so man3p/fmin.3p
++.so man3/fmin.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/fmodf.3p man-pages-posix-2003-a/man3p/fmodf.3p
+--- man-pages-posix-2003-a.orig/man3p/fmodf.3p	2012-10-20 02:12:42.425247735 +0400
++++ man-pages-posix-2003-a/man3p/fmodf.3p	2012-10-20 02:15:30.348571893 +0400
+@@ -1 +1 @@
+-.so man3p/fmod.3p
++.so man3/fmod.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/fmodl.3p man-pages-posix-2003-a/man3p/fmodl.3p
+--- man-pages-posix-2003-a.orig/man3p/fmodl.3p	2012-10-20 02:12:42.418581069 +0400
++++ man-pages-posix-2003-a/man3p/fmodl.3p	2012-10-20 02:15:30.348571893 +0400
+@@ -1 +1 @@
+-.so man3p/fmod.3p
++.so man3/fmod.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/fpathconf.3p man-pages-posix-2003-a/man3p/fpathconf.3p
+--- man-pages-posix-2003-a.orig/man3p/fpathconf.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/fpathconf.3p	2012-10-20 02:15:30.351905226 +0400
+@@ -1 +1 @@
+-.so man3p/pathconf.3p
++.so man3/pathconf.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/fprintf.3p man-pages-posix-2003-a/man3p/fprintf.3p
+--- man-pages-posix-2003-a.orig/man3p/fprintf.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/fprintf.3p	2012-10-20 02:15:30.351905226 +0400
+@@ -1 +1 @@
+-.so man3p/printf.3p
++.so man3/printf.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/freeaddrinfo.3p man-pages-posix-2003-a/man3p/freeaddrinfo.3p
+--- man-pages-posix-2003-a.orig/man3p/freeaddrinfo.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/freeaddrinfo.3p	2012-10-20 02:15:30.351905226 +0400
+@@ -1 +1 @@
+-.so man3p/getaddrinfo.3p
++.so man3/getaddrinfo.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/frexpf.3p man-pages-posix-2003-a/man3p/frexpf.3p
+--- man-pages-posix-2003-a.orig/man3p/frexpf.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/frexpf.3p	2012-10-20 02:15:30.355238560 +0400
+@@ -1 +1 @@
+-.so man3p/frexp.3p
++.so man3/frexp.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/frexpl.3p man-pages-posix-2003-a/man3p/frexpl.3p
+--- man-pages-posix-2003-a.orig/man3p/frexpl.3p	2012-10-20 02:12:42.441914401 +0400
++++ man-pages-posix-2003-a/man3p/frexpl.3p	2012-10-20 02:15:30.355238560 +0400
+@@ -1 +1 @@
+-.so man3p/frexp.3p
++.so man3/frexp.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/fscanf.3p man-pages-posix-2003-a/man3p/fscanf.3p
+--- man-pages-posix-2003-a.orig/man3p/fscanf.3p	2012-10-20 02:12:42.425247735 +0400
++++ man-pages-posix-2003-a/man3p/fscanf.3p	2012-10-20 02:15:30.355238560 +0400
+@@ -1 +1 @@
+-.so man3p/scanf.3p
++.so man3/scanf.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/fseeko.3p man-pages-posix-2003-a/man3p/fseeko.3p
+--- man-pages-posix-2003-a.orig/man3p/fseeko.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/fseeko.3p	2012-10-20 02:15:30.355238560 +0400
+@@ -1 +1 @@
+-.so man3p/fseek.3p
++.so man3/fseek.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/fstatvfs.3p man-pages-posix-2003-a/man3p/fstatvfs.3p
+--- man-pages-posix-2003-a.orig/man3p/fstatvfs.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/fstatvfs.3p	2012-10-20 02:15:30.355238560 +0400
+@@ -1 +1 @@
+-.so man3p/statvfs.3p
++.so man3/statvfs.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/ftello.3p man-pages-posix-2003-a/man3p/ftello.3p
+--- man-pages-posix-2003-a.orig/man3p/ftello.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/ftello.3p	2012-10-20 02:15:30.355238560 +0400
+@@ -1 +1 @@
+-.so man3p/ftell.3p
++.so man3/ftell.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/ftrylockfile.3p man-pages-posix-2003-a/man3p/ftrylockfile.3p
+--- man-pages-posix-2003-a.orig/man3p/ftrylockfile.3p	2012-10-20 02:12:42.425247735 +0400
++++ man-pages-posix-2003-a/man3p/ftrylockfile.3p	2012-10-20 02:15:30.358571893 +0400
+@@ -1 +1 @@
+-.so man3p/flockfile.3p
++.so man3/flockfile.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/funlockfile.3p man-pages-posix-2003-a/man3p/funlockfile.3p
+--- man-pages-posix-2003-a.orig/man3p/funlockfile.3p	2012-10-20 02:12:42.418581069 +0400
++++ man-pages-posix-2003-a/man3p/funlockfile.3p	2012-10-20 02:15:30.358571893 +0400
+@@ -1 +1 @@
+-.so man3p/flockfile.3p
++.so man3/flockfile.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/fwprintf.3p man-pages-posix-2003-a/man3p/fwprintf.3p
+--- man-pages-posix-2003-a.orig/man3p/fwprintf.3p	2012-10-20 02:12:42.418581069 +0400
++++ man-pages-posix-2003-a/man3p/fwprintf.3p	2012-10-20 02:15:30.358571893 +0400
+@@ -1 +1 @@
+-.so man3p/wprintf.3p
++.so man3/wprintf.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/fwscanf.3p man-pages-posix-2003-a/man3p/fwscanf.3p
+--- man-pages-posix-2003-a.orig/man3p/fwscanf.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/fwscanf.3p	2012-10-20 02:15:30.358571893 +0400
+@@ -1 +1 @@
+-.so man3p/wscanf.3p
++.so man3/wscanf.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/gcvt.3p man-pages-posix-2003-a/man3p/gcvt.3p
+--- man-pages-posix-2003-a.orig/man3p/gcvt.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/gcvt.3p	2012-10-20 02:15:30.358571893 +0400
+@@ -1 +1 @@
+-.so man3p/ecvt.3p
++.so man3/ecvt.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/getc_unlocked.3p man-pages-posix-2003-a/man3p/getc_unlocked.3p
+--- man-pages-posix-2003-a.orig/man3p/getc_unlocked.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/getc_unlocked.3p	2012-10-20 02:15:30.361905226 +0400
+@@ -1 +1 @@
+-.so man3p/getchar_unlocked.3p
++.so man3/getchar_unlocked.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/getdate_err.3p man-pages-posix-2003-a/man3p/getdate_err.3p
+--- man-pages-posix-2003-a.orig/man3p/getdate_err.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/getdate_err.3p	2012-10-20 02:15:30.361905226 +0400
+@@ -1 +1 @@
+-.so man3p/getdate.3p
++.so man3/getdate.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/getgrgid_r.3p man-pages-posix-2003-a/man3p/getgrgid_r.3p
+--- man-pages-posix-2003-a.orig/man3p/getgrgid_r.3p	2012-10-20 02:12:42.411914402 +0400
++++ man-pages-posix-2003-a/man3p/getgrgid_r.3p	2012-10-20 02:15:30.365238559 +0400
+@@ -1 +1 @@
+-.so man3p/getgrgid.3p
++.so man3/getgrgid.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/getgrnam_r.3p man-pages-posix-2003-a/man3p/getgrnam_r.3p
+--- man-pages-posix-2003-a.orig/man3p/getgrnam_r.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/getgrnam_r.3p	2012-10-20 02:15:30.365238559 +0400
+@@ -1 +1 @@
+-.so man3p/getgrnam.3p
++.so man3/getgrnam.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/gethostbyaddr.3p man-pages-posix-2003-a/man3p/gethostbyaddr.3p
+--- man-pages-posix-2003-a.orig/man3p/gethostbyaddr.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/gethostbyaddr.3p	2012-10-20 02:15:30.365238559 +0400
+@@ -1 +1 @@
+-.so man3p/gethostbyname.3p
++.so man3/gethostbyname.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/getlogin_r.3p man-pages-posix-2003-a/man3p/getlogin_r.3p
+--- man-pages-posix-2003-a.orig/man3p/getlogin_r.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/getlogin_r.3p	2012-10-20 02:15:30.368571892 +0400
+@@ -1 +1 @@
+-.so man3p/getlogin.3p
++.so man3/getlogin.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/getnetbyaddr.3p man-pages-posix-2003-a/man3p/getnetbyaddr.3p
+--- man-pages-posix-2003-a.orig/man3p/getnetbyaddr.3p	2012-10-20 02:12:42.428581068 +0400
++++ man-pages-posix-2003-a/man3p/getnetbyaddr.3p	2012-10-20 02:15:30.368571892 +0400
+@@ -1 +1 @@
+-.so man3p/getnetent.3p
++.so man3/getnetent.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/getnetbyname.3p man-pages-posix-2003-a/man3p/getnetbyname.3p
+--- man-pages-posix-2003-a.orig/man3p/getnetbyname.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/getnetbyname.3p	2012-10-20 02:15:30.368571892 +0400
+@@ -1 +1 @@
+-.so man3p/getnetent.3p
++.so man3/getnetent.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/getpmsg.3p man-pages-posix-2003-a/man3p/getpmsg.3p
+--- man-pages-posix-2003-a.orig/man3p/getpmsg.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/getpmsg.3p	2012-10-20 02:15:30.371905225 +0400
+@@ -1 +1 @@
+-.so man3p/getmsg.3p
++.so man3/getmsg.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/getprotobyname.3p man-pages-posix-2003-a/man3p/getprotobyname.3p
+--- man-pages-posix-2003-a.orig/man3p/getprotobyname.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/getprotobyname.3p	2012-10-20 02:15:30.371905225 +0400
+@@ -1 +1 @@
+-.so man3p/getprotoent.3p
++.so man3/getprotoent.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/getprotobynumber.3p man-pages-posix-2003-a/man3p/getprotobynumber.3p
+--- man-pages-posix-2003-a.orig/man3p/getprotobynumber.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/getprotobynumber.3p	2012-10-20 02:15:30.371905225 +0400
+@@ -1 +1 @@
+-.so man3p/getprotoent.3p
++.so man3/getprotoent.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/getpwnam_r.3p man-pages-posix-2003-a/man3p/getpwnam_r.3p
+--- man-pages-posix-2003-a.orig/man3p/getpwnam_r.3p	2012-10-20 02:12:42.441914401 +0400
++++ man-pages-posix-2003-a/man3p/getpwnam_r.3p	2012-10-20 02:15:30.371905225 +0400
+@@ -1 +1 @@
+-.so man3p/getpwnam.3p
++.so man3/getpwnam.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/getpwuid_r.3p man-pages-posix-2003-a/man3p/getpwuid_r.3p
+--- man-pages-posix-2003-a.orig/man3p/getpwuid_r.3p	2012-10-20 02:12:42.418581069 +0400
++++ man-pages-posix-2003-a/man3p/getpwuid_r.3p	2012-10-20 02:15:30.371905225 +0400
+@@ -1 +1 @@
+-.so man3p/getpwuid.3p
++.so man3/getpwuid.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/getservbyname.3p man-pages-posix-2003-a/man3p/getservbyname.3p
+--- man-pages-posix-2003-a.orig/man3p/getservbyname.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/getservbyname.3p	2012-10-20 02:15:30.375238558 +0400
+@@ -1 +1 @@
+-.so man3p/getservent.3p
++.so man3/getservent.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/getservbyport.3p man-pages-posix-2003-a/man3p/getservbyport.3p
+--- man-pages-posix-2003-a.orig/man3p/getservbyport.3p	2012-10-20 02:12:42.411914402 +0400
++++ man-pages-posix-2003-a/man3p/getservbyport.3p	2012-10-20 02:15:30.375238558 +0400
+@@ -1 +1 @@
+-.so man3p/getservent.3p
++.so man3/getservent.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/getutxent.3p man-pages-posix-2003-a/man3p/getutxent.3p
+--- man-pages-posix-2003-a.orig/man3p/getutxent.3p	2012-10-20 02:12:42.415247736 +0400
++++ man-pages-posix-2003-a/man3p/getutxent.3p	2012-10-20 02:15:30.375238558 +0400
+@@ -1 +1 @@
+-.so man3p/getutxid.3p
++.so man3/getutxid.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/getutxline.3p man-pages-posix-2003-a/man3p/getutxline.3p
+--- man-pages-posix-2003-a.orig/man3p/getutxline.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/getutxline.3p	2012-10-20 02:15:30.378571892 +0400
+@@ -1 +1 @@
+-.so man3p/getutxid.3p
++.so man3/getutxid.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/globfree.3p man-pages-posix-2003-a/man3p/globfree.3p
+--- man-pages-posix-2003-a.orig/man3p/globfree.3p	2012-10-20 02:12:42.425247735 +0400
++++ man-pages-posix-2003-a/man3p/globfree.3p	2012-10-20 02:15:30.378571892 +0400
+@@ -1 +1 @@
+-.so man3p/glob.3p
++.so man3/glob.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/gmtime_r.3p man-pages-posix-2003-a/man3p/gmtime_r.3p
+--- man-pages-posix-2003-a.orig/man3p/gmtime_r.3p	2012-10-20 02:12:42.421914402 +0400
++++ man-pages-posix-2003-a/man3p/gmtime_r.3p	2012-10-20 02:15:30.378571892 +0400
+@@ -1 +1 @@
+-.so man3p/gmtime.3p
++.so man3/gmtime.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/hdestroy.3p man-pages-posix-2003-a/man3p/hdestroy.3p
+--- man-pages-posix-2003-a.orig/man3p/hdestroy.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/hdestroy.3p	2012-10-20 02:15:30.381905225 +0400
+@@ -1 +1 @@
+-.so man3p/hcreate.3p
++.so man3/hcreate.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/hsearch.3p man-pages-posix-2003-a/man3p/hsearch.3p
+--- man-pages-posix-2003-a.orig/man3p/hsearch.3p	2012-10-20 02:12:42.405247736 +0400
++++ man-pages-posix-2003-a/man3p/hsearch.3p	2012-10-20 02:15:30.381905225 +0400
+@@ -1 +1 @@
+-.so man3p/hcreate.3p
++.so man3/hcreate.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/htons.3p man-pages-posix-2003-a/man3p/htons.3p
+--- man-pages-posix-2003-a.orig/man3p/htons.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/htons.3p	2012-10-20 02:15:30.381905225 +0400
+@@ -1 +1 @@
+-.so man3p/htonl.3p
++.so man3/htonl.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/hypotf.3p man-pages-posix-2003-a/man3p/hypotf.3p
+--- man-pages-posix-2003-a.orig/man3p/hypotf.3p	2012-10-20 02:12:42.415247736 +0400
++++ man-pages-posix-2003-a/man3p/hypotf.3p	2012-10-20 02:15:30.381905225 +0400
+@@ -1 +1 @@
+-.so man3p/hypot.3p
++.so man3/hypot.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/hypotl.3p man-pages-posix-2003-a/man3p/hypotl.3p
+--- man-pages-posix-2003-a.orig/man3p/hypotl.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/hypotl.3p	2012-10-20 02:15:30.381905225 +0400
+@@ -1 +1 @@
+-.so man3p/hypot.3p
++.so man3/hypot.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/ilogbf.3p man-pages-posix-2003-a/man3p/ilogbf.3p
+--- man-pages-posix-2003-a.orig/man3p/ilogbf.3p	2012-10-20 02:12:42.441914401 +0400
++++ man-pages-posix-2003-a/man3p/ilogbf.3p	2012-10-20 02:15:30.385238558 +0400
+@@ -1 +1 @@
+-.so man3p/ilogb.3p
++.so man3/ilogb.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/ilogbl.3p man-pages-posix-2003-a/man3p/ilogbl.3p
+--- man-pages-posix-2003-a.orig/man3p/ilogbl.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/ilogbl.3p	2012-10-20 02:15:30.385238558 +0400
+@@ -1 +1 @@
+-.so man3p/ilogb.3p
++.so man3/ilogb.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/inet_ntoa.3p man-pages-posix-2003-a/man3p/inet_ntoa.3p
+--- man-pages-posix-2003-a.orig/man3p/inet_ntoa.3p	2012-10-20 02:12:42.405247736 +0400
++++ man-pages-posix-2003-a/man3p/inet_ntoa.3p	2012-10-20 02:15:30.385238558 +0400
+@@ -1 +1 @@
+-.so man3p/inet_addr.3p
++.so man3/inet_addr.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/inet_pton.3p man-pages-posix-2003-a/man3p/inet_pton.3p
+--- man-pages-posix-2003-a.orig/man3p/inet_pton.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/inet_pton.3p	2012-10-20 02:15:30.388571891 +0400
+@@ -1 +1 @@
+-.so man3p/inet_ntop.3p
++.so man3/inet_ntop.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/initstate.3p man-pages-posix-2003-a/man3p/initstate.3p
+--- man-pages-posix-2003-a.orig/man3p/initstate.3p	2012-10-20 02:12:42.418581069 +0400
++++ man-pages-posix-2003-a/man3p/initstate.3p	2012-10-20 02:15:30.388571891 +0400
+@@ -1 +1 @@
+-.so man3p/random.3p
++.so man3/random.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/j1.3p man-pages-posix-2003-a/man3p/j1.3p
+--- man-pages-posix-2003-a.orig/man3p/j1.3p	2012-10-20 02:12:42.411914402 +0400
++++ man-pages-posix-2003-a/man3p/j1.3p	2012-10-20 02:15:30.398571890 +0400
+@@ -1 +1 @@
+-.so man3p/j0.3p
++.so man3/j0.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/jn.3p man-pages-posix-2003-a/man3p/jn.3p
+--- man-pages-posix-2003-a.orig/man3p/jn.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/jn.3p	2012-10-20 02:15:30.398571890 +0400
+@@ -1 +1 @@
+-.so man3p/j0.3p
++.so man3/j0.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/jrand48.3p man-pages-posix-2003-a/man3p/jrand48.3p
+--- man-pages-posix-2003-a.orig/man3p/jrand48.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/jrand48.3p	2012-10-20 02:15:30.398571890 +0400
+@@ -1 +1 @@
+-.so man3p/drand48.3p
++.so man3/drand48.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/l64a.3p man-pages-posix-2003-a/man3p/l64a.3p
+--- man-pages-posix-2003-a.orig/man3p/l64a.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/l64a.3p	2012-10-20 02:15:30.398571890 +0400
+@@ -1 +1 @@
+-.so man3p/a64l.3p
++.so man3/a64l.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/lcong48.3p man-pages-posix-2003-a/man3p/lcong48.3p
+--- man-pages-posix-2003-a.orig/man3p/lcong48.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/lcong48.3p	2012-10-20 02:15:30.398571890 +0400
+@@ -1 +1 @@
+-.so man3p/drand48.3p
++.so man3/drand48.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/ldexpf.3p man-pages-posix-2003-a/man3p/ldexpf.3p
+--- man-pages-posix-2003-a.orig/man3p/ldexpf.3p	2012-10-20 02:12:42.425247735 +0400
++++ man-pages-posix-2003-a/man3p/ldexpf.3p	2012-10-20 02:15:30.401905224 +0400
+@@ -1 +1 @@
+-.so man3p/ldexp.3p
++.so man3/ldexp.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/ldexpl.3p man-pages-posix-2003-a/man3p/ldexpl.3p
+--- man-pages-posix-2003-a.orig/man3p/ldexpl.3p	2012-10-20 02:12:42.418581069 +0400
++++ man-pages-posix-2003-a/man3p/ldexpl.3p	2012-10-20 02:15:30.401905224 +0400
+@@ -1 +1 @@
+-.so man3p/ldexp.3p
++.so man3/ldexp.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/lfind.3p man-pages-posix-2003-a/man3p/lfind.3p
+--- man-pages-posix-2003-a.orig/man3p/lfind.3p	2012-10-20 02:12:42.418581069 +0400
++++ man-pages-posix-2003-a/man3p/lfind.3p	2012-10-20 02:15:30.401905224 +0400
+@@ -1 +1 @@
+-.so man3p/lsearch.3p
++.so man3/lsearch.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/lgammaf.3p man-pages-posix-2003-a/man3p/lgammaf.3p
+--- man-pages-posix-2003-a.orig/man3p/lgammaf.3p	2012-10-20 02:12:42.441914401 +0400
++++ man-pages-posix-2003-a/man3p/lgammaf.3p	2012-10-20 02:15:30.401905224 +0400
+@@ -1 +1 @@
+-.so man3p/lgamma.3p
++.so man3/lgamma.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/lgammal.3p man-pages-posix-2003-a/man3p/lgammal.3p
+--- man-pages-posix-2003-a.orig/man3p/lgammal.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/lgammal.3p	2012-10-20 02:15:30.401905224 +0400
+@@ -1 +1 @@
+-.so man3p/lgamma.3p
++.so man3/lgamma.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/llabs.3p man-pages-posix-2003-a/man3p/llabs.3p
+--- man-pages-posix-2003-a.orig/man3p/llabs.3p	2012-10-20 02:12:42.441914401 +0400
++++ man-pages-posix-2003-a/man3p/llabs.3p	2012-10-20 02:15:30.401905224 +0400
+@@ -1 +1 @@
+-.so man3p/labs.3p
++.so man3/labs.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/lldiv.3p man-pages-posix-2003-a/man3p/lldiv.3p
+--- man-pages-posix-2003-a.orig/man3p/lldiv.3p	2012-10-20 02:12:42.441914401 +0400
++++ man-pages-posix-2003-a/man3p/lldiv.3p	2012-10-20 02:15:30.401905224 +0400
+@@ -1 +1 @@
+-.so man3p/ldiv.3p
++.so man3/ldiv.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/llrintf.3p man-pages-posix-2003-a/man3p/llrintf.3p
+--- man-pages-posix-2003-a.orig/man3p/llrintf.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/llrintf.3p	2012-10-20 02:15:30.401905224 +0400
+@@ -1 +1 @@
+-.so man3p/llrint.3p
++.so man3/llrint.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/llrintl.3p man-pages-posix-2003-a/man3p/llrintl.3p
+--- man-pages-posix-2003-a.orig/man3p/llrintl.3p	2012-10-20 02:12:42.425247735 +0400
++++ man-pages-posix-2003-a/man3p/llrintl.3p	2012-10-20 02:15:30.401905224 +0400
+@@ -1 +1 @@
+-.so man3p/llrint.3p
++.so man3/llrint.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/llroundf.3p man-pages-posix-2003-a/man3p/llroundf.3p
+--- man-pages-posix-2003-a.orig/man3p/llroundf.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/llroundf.3p	2012-10-20 02:15:30.405238557 +0400
+@@ -1 +1 @@
+-.so man3p/llround.3p
++.so man3/llround.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/llroundl.3p man-pages-posix-2003-a/man3p/llroundl.3p
+--- man-pages-posix-2003-a.orig/man3p/llroundl.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/llroundl.3p	2012-10-20 02:15:30.405238557 +0400
+@@ -1 +1 @@
+-.so man3p/llround.3p
++.so man3/llround.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/localtime_r.3p man-pages-posix-2003-a/man3p/localtime_r.3p
+--- man-pages-posix-2003-a.orig/man3p/localtime_r.3p	2012-10-20 02:12:42.421914402 +0400
++++ man-pages-posix-2003-a/man3p/localtime_r.3p	2012-10-20 02:15:30.405238557 +0400
+@@ -1 +1 @@
+-.so man3p/localtime.3p
++.so man3/localtime.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/log10f.3p man-pages-posix-2003-a/man3p/log10f.3p
+--- man-pages-posix-2003-a.orig/man3p/log10f.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/log10f.3p	2012-10-20 02:15:30.405238557 +0400
+@@ -1 +1 @@
+-.so man3p/log10.3p
++.so man3/log10.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/log10l.3p man-pages-posix-2003-a/man3p/log10l.3p
+--- man-pages-posix-2003-a.orig/man3p/log10l.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/log10l.3p	2012-10-20 02:15:30.405238557 +0400
+@@ -1 +1 @@
+-.so man3p/log10.3p
++.so man3/log10.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/log1pf.3p man-pages-posix-2003-a/man3p/log1pf.3p
+--- man-pages-posix-2003-a.orig/man3p/log1pf.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/log1pf.3p	2012-10-20 02:15:30.405238557 +0400
+@@ -1 +1 @@
+-.so man3p/log1p.3p
++.so man3/log1p.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/log1pl.3p man-pages-posix-2003-a/man3p/log1pl.3p
+--- man-pages-posix-2003-a.orig/man3p/log1pl.3p	2012-10-20 02:12:42.425247735 +0400
++++ man-pages-posix-2003-a/man3p/log1pl.3p	2012-10-20 02:15:30.405238557 +0400
+@@ -1 +1 @@
+-.so man3p/log1p.3p
++.so man3/log1p.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/log2f.3p man-pages-posix-2003-a/man3p/log2f.3p
+--- man-pages-posix-2003-a.orig/man3p/log2f.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/log2f.3p	2012-10-20 02:15:30.408571890 +0400
+@@ -1 +1 @@
+-.so man3p/log2.3p
++.so man3/log2.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/log2l.3p man-pages-posix-2003-a/man3p/log2l.3p
+--- man-pages-posix-2003-a.orig/man3p/log2l.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/log2l.3p	2012-10-20 02:15:30.408571890 +0400
+@@ -1 +1 @@
+-.so man3p/log2.3p
++.so man3/log2.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/logbf.3p man-pages-posix-2003-a/man3p/logbf.3p
+--- man-pages-posix-2003-a.orig/man3p/logbf.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/logbf.3p	2012-10-20 02:15:30.408571890 +0400
+@@ -1 +1 @@
+-.so man3p/logb.3p
++.so man3/logb.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/logbl.3p man-pages-posix-2003-a/man3p/logbl.3p
+--- man-pages-posix-2003-a.orig/man3p/logbl.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/logbl.3p	2012-10-20 02:15:30.408571890 +0400
+@@ -1 +1 @@
+-.so man3p/logb.3p
++.so man3/logb.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/logf.3p man-pages-posix-2003-a/man3p/logf.3p
+--- man-pages-posix-2003-a.orig/man3p/logf.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/logf.3p	2012-10-20 02:15:30.408571890 +0400
+@@ -1 +1 @@
+-.so man3p/log.3p
++.so man3/log.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/logl.3p man-pages-posix-2003-a/man3p/logl.3p
+--- man-pages-posix-2003-a.orig/man3p/logl.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/logl.3p	2012-10-20 02:15:30.408571890 +0400
+@@ -1 +1 @@
+-.so man3p/log.3p
++.so man3/log.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/_longjmp.3p man-pages-posix-2003-a/man3p/_longjmp.3p
+--- man-pages-posix-2003-a.orig/man3p/_longjmp.3p	2012-10-20 02:12:42.428581068 +0400
++++ man-pages-posix-2003-a/man3p/_longjmp.3p	2012-10-20 02:15:30.408571890 +0400
+@@ -1 +1 @@
+-.so man3p/_setjmp.3p
++.so man3/_setjmp.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/lrand48.3p man-pages-posix-2003-a/man3p/lrand48.3p
+--- man-pages-posix-2003-a.orig/man3p/lrand48.3p	2012-10-20 02:12:42.421914402 +0400
++++ man-pages-posix-2003-a/man3p/lrand48.3p	2012-10-20 02:15:30.408571890 +0400
+@@ -1 +1 @@
+-.so man3p/drand48.3p
++.so man3/drand48.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/lrintf.3p man-pages-posix-2003-a/man3p/lrintf.3p
+--- man-pages-posix-2003-a.orig/man3p/lrintf.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/lrintf.3p	2012-10-20 02:15:30.408571890 +0400
+@@ -1 +1 @@
+-.so man3p/lrint.3p
++.so man3/lrint.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/lrintl.3p man-pages-posix-2003-a/man3p/lrintl.3p
+--- man-pages-posix-2003-a.orig/man3p/lrintl.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/lrintl.3p	2012-10-20 02:15:30.408571890 +0400
+@@ -1 +1 @@
+-.so man3p/lrint.3p
++.so man3/lrint.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/lroundf.3p man-pages-posix-2003-a/man3p/lroundf.3p
+--- man-pages-posix-2003-a.orig/man3p/lroundf.3p	2012-10-20 02:12:42.405247736 +0400
++++ man-pages-posix-2003-a/man3p/lroundf.3p	2012-10-20 02:15:30.408571890 +0400
+@@ -1 +1 @@
+-.so man3p/lround.3p
++.so man3/lround.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/lroundl.3p man-pages-posix-2003-a/man3p/lroundl.3p
+--- man-pages-posix-2003-a.orig/man3p/lroundl.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/lroundl.3p	2012-10-20 02:15:30.408571890 +0400
+@@ -1 +1 @@
+-.so man3p/lround.3p
++.so man3/lround.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/modff.3p man-pages-posix-2003-a/man3p/modff.3p
+--- man-pages-posix-2003-a.orig/man3p/modff.3p	2012-10-20 02:12:42.405247736 +0400
++++ man-pages-posix-2003-a/man3p/modff.3p	2012-10-20 02:15:30.418571889 +0400
+@@ -1 +1 @@
+-.so man3p/modf.3p
++.so man3/modf.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/modfl.3p man-pages-posix-2003-a/man3p/modfl.3p
+--- man-pages-posix-2003-a.orig/man3p/modfl.3p	2012-10-20 02:12:42.418581069 +0400
++++ man-pages-posix-2003-a/man3p/modfl.3p	2012-10-20 02:15:30.418571889 +0400
+@@ -1 +1 @@
+-.so man3p/modf.3p
++.so man3/modf.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/mq_timedreceive.3p man-pages-posix-2003-a/man3p/mq_timedreceive.3p
+--- man-pages-posix-2003-a.orig/man3p/mq_timedreceive.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/mq_timedreceive.3p	2012-10-20 02:15:30.421905223 +0400
+@@ -1 +1 @@
+-.so man3p/mq_receive.3p
++.so man3/mq_receive.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/mq_timedsend.3p man-pages-posix-2003-a/man3p/mq_timedsend.3p
+--- man-pages-posix-2003-a.orig/man3p/mq_timedsend.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/mq_timedsend.3p	2012-10-20 02:15:30.421905223 +0400
+@@ -1 +1 @@
+-.so man3p/mq_send.3p
++.so man3/mq_send.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/mrand48.3p man-pages-posix-2003-a/man3p/mrand48.3p
+--- man-pages-posix-2003-a.orig/man3p/mrand48.3p	2012-10-20 02:12:42.441914401 +0400
++++ man-pages-posix-2003-a/man3p/mrand48.3p	2012-10-20 02:15:30.421905223 +0400
+@@ -1 +1 @@
+-.so man3p/drand48.3p
++.so man3/drand48.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/munlock.3p man-pages-posix-2003-a/man3p/munlock.3p
+--- man-pages-posix-2003-a.orig/man3p/munlock.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/munlock.3p	2012-10-20 02:15:30.425238556 +0400
+@@ -1 +1 @@
+-.so man3p/mlock.3p
++.so man3/mlock.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/munlockall.3p man-pages-posix-2003-a/man3p/munlockall.3p
+--- man-pages-posix-2003-a.orig/man3p/munlockall.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/munlockall.3p	2012-10-20 02:15:30.425238556 +0400
+@@ -1 +1 @@
+-.so man3p/mlockall.3p
++.so man3/mlockall.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/nanf.3p man-pages-posix-2003-a/man3p/nanf.3p
+--- man-pages-posix-2003-a.orig/man3p/nanf.3p	2012-10-20 02:12:42.421914402 +0400
++++ man-pages-posix-2003-a/man3p/nanf.3p	2012-10-20 02:15:30.425238556 +0400
+@@ -1 +1 @@
+-.so man3p/nan.3p
++.so man3/nan.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/nanl.3p man-pages-posix-2003-a/man3p/nanl.3p
+--- man-pages-posix-2003-a.orig/man3p/nanl.3p	2012-10-20 02:12:42.428581068 +0400
++++ man-pages-posix-2003-a/man3p/nanl.3p	2012-10-20 02:15:30.425238556 +0400
+@@ -1 +1 @@
+-.so man3p/nan.3p
++.so man3/nan.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/nearbyintf.3p man-pages-posix-2003-a/man3p/nearbyintf.3p
+--- man-pages-posix-2003-a.orig/man3p/nearbyintf.3p	2012-10-20 02:12:42.418581069 +0400
++++ man-pages-posix-2003-a/man3p/nearbyintf.3p	2012-10-20 02:15:30.425238556 +0400
+@@ -1 +1 @@
+-.so man3p/nearbyint.3p
++.so man3/nearbyint.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/nearbyintl.3p man-pages-posix-2003-a/man3p/nearbyintl.3p
+--- man-pages-posix-2003-a.orig/man3p/nearbyintl.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/nearbyintl.3p	2012-10-20 02:15:30.425238556 +0400
+@@ -1 +1 @@
+-.so man3p/nearbyint.3p
++.so man3/nearbyint.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/nextafterf.3p man-pages-posix-2003-a/man3p/nextafterf.3p
+--- man-pages-posix-2003-a.orig/man3p/nextafterf.3p	2012-10-20 02:12:42.418581069 +0400
++++ man-pages-posix-2003-a/man3p/nextafterf.3p	2012-10-20 02:15:30.428571889 +0400
+@@ -1 +1 @@
+-.so man3p/nextafter.3p
++.so man3/nextafter.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/nextafterl.3p man-pages-posix-2003-a/man3p/nextafterl.3p
+--- man-pages-posix-2003-a.orig/man3p/nextafterl.3p	2012-10-20 02:12:42.411914402 +0400
++++ man-pages-posix-2003-a/man3p/nextafterl.3p	2012-10-20 02:15:30.428571889 +0400
+@@ -1 +1 @@
+-.so man3p/nextafter.3p
++.so man3/nextafter.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/nexttoward.3p man-pages-posix-2003-a/man3p/nexttoward.3p
+--- man-pages-posix-2003-a.orig/man3p/nexttoward.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/nexttoward.3p	2012-10-20 02:15:30.428571889 +0400
+@@ -1 +1 @@
+-.so man3p/nextafter.3p
++.so man3/nextafter.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/nexttowardf.3p man-pages-posix-2003-a/man3p/nexttowardf.3p
+--- man-pages-posix-2003-a.orig/man3p/nexttowardf.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/nexttowardf.3p	2012-10-20 02:15:30.428571889 +0400
+@@ -1 +1 @@
+-.so man3p/nextafter.3p
++.so man3/nextafter.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/nexttowardl.3p man-pages-posix-2003-a/man3p/nexttowardl.3p
+--- man-pages-posix-2003-a.orig/man3p/nexttowardl.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/nexttowardl.3p	2012-10-20 02:15:30.428571889 +0400
+@@ -1 +1 @@
+-.so man3p/nextafter.3p
++.so man3/nextafter.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/nrand48.3p man-pages-posix-2003-a/man3p/nrand48.3p
+--- man-pages-posix-2003-a.orig/man3p/nrand48.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/nrand48.3p	2012-10-20 02:15:30.428571889 +0400
+@@ -1 +1 @@
+-.so man3p/drand48.3p
++.so man3/drand48.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/ntohl.3p man-pages-posix-2003-a/man3p/ntohl.3p
+--- man-pages-posix-2003-a.orig/man3p/ntohl.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/ntohl.3p	2012-10-20 02:15:30.428571889 +0400
+@@ -1 +1 @@
+-.so man3p/htonl.3p
++.so man3/htonl.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/ntohs.3p man-pages-posix-2003-a/man3p/ntohs.3p
+--- man-pages-posix-2003-a.orig/man3p/ntohs.3p	2012-10-20 02:12:42.441914401 +0400
++++ man-pages-posix-2003-a/man3p/ntohs.3p	2012-10-20 02:15:30.428571889 +0400
+@@ -1 +1 @@
+-.so man3p/htonl.3p
++.so man3/htonl.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/openlog.3p man-pages-posix-2003-a/man3p/openlog.3p
+--- man-pages-posix-2003-a.orig/man3p/openlog.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/openlog.3p	2012-10-20 02:15:30.431905222 +0400
+@@ -1 +1 @@
+-.so man3p/syslog.3p
++.so man3/syslog.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/optarg.3p man-pages-posix-2003-a/man3p/optarg.3p
+--- man-pages-posix-2003-a.orig/man3p/optarg.3p	2012-10-20 02:12:42.418581069 +0400
++++ man-pages-posix-2003-a/man3p/optarg.3p	2012-10-20 02:15:30.431905222 +0400
+@@ -1 +1 @@
+-.so man3p/getopt.3p
++.so man3/getopt.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/opterr.3p man-pages-posix-2003-a/man3p/opterr.3p
+--- man-pages-posix-2003-a.orig/man3p/opterr.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/opterr.3p	2012-10-20 02:15:30.431905222 +0400
+@@ -1 +1 @@
+-.so man3p/getopt.3p
++.so man3/getopt.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/optind.3p man-pages-posix-2003-a/man3p/optind.3p
+--- man-pages-posix-2003-a.orig/man3p/optind.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/optind.3p	2012-10-20 02:15:30.431905222 +0400
+@@ -1 +1 @@
+-.so man3p/getopt.3p
++.so man3/getopt.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/optopt.3p man-pages-posix-2003-a/man3p/optopt.3p
+--- man-pages-posix-2003-a.orig/man3p/optopt.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/optopt.3p	2012-10-20 02:15:30.431905222 +0400
+@@ -1 +1 @@
+-.so man3p/getopt.3p
++.so man3/getopt.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/posix_spawnattr_destroy.3p man-pages-posix-2003-a/man3p/posix_spawnattr_destroy.3p
+--- man-pages-posix-2003-a.orig/man3p/posix_spawnattr_destroy.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/posix_spawnattr_destroy.3p	2012-10-20 02:15:30.438571888 +0400
+@@ -1 +1 @@
+-.so man3p/posix_spawnattr_init.3p
++.so man3/posix_spawnattr_init.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/posix_spawnattr_setflags.3p man-pages-posix-2003-a/man3p/posix_spawnattr_setflags.3p
+--- man-pages-posix-2003-a.orig/man3p/posix_spawnattr_setflags.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/posix_spawnattr_setflags.3p	2012-10-20 02:15:30.438571888 +0400
+@@ -1 +1 @@
+-.so man3p/posix_spawnattr_getflags.3p
++.so man3/posix_spawnattr_getflags.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/posix_spawnattr_setpgroup.3p man-pages-posix-2003-a/man3p/posix_spawnattr_setpgroup.3p
+--- man-pages-posix-2003-a.orig/man3p/posix_spawnattr_setpgroup.3p	2012-10-20 02:12:42.421914402 +0400
++++ man-pages-posix-2003-a/man3p/posix_spawnattr_setpgroup.3p	2012-10-20 02:15:30.438571888 +0400
+@@ -1 +1 @@
+-.so man3p/posix_spawnattr_getpgroup.3p
++.so man3/posix_spawnattr_getpgroup.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/posix_spawnattr_setschedparam.3p man-pages-posix-2003-a/man3p/posix_spawnattr_setschedparam.3p
+--- man-pages-posix-2003-a.orig/man3p/posix_spawnattr_setschedparam.3p	2012-10-20 02:12:42.441914401 +0400
++++ man-pages-posix-2003-a/man3p/posix_spawnattr_setschedparam.3p	2012-10-20 02:15:30.438571888 +0400
+@@ -1 +1 @@
+-.so man3p/posix_spawnattr_getschedparam.3p
++.so man3/posix_spawnattr_getschedparam.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/posix_spawnattr_setschedpolicy.3p man-pages-posix-2003-a/man3p/posix_spawnattr_setschedpolicy.3p
+--- man-pages-posix-2003-a.orig/man3p/posix_spawnattr_setschedpolicy.3p	2012-10-20 02:12:42.425247735 +0400
++++ man-pages-posix-2003-a/man3p/posix_spawnattr_setschedpolicy.3p	2012-10-20 02:15:30.438571888 +0400
+@@ -1 +1 @@
+-.so man3p/posix_spawnattr_getschedpolicy.3p
++.so man3/posix_spawnattr_getschedpolicy.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/posix_spawnattr_setsigdefault.3p man-pages-posix-2003-a/man3p/posix_spawnattr_setsigdefault.3p
+--- man-pages-posix-2003-a.orig/man3p/posix_spawnattr_setsigdefault.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/posix_spawnattr_setsigdefault.3p	2012-10-20 02:15:30.438571888 +0400
+@@ -1 +1 @@
+-.so man3p/posix_spawnattr_getsigdefault.3p
++.so man3/posix_spawnattr_getsigdefault.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/posix_spawnattr_setsigmask.3p man-pages-posix-2003-a/man3p/posix_spawnattr_setsigmask.3p
+--- man-pages-posix-2003-a.orig/man3p/posix_spawnattr_setsigmask.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/posix_spawnattr_setsigmask.3p	2012-10-20 02:15:30.438571888 +0400
+@@ -1 +1 @@
+-.so man3p/posix_spawnattr_getsigmask.3p
++.so man3/posix_spawnattr_getsigmask.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/posix_spawn_file_actions_addclose.3p man-pages-posix-2003-a/man3p/posix_spawn_file_actions_addclose.3p
+--- man-pages-posix-2003-a.orig/man3p/posix_spawn_file_actions_addclose.3p	2012-10-20 02:12:42.411914402 +0400
++++ man-pages-posix-2003-a/man3p/posix_spawn_file_actions_addclose.3p	2012-10-20 02:15:30.438571888 +0400
+@@ -1 +1 @@
+-.so man3p/posix_spawn_file_actions_addopen.3p
++.so man3/posix_spawn_file_actions_addopen.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/posix_spawn_file_actions_destroy.3p man-pages-posix-2003-a/man3p/posix_spawn_file_actions_destroy.3p
+--- man-pages-posix-2003-a.orig/man3p/posix_spawn_file_actions_destroy.3p	2012-10-20 02:12:42.425247735 +0400
++++ man-pages-posix-2003-a/man3p/posix_spawn_file_actions_destroy.3p	2012-10-20 02:15:30.441905221 +0400
+@@ -1 +1 @@
+-.so man3p/posix_spawn_file_actions_init.3p
++.so man3/posix_spawn_file_actions_init.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/posix_spawnp.3p man-pages-posix-2003-a/man3p/posix_spawnp.3p
+--- man-pages-posix-2003-a.orig/man3p/posix_spawnp.3p	2012-10-20 02:12:42.428581068 +0400
++++ man-pages-posix-2003-a/man3p/posix_spawnp.3p	2012-10-20 02:15:30.441905221 +0400
+@@ -1 +1 @@
+-.so man3p/posix_spawn.3p
++.so man3/posix_spawn.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/posix_trace_attr_destroy.3p man-pages-posix-2003-a/man3p/posix_trace_attr_destroy.3p
+--- man-pages-posix-2003-a.orig/man3p/posix_trace_attr_destroy.3p	2012-10-20 02:12:42.411914402 +0400
++++ man-pages-posix-2003-a/man3p/posix_trace_attr_destroy.3p	2012-10-20 02:15:30.441905221 +0400
+@@ -1 +1 @@
+-.so man3p/posix_trace_attr_init.3p
++.so man3/posix_trace_attr_init.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/posix_trace_attr_getclockres.3p man-pages-posix-2003-a/man3p/posix_trace_attr_getclockres.3p
+--- man-pages-posix-2003-a.orig/man3p/posix_trace_attr_getclockres.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/posix_trace_attr_getclockres.3p	2012-10-20 02:15:30.441905221 +0400
+@@ -1 +1 @@
+-.so man3p/posix_trace_attr_getname.3p
++.so man3/posix_trace_attr_getname.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/posix_trace_attr_getcreatetime.3p man-pages-posix-2003-a/man3p/posix_trace_attr_getcreatetime.3p
+--- man-pages-posix-2003-a.orig/man3p/posix_trace_attr_getcreatetime.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/posix_trace_attr_getcreatetime.3p	2012-10-20 02:15:30.441905221 +0400
+@@ -1 +1 @@
+-.so man3p/posix_trace_attr_getname.3p
++.so man3/posix_trace_attr_getname.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/posix_trace_attr_getgenversion.3p man-pages-posix-2003-a/man3p/posix_trace_attr_getgenversion.3p
+--- man-pages-posix-2003-a.orig/man3p/posix_trace_attr_getgenversion.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/posix_trace_attr_getgenversion.3p	2012-10-20 02:15:30.441905221 +0400
+@@ -1 +1 @@
+-.so man3p/posix_trace_attr_getname.3p
++.so man3/posix_trace_attr_getname.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/posix_trace_attr_getlogfullpolicy.3p man-pages-posix-2003-a/man3p/posix_trace_attr_getlogfullpolicy.3p
+--- man-pages-posix-2003-a.orig/man3p/posix_trace_attr_getlogfullpolicy.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/posix_trace_attr_getlogfullpolicy.3p	2012-10-20 02:15:30.441905221 +0400
+@@ -1 +1 @@
+-.so man3p/posix_trace_attr_getinherited.3p
++.so man3/posix_trace_attr_getinherited.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/posix_trace_attr_getmaxdatasize.3p man-pages-posix-2003-a/man3p/posix_trace_attr_getmaxdatasize.3p
+--- man-pages-posix-2003-a.orig/man3p/posix_trace_attr_getmaxdatasize.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/posix_trace_attr_getmaxdatasize.3p	2012-10-20 02:15:30.441905221 +0400
+@@ -1 +1 @@
+-.so man3p/posix_trace_attr_getlogsize.3p
++.so man3/posix_trace_attr_getlogsize.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/posix_trace_attr_getmaxsystemeventsize.3p man-pages-posix-2003-a/man3p/posix_trace_attr_getmaxsystemeventsize.3p
+--- man-pages-posix-2003-a.orig/man3p/posix_trace_attr_getmaxsystemeventsize.3p	2012-10-20 02:12:42.421914402 +0400
++++ man-pages-posix-2003-a/man3p/posix_trace_attr_getmaxsystemeventsize.3p	2012-10-20 02:15:30.441905221 +0400
+@@ -1 +1 @@
+-.so man3p/posix_trace_attr_getlogsize.3p
++.so man3/posix_trace_attr_getlogsize.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/posix_trace_attr_getmaxusereventsize.3p man-pages-posix-2003-a/man3p/posix_trace_attr_getmaxusereventsize.3p
+--- man-pages-posix-2003-a.orig/man3p/posix_trace_attr_getmaxusereventsize.3p	2012-10-20 02:12:42.428581068 +0400
++++ man-pages-posix-2003-a/man3p/posix_trace_attr_getmaxusereventsize.3p	2012-10-20 02:15:30.441905221 +0400
+@@ -1 +1 @@
+-.so man3p/posix_trace_attr_getlogsize.3p
++.so man3/posix_trace_attr_getlogsize.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/posix_trace_attr_getstreamfullpolicy.3p man-pages-posix-2003-a/man3p/posix_trace_attr_getstreamfullpolicy.3p
+--- man-pages-posix-2003-a.orig/man3p/posix_trace_attr_getstreamfullpolicy.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/posix_trace_attr_getstreamfullpolicy.3p	2012-10-20 02:15:30.441905221 +0400
+@@ -1 +1 @@
+-.so man3p/posix_trace_attr_getinherited.3p
++.so man3/posix_trace_attr_getinherited.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/posix_trace_attr_getstreamsize.3p man-pages-posix-2003-a/man3p/posix_trace_attr_getstreamsize.3p
+--- man-pages-posix-2003-a.orig/man3p/posix_trace_attr_getstreamsize.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/posix_trace_attr_getstreamsize.3p	2012-10-20 02:15:30.441905221 +0400
+@@ -1 +1 @@
+-.so man3p/posix_trace_attr_getlogsize.3p
++.so man3/posix_trace_attr_getlogsize.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/posix_trace_attr_setinherited.3p man-pages-posix-2003-a/man3p/posix_trace_attr_setinherited.3p
+--- man-pages-posix-2003-a.orig/man3p/posix_trace_attr_setinherited.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/posix_trace_attr_setinherited.3p	2012-10-20 02:15:30.445238555 +0400
+@@ -1 +1 @@
+-.so man3p/posix_trace_attr_getinherited.3p
++.so man3/posix_trace_attr_getinherited.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/posix_trace_attr_setlogfullpolicy.3p man-pages-posix-2003-a/man3p/posix_trace_attr_setlogfullpolicy.3p
+--- man-pages-posix-2003-a.orig/man3p/posix_trace_attr_setlogfullpolicy.3p	2012-10-20 02:12:42.421914402 +0400
++++ man-pages-posix-2003-a/man3p/posix_trace_attr_setlogfullpolicy.3p	2012-10-20 02:15:30.445238555 +0400
+@@ -1 +1 @@
+-.so man3p/posix_trace_attr_getinherited.3p
++.so man3/posix_trace_attr_getinherited.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/posix_trace_attr_setlogsize.3p man-pages-posix-2003-a/man3p/posix_trace_attr_setlogsize.3p
+--- man-pages-posix-2003-a.orig/man3p/posix_trace_attr_setlogsize.3p	2012-10-20 02:12:42.405247736 +0400
++++ man-pages-posix-2003-a/man3p/posix_trace_attr_setlogsize.3p	2012-10-20 02:15:30.445238555 +0400
+@@ -1 +1 @@
+-.so man3p/posix_trace_attr_getlogsize.3p
++.so man3/posix_trace_attr_getlogsize.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/posix_trace_attr_setmaxdatasize.3p man-pages-posix-2003-a/man3p/posix_trace_attr_setmaxdatasize.3p
+--- man-pages-posix-2003-a.orig/man3p/posix_trace_attr_setmaxdatasize.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/posix_trace_attr_setmaxdatasize.3p	2012-10-20 02:15:30.445238555 +0400
+@@ -1 +1 @@
+-.so man3p/posix_trace_attr_getlogsize.3p
++.so man3/posix_trace_attr_getlogsize.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/posix_trace_attr_setname.3p man-pages-posix-2003-a/man3p/posix_trace_attr_setname.3p
+--- man-pages-posix-2003-a.orig/man3p/posix_trace_attr_setname.3p	2012-10-20 02:12:42.405247736 +0400
++++ man-pages-posix-2003-a/man3p/posix_trace_attr_setname.3p	2012-10-20 02:15:30.445238555 +0400
+@@ -1 +1 @@
+-.so man3p/posix_trace_attr_getname.3p
++.so man3/posix_trace_attr_getname.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/posix_trace_attr_setstreamfullpolicy.3p man-pages-posix-2003-a/man3p/posix_trace_attr_setstreamfullpolicy.3p
+--- man-pages-posix-2003-a.orig/man3p/posix_trace_attr_setstreamfullpolicy.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/posix_trace_attr_setstreamfullpolicy.3p	2012-10-20 02:15:30.445238555 +0400
+@@ -1 +1 @@
+-.so man3p/posix_trace_attr_getinherited.3p
++.so man3/posix_trace_attr_getinherited.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/posix_trace_attr_setstreamsize.3p man-pages-posix-2003-a/man3p/posix_trace_attr_setstreamsize.3p
+--- man-pages-posix-2003-a.orig/man3p/posix_trace_attr_setstreamsize.3p	2012-10-20 02:12:42.415247736 +0400
++++ man-pages-posix-2003-a/man3p/posix_trace_attr_setstreamsize.3p	2012-10-20 02:15:30.445238555 +0400
+@@ -1 +1 @@
+-.so man3p/posix_trace_attr_getlogsize.3p
++.so man3/posix_trace_attr_getlogsize.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/posix_trace_close.3p man-pages-posix-2003-a/man3p/posix_trace_close.3p
+--- man-pages-posix-2003-a.orig/man3p/posix_trace_close.3p	2012-10-20 02:12:42.418581069 +0400
++++ man-pages-posix-2003-a/man3p/posix_trace_close.3p	2012-10-20 02:15:30.445238555 +0400
+@@ -1 +1 @@
+-.so man3p/posix_trace_open.3p
++.so man3/posix_trace_open.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/posix_trace_create_withlog.3p man-pages-posix-2003-a/man3p/posix_trace_create_withlog.3p
+--- man-pages-posix-2003-a.orig/man3p/posix_trace_create_withlog.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/posix_trace_create_withlog.3p	2012-10-20 02:15:30.445238555 +0400
+@@ -1 +1 @@
+-.so man3p/posix_trace_create.3p
++.so man3/posix_trace_create.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/posix_trace_eventid_equal.3p man-pages-posix-2003-a/man3p/posix_trace_eventid_equal.3p
+--- man-pages-posix-2003-a.orig/man3p/posix_trace_eventid_equal.3p	2012-10-20 02:12:42.428581068 +0400
++++ man-pages-posix-2003-a/man3p/posix_trace_eventid_equal.3p	2012-10-20 02:15:30.445238555 +0400
+@@ -1 +1 @@
+-.so man3p/posix_trace_eventid_get_name.3p
++.so man3/posix_trace_eventid_get_name.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/posix_trace_eventid_open.3p man-pages-posix-2003-a/man3p/posix_trace_eventid_open.3p
+--- man-pages-posix-2003-a.orig/man3p/posix_trace_eventid_open.3p	2012-10-20 02:12:42.421914402 +0400
++++ man-pages-posix-2003-a/man3p/posix_trace_eventid_open.3p	2012-10-20 02:15:30.445238555 +0400
+@@ -1 +1 @@
+-.so man3p/posix_trace_event.3p
++.so man3/posix_trace_event.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/posix_trace_eventset_del.3p man-pages-posix-2003-a/man3p/posix_trace_eventset_del.3p
+--- man-pages-posix-2003-a.orig/man3p/posix_trace_eventset_del.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/posix_trace_eventset_del.3p	2012-10-20 02:15:30.445238555 +0400
+@@ -1 +1 @@
+-.so man3p/posix_trace_eventset_add.3p
++.so man3/posix_trace_eventset_add.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/posix_trace_eventset_empty.3p man-pages-posix-2003-a/man3p/posix_trace_eventset_empty.3p
+--- man-pages-posix-2003-a.orig/man3p/posix_trace_eventset_empty.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/posix_trace_eventset_empty.3p	2012-10-20 02:15:30.445238555 +0400
+@@ -1 +1 @@
+-.so man3p/posix_trace_eventset_add.3p
++.so man3/posix_trace_eventset_add.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/posix_trace_eventset_fill.3p man-pages-posix-2003-a/man3p/posix_trace_eventset_fill.3p
+--- man-pages-posix-2003-a.orig/man3p/posix_trace_eventset_fill.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/posix_trace_eventset_fill.3p	2012-10-20 02:15:30.445238555 +0400
+@@ -1 +1 @@
+-.so man3p/posix_trace_eventset_add.3p
++.so man3/posix_trace_eventset_add.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/posix_trace_eventset_ismember.3p man-pages-posix-2003-a/man3p/posix_trace_eventset_ismember.3p
+--- man-pages-posix-2003-a.orig/man3p/posix_trace_eventset_ismember.3p	2012-10-20 02:12:42.415247736 +0400
++++ man-pages-posix-2003-a/man3p/posix_trace_eventset_ismember.3p	2012-10-20 02:15:30.448571888 +0400
+@@ -1 +1 @@
+-.so man3p/posix_trace_eventset_add.3p
++.so man3/posix_trace_eventset_add.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/posix_trace_eventtypelist_rewind.3p man-pages-posix-2003-a/man3p/posix_trace_eventtypelist_rewind.3p
+--- man-pages-posix-2003-a.orig/man3p/posix_trace_eventtypelist_rewind.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/posix_trace_eventtypelist_rewind.3p	2012-10-20 02:15:30.448571888 +0400
+@@ -1 +1 @@
+-.so man3p/posix_trace_eventtypelist_getnext_id.3p
++.so man3/posix_trace_eventtypelist_getnext_id.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/posix_trace_flush.3p man-pages-posix-2003-a/man3p/posix_trace_flush.3p
+--- man-pages-posix-2003-a.orig/man3p/posix_trace_flush.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/posix_trace_flush.3p	2012-10-20 02:15:30.448571888 +0400
+@@ -1 +1 @@
+-.so man3p/posix_trace_create.3p
++.so man3/posix_trace_create.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/posix_trace_get_attr.3p man-pages-posix-2003-a/man3p/posix_trace_get_attr.3p
+--- man-pages-posix-2003-a.orig/man3p/posix_trace_get_attr.3p	2012-10-20 02:12:42.405247736 +0400
++++ man-pages-posix-2003-a/man3p/posix_trace_get_attr.3p	2012-10-20 02:15:30.448571888 +0400
+@@ -1 +1 @@
+-.so man3p/posix_trace_get_status.3p
++.so man3/posix_trace_get_status.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/posix_trace_rewind.3p man-pages-posix-2003-a/man3p/posix_trace_rewind.3p
+--- man-pages-posix-2003-a.orig/man3p/posix_trace_rewind.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/posix_trace_rewind.3p	2012-10-20 02:15:30.448571888 +0400
+@@ -1 +1 @@
+-.so man3p/posix_trace_open.3p
++.so man3/posix_trace_open.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/posix_trace_set_filter.3p man-pages-posix-2003-a/man3p/posix_trace_set_filter.3p
+--- man-pages-posix-2003-a.orig/man3p/posix_trace_set_filter.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/posix_trace_set_filter.3p	2012-10-20 02:15:30.448571888 +0400
+@@ -1 +1 @@
+-.so man3p/posix_trace_get_filter.3p
++.so man3/posix_trace_get_filter.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/posix_trace_shutdown.3p man-pages-posix-2003-a/man3p/posix_trace_shutdown.3p
+--- man-pages-posix-2003-a.orig/man3p/posix_trace_shutdown.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/posix_trace_shutdown.3p	2012-10-20 02:15:30.448571888 +0400
+@@ -1 +1 @@
+-.so man3p/posix_trace_create.3p
++.so man3/posix_trace_create.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/posix_trace_stop.3p man-pages-posix-2003-a/man3p/posix_trace_stop.3p
+--- man-pages-posix-2003-a.orig/man3p/posix_trace_stop.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/posix_trace_stop.3p	2012-10-20 02:15:30.448571888 +0400
+@@ -1 +1 @@
+-.so man3p/posix_trace_start.3p
++.so man3/posix_trace_start.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/posix_trace_timedgetnext_event.3p man-pages-posix-2003-a/man3p/posix_trace_timedgetnext_event.3p
+--- man-pages-posix-2003-a.orig/man3p/posix_trace_timedgetnext_event.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/posix_trace_timedgetnext_event.3p	2012-10-20 02:15:30.448571888 +0400
+@@ -1 +1 @@
+-.so man3p/posix_trace_getnext_event.3p
++.so man3/posix_trace_getnext_event.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/posix_trace_trid_eventid_open.3p man-pages-posix-2003-a/man3p/posix_trace_trid_eventid_open.3p
+--- man-pages-posix-2003-a.orig/man3p/posix_trace_trid_eventid_open.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/posix_trace_trid_eventid_open.3p	2012-10-20 02:15:30.448571888 +0400
+@@ -1 +1 @@
+-.so man3p/posix_trace_eventid_get_name.3p
++.so man3/posix_trace_eventid_get_name.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/posix_trace_trygetnext_event.3p man-pages-posix-2003-a/man3p/posix_trace_trygetnext_event.3p
+--- man-pages-posix-2003-a.orig/man3p/posix_trace_trygetnext_event.3p	2012-10-20 02:12:42.415247736 +0400
++++ man-pages-posix-2003-a/man3p/posix_trace_trygetnext_event.3p	2012-10-20 02:15:30.448571888 +0400
+@@ -1 +1 @@
+-.so man3p/posix_trace_getnext_event.3p
++.so man3/posix_trace_getnext_event.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/powf.3p man-pages-posix-2003-a/man3p/powf.3p
+--- man-pages-posix-2003-a.orig/man3p/powf.3p	2012-10-20 02:12:42.425247735 +0400
++++ man-pages-posix-2003-a/man3p/powf.3p	2012-10-20 02:15:30.451905221 +0400
+@@ -1 +1 @@
+-.so man3p/pow.3p
++.so man3/pow.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/powl.3p man-pages-posix-2003-a/man3p/powl.3p
+--- man-pages-posix-2003-a.orig/man3p/powl.3p	2012-10-20 02:12:42.405247736 +0400
++++ man-pages-posix-2003-a/man3p/powl.3p	2012-10-20 02:15:30.451905221 +0400
+@@ -1 +1 @@
+-.so man3p/pow.3p
++.so man3/pow.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pread.3p man-pages-posix-2003-a/man3p/pread.3p
+--- man-pages-posix-2003-a.orig/man3p/pread.3p	2012-10-20 02:12:42.441914401 +0400
++++ man-pages-posix-2003-a/man3p/pread.3p	2012-10-20 02:15:30.451905221 +0400
+@@ -1 +1 @@
+-.so man3p/read.3p
++.so man3/read.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pselect.3p man-pages-posix-2003-a/man3p/pselect.3p
+--- man-pages-posix-2003-a.orig/man3p/pselect.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/pselect.3p	2012-10-20 02:15:30.455238554 +0400
+@@ -1 +1 @@
+-.so man3p/select.3p
++.so man3/select.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pthread_attr_destroy.3p man-pages-posix-2003-a/man3p/pthread_attr_destroy.3p
+--- man-pages-posix-2003-a.orig/man3p/pthread_attr_destroy.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/pthread_attr_destroy.3p	2012-10-20 02:15:30.455238554 +0400
+@@ -1 +1 @@
+-.so man3p/pthread_attr_init.3p
++.so man3/pthread_attr_init.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pthread_attr_setdetachstate.3p man-pages-posix-2003-a/man3p/pthread_attr_setdetachstate.3p
+--- man-pages-posix-2003-a.orig/man3p/pthread_attr_setdetachstate.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/pthread_attr_setdetachstate.3p	2012-10-20 02:15:30.458571887 +0400
+@@ -1 +1 @@
+-.so man3p/pthread_attr_getdetachstate.3p
++.so man3/pthread_attr_getdetachstate.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pthread_attr_setguardsize.3p man-pages-posix-2003-a/man3p/pthread_attr_setguardsize.3p
+--- man-pages-posix-2003-a.orig/man3p/pthread_attr_setguardsize.3p	2012-10-20 02:12:42.418581069 +0400
++++ man-pages-posix-2003-a/man3p/pthread_attr_setguardsize.3p	2012-10-20 02:15:30.458571887 +0400
+@@ -1 +1 @@
+-.so man3p/pthread_attr_getguardsize.3p
++.so man3/pthread_attr_getguardsize.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pthread_attr_setinheritsched.3p man-pages-posix-2003-a/man3p/pthread_attr_setinheritsched.3p
+--- man-pages-posix-2003-a.orig/man3p/pthread_attr_setinheritsched.3p	2012-10-20 02:12:42.428581068 +0400
++++ man-pages-posix-2003-a/man3p/pthread_attr_setinheritsched.3p	2012-10-20 02:15:30.458571887 +0400
+@@ -1 +1 @@
+-.so man3p/pthread_attr_getinheritsched.3p
++.so man3/pthread_attr_getinheritsched.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pthread_attr_setschedparam.3p man-pages-posix-2003-a/man3p/pthread_attr_setschedparam.3p
+--- man-pages-posix-2003-a.orig/man3p/pthread_attr_setschedparam.3p	2012-10-20 02:12:42.415247736 +0400
++++ man-pages-posix-2003-a/man3p/pthread_attr_setschedparam.3p	2012-10-20 02:15:30.458571887 +0400
+@@ -1 +1 @@
+-.so man3p/pthread_attr_getschedparam.3p
++.so man3/pthread_attr_getschedparam.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pthread_attr_setschedpolicy.3p man-pages-posix-2003-a/man3p/pthread_attr_setschedpolicy.3p
+--- man-pages-posix-2003-a.orig/man3p/pthread_attr_setschedpolicy.3p	2012-10-20 02:12:42.415247736 +0400
++++ man-pages-posix-2003-a/man3p/pthread_attr_setschedpolicy.3p	2012-10-20 02:15:30.458571887 +0400
+@@ -1 +1 @@
+-.so man3p/pthread_attr_getschedpolicy.3p
++.so man3/pthread_attr_getschedpolicy.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pthread_attr_setscope.3p man-pages-posix-2003-a/man3p/pthread_attr_setscope.3p
+--- man-pages-posix-2003-a.orig/man3p/pthread_attr_setscope.3p	2012-10-20 02:12:42.421914402 +0400
++++ man-pages-posix-2003-a/man3p/pthread_attr_setscope.3p	2012-10-20 02:15:30.458571887 +0400
+@@ -1 +1 @@
+-.so man3p/pthread_attr_getscope.3p
++.so man3/pthread_attr_getscope.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pthread_attr_setstack.3p man-pages-posix-2003-a/man3p/pthread_attr_setstack.3p
+--- man-pages-posix-2003-a.orig/man3p/pthread_attr_setstack.3p	2012-10-20 02:12:42.418581069 +0400
++++ man-pages-posix-2003-a/man3p/pthread_attr_setstack.3p	2012-10-20 02:15:30.458571887 +0400
+@@ -1 +1 @@
+-.so man3p/pthread_attr_getstack.3p
++.so man3/pthread_attr_getstack.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pthread_attr_setstackaddr.3p man-pages-posix-2003-a/man3p/pthread_attr_setstackaddr.3p
+--- man-pages-posix-2003-a.orig/man3p/pthread_attr_setstackaddr.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/pthread_attr_setstackaddr.3p	2012-10-20 02:15:30.458571887 +0400
+@@ -1 +1 @@
+-.so man3p/pthread_attr_getstackaddr.3p
++.so man3/pthread_attr_getstackaddr.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pthread_attr_setstacksize.3p man-pages-posix-2003-a/man3p/pthread_attr_setstacksize.3p
+--- man-pages-posix-2003-a.orig/man3p/pthread_attr_setstacksize.3p	2012-10-20 02:12:42.441914401 +0400
++++ man-pages-posix-2003-a/man3p/pthread_attr_setstacksize.3p	2012-10-20 02:15:30.458571887 +0400
+@@ -1 +1 @@
+-.so man3p/pthread_attr_getstacksize.3p
++.so man3/pthread_attr_getstacksize.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pthread_barrierattr_destroy.3p man-pages-posix-2003-a/man3p/pthread_barrierattr_destroy.3p
+--- man-pages-posix-2003-a.orig/man3p/pthread_barrierattr_destroy.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/pthread_barrierattr_destroy.3p	2012-10-20 02:15:30.458571887 +0400
+@@ -1 +1 @@
+-.so man3p/pthread_barrierattr_init.3p
++.so man3/pthread_barrierattr_init.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pthread_barrierattr_setpshared.3p man-pages-posix-2003-a/man3p/pthread_barrierattr_setpshared.3p
+--- man-pages-posix-2003-a.orig/man3p/pthread_barrierattr_setpshared.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/pthread_barrierattr_setpshared.3p	2012-10-20 02:15:30.458571887 +0400
+@@ -1 +1 @@
+-.so man3p/pthread_barrierattr_getpshared.3p
++.so man3/pthread_barrierattr_getpshared.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pthread_barrier_destroy.3p man-pages-posix-2003-a/man3p/pthread_barrier_destroy.3p
+--- man-pages-posix-2003-a.orig/man3p/pthread_barrier_destroy.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/pthread_barrier_destroy.3p	2012-10-20 02:15:30.458571887 +0400
+@@ -1 +1 @@
+-.so man3p/pthread_barrier_init.3p
++.so man3/pthread_barrier_init.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pthread_cleanup_pop.3p man-pages-posix-2003-a/man3p/pthread_cleanup_pop.3p
+--- man-pages-posix-2003-a.orig/man3p/pthread_cleanup_pop.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/pthread_cleanup_pop.3p	2012-10-20 02:15:30.458571887 +0400
+@@ -1 +1 @@
+-.so man3p/pthread_cleanup_push.3p
++.so man3/pthread_cleanup_push.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pthread_condattr_destroy.3p man-pages-posix-2003-a/man3p/pthread_condattr_destroy.3p
+--- man-pages-posix-2003-a.orig/man3p/pthread_condattr_destroy.3p	2012-10-20 02:12:42.421914402 +0400
++++ man-pages-posix-2003-a/man3p/pthread_condattr_destroy.3p	2012-10-20 02:15:30.461905220 +0400
+@@ -1 +1 @@
+-.so man3p/pthread_condattr_init.3p
++.so man3/pthread_condattr_init.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pthread_condattr_setclock.3p man-pages-posix-2003-a/man3p/pthread_condattr_setclock.3p
+--- man-pages-posix-2003-a.orig/man3p/pthread_condattr_setclock.3p	2012-10-20 02:12:42.441914401 +0400
++++ man-pages-posix-2003-a/man3p/pthread_condattr_setclock.3p	2012-10-20 02:15:30.461905220 +0400
+@@ -1 +1 @@
+-.so man3p/pthread_condattr_getclock.3p
++.so man3/pthread_condattr_getclock.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pthread_condattr_setpshared.3p man-pages-posix-2003-a/man3p/pthread_condattr_setpshared.3p
+--- man-pages-posix-2003-a.orig/man3p/pthread_condattr_setpshared.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/pthread_condattr_setpshared.3p	2012-10-20 02:15:30.461905220 +0400
+@@ -1 +1 @@
+-.so man3p/pthread_condattr_getpshared.3p
++.so man3/pthread_condattr_getpshared.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pthread_cond_broadcast.3p man-pages-posix-2003-a/man3p/pthread_cond_broadcast.3p
+--- man-pages-posix-2003-a.orig/man3p/pthread_cond_broadcast.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/pthread_cond_broadcast.3p	2012-10-20 02:15:30.461905220 +0400
+@@ -1 +1 @@
+-.so man3p/pthread_cond_signal.3p
++.so man3/pthread_cond_signal.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pthread_cond_destroy.3p man-pages-posix-2003-a/man3p/pthread_cond_destroy.3p
+--- man-pages-posix-2003-a.orig/man3p/pthread_cond_destroy.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/pthread_cond_destroy.3p	2012-10-20 02:15:30.461905220 +0400
+@@ -1 +1 @@
+-.so man3p/pthread_cond_init.3p
++.so man3/pthread_cond_init.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pthread_cond_timedwait.3p man-pages-posix-2003-a/man3p/pthread_cond_timedwait.3p
+--- man-pages-posix-2003-a.orig/man3p/pthread_cond_timedwait.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/pthread_cond_timedwait.3p	2012-10-20 02:15:30.461905220 +0400
+@@ -1 +1 @@
+-.so man3p/pthread_cond_wait.3p
++.so man3/pthread_cond_wait.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pthread_mutexattr_destroy.3p man-pages-posix-2003-a/man3p/pthread_mutexattr_destroy.3p
+--- man-pages-posix-2003-a.orig/man3p/pthread_mutexattr_destroy.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/pthread_mutexattr_destroy.3p	2012-10-20 02:15:30.468571887 +0400
+@@ -1 +1 @@
+-.so man3p/pthread_mutexattr_init.3p
++.so man3/pthread_mutexattr_init.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pthread_mutexattr_setprioceiling.3p man-pages-posix-2003-a/man3p/pthread_mutexattr_setprioceiling.3p
+--- man-pages-posix-2003-a.orig/man3p/pthread_mutexattr_setprioceiling.3p	2012-10-20 02:12:42.425247735 +0400
++++ man-pages-posix-2003-a/man3p/pthread_mutexattr_setprioceiling.3p	2012-10-20 02:15:30.468571887 +0400
+@@ -1 +1 @@
+-.so man3p/pthread_mutexattr_getprioceiling.3p
++.so man3/pthread_mutexattr_getprioceiling.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pthread_mutexattr_setprotocol.3p man-pages-posix-2003-a/man3p/pthread_mutexattr_setprotocol.3p
+--- man-pages-posix-2003-a.orig/man3p/pthread_mutexattr_setprotocol.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/pthread_mutexattr_setprotocol.3p	2012-10-20 02:15:30.468571887 +0400
+@@ -1 +1 @@
+-.so man3p/pthread_mutexattr_getprotocol.3p
++.so man3/pthread_mutexattr_getprotocol.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pthread_mutexattr_setpshared.3p man-pages-posix-2003-a/man3p/pthread_mutexattr_setpshared.3p
+--- man-pages-posix-2003-a.orig/man3p/pthread_mutexattr_setpshared.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/pthread_mutexattr_setpshared.3p	2012-10-20 02:15:30.468571887 +0400
+@@ -1 +1 @@
+-.so man3p/pthread_mutexattr_getpshared.3p
++.so man3/pthread_mutexattr_getpshared.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pthread_mutexattr_settype.3p man-pages-posix-2003-a/man3p/pthread_mutexattr_settype.3p
+--- man-pages-posix-2003-a.orig/man3p/pthread_mutexattr_settype.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/pthread_mutexattr_settype.3p	2012-10-20 02:15:30.468571887 +0400
+@@ -1 +1 @@
+-.so man3p/pthread_mutexattr_gettype.3p
++.so man3/pthread_mutexattr_gettype.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pthread_mutex_destroy.3p man-pages-posix-2003-a/man3p/pthread_mutex_destroy.3p
+--- man-pages-posix-2003-a.orig/man3p/pthread_mutex_destroy.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/pthread_mutex_destroy.3p	2012-10-20 02:15:30.468571887 +0400
+@@ -1 +1 @@
+-.so man3p/pthread_mutex_init.3p
++.so man3/pthread_mutex_init.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pthread_mutex_setprioceiling.3p man-pages-posix-2003-a/man3p/pthread_mutex_setprioceiling.3p
+--- man-pages-posix-2003-a.orig/man3p/pthread_mutex_setprioceiling.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/pthread_mutex_setprioceiling.3p	2012-10-20 02:15:30.471905220 +0400
+@@ -1 +1 @@
+-.so man3p/pthread_mutex_getprioceiling.3p
++.so man3/pthread_mutex_getprioceiling.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pthread_mutex_trylock.3p man-pages-posix-2003-a/man3p/pthread_mutex_trylock.3p
+--- man-pages-posix-2003-a.orig/man3p/pthread_mutex_trylock.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/pthread_mutex_trylock.3p	2012-10-20 02:15:30.471905220 +0400
+@@ -1 +1 @@
+-.so man3p/pthread_mutex_lock.3p
++.so man3/pthread_mutex_lock.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pthread_mutex_unlock.3p man-pages-posix-2003-a/man3p/pthread_mutex_unlock.3p
+--- man-pages-posix-2003-a.orig/man3p/pthread_mutex_unlock.3p	2012-10-20 02:12:42.411914402 +0400
++++ man-pages-posix-2003-a/man3p/pthread_mutex_unlock.3p	2012-10-20 02:15:30.471905220 +0400
+@@ -1 +1 @@
+-.so man3p/pthread_mutex_lock.3p
++.so man3/pthread_mutex_lock.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pthread_rwlockattr_destroy.3p man-pages-posix-2003-a/man3p/pthread_rwlockattr_destroy.3p
+--- man-pages-posix-2003-a.orig/man3p/pthread_rwlockattr_destroy.3p	2012-10-20 02:12:42.418581069 +0400
++++ man-pages-posix-2003-a/man3p/pthread_rwlockattr_destroy.3p	2012-10-20 02:15:30.471905220 +0400
+@@ -1 +1 @@
+-.so man3p/pthread_rwlockattr_init.3p
++.so man3/pthread_rwlockattr_init.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pthread_rwlockattr_setpshared.3p man-pages-posix-2003-a/man3p/pthread_rwlockattr_setpshared.3p
+--- man-pages-posix-2003-a.orig/man3p/pthread_rwlockattr_setpshared.3p	2012-10-20 02:12:42.425247735 +0400
++++ man-pages-posix-2003-a/man3p/pthread_rwlockattr_setpshared.3p	2012-10-20 02:15:30.471905220 +0400
+@@ -1 +1 @@
+-.so man3p/pthread_rwlockattr_getpshared.3p
++.so man3/pthread_rwlockattr_getpshared.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pthread_rwlock_destroy.3p man-pages-posix-2003-a/man3p/pthread_rwlock_destroy.3p
+--- man-pages-posix-2003-a.orig/man3p/pthread_rwlock_destroy.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/pthread_rwlock_destroy.3p	2012-10-20 02:15:30.471905220 +0400
+@@ -1 +1 @@
+-.so man3p/pthread_rwlock_init.3p
++.so man3/pthread_rwlock_init.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pthread_rwlock_tryrdlock.3p man-pages-posix-2003-a/man3p/pthread_rwlock_tryrdlock.3p
+--- man-pages-posix-2003-a.orig/man3p/pthread_rwlock_tryrdlock.3p	2012-10-20 02:12:42.411914402 +0400
++++ man-pages-posix-2003-a/man3p/pthread_rwlock_tryrdlock.3p	2012-10-20 02:15:30.475238553 +0400
+@@ -1 +1 @@
+-.so man3p/pthread_rwlock_rdlock.3p
++.so man3/pthread_rwlock_rdlock.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pthread_rwlock_trywrlock.3p man-pages-posix-2003-a/man3p/pthread_rwlock_trywrlock.3p
+--- man-pages-posix-2003-a.orig/man3p/pthread_rwlock_trywrlock.3p	2012-10-20 02:12:42.441914401 +0400
++++ man-pages-posix-2003-a/man3p/pthread_rwlock_trywrlock.3p	2012-10-20 02:15:30.475238553 +0400
+@@ -1 +1 @@
+-.so man3p/pthread_rwlock_wrlock.3p
++.so man3/pthread_rwlock_wrlock.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pthread_setcancelstate.3p man-pages-posix-2003-a/man3p/pthread_setcancelstate.3p
+--- man-pages-posix-2003-a.orig/man3p/pthread_setcancelstate.3p	2012-10-20 02:12:42.415247736 +0400
++++ man-pages-posix-2003-a/man3p/pthread_setcancelstate.3p	2012-10-20 02:15:30.475238553 +0400
+@@ -1 +1 @@
+-.so man3p/pthread_testcancel.3p
++.so man3/pthread_testcancel.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pthread_setcanceltype.3p man-pages-posix-2003-a/man3p/pthread_setcanceltype.3p
+--- man-pages-posix-2003-a.orig/man3p/pthread_setcanceltype.3p	2012-10-20 02:12:42.415247736 +0400
++++ man-pages-posix-2003-a/man3p/pthread_setcanceltype.3p	2012-10-20 02:15:30.475238553 +0400
+@@ -1 +1 @@
+-.so man3p/pthread_testcancel.3p
++.so man3/pthread_testcancel.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pthread_setconcurrency.3p man-pages-posix-2003-a/man3p/pthread_setconcurrency.3p
+--- man-pages-posix-2003-a.orig/man3p/pthread_setconcurrency.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/pthread_setconcurrency.3p	2012-10-20 02:15:30.475238553 +0400
+@@ -1 +1 @@
+-.so man3p/pthread_getconcurrency.3p
++.so man3/pthread_getconcurrency.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pthread_setschedparam.3p man-pages-posix-2003-a/man3p/pthread_setschedparam.3p
+--- man-pages-posix-2003-a.orig/man3p/pthread_setschedparam.3p	2012-10-20 02:12:42.421914402 +0400
++++ man-pages-posix-2003-a/man3p/pthread_setschedparam.3p	2012-10-20 02:15:30.475238553 +0400
+@@ -1 +1 @@
+-.so man3p/pthread_getschedparam.3p
++.so man3/pthread_getschedparam.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pthread_setspecific.3p man-pages-posix-2003-a/man3p/pthread_setspecific.3p
+--- man-pages-posix-2003-a.orig/man3p/pthread_setspecific.3p	2012-10-20 02:12:42.418581069 +0400
++++ man-pages-posix-2003-a/man3p/pthread_setspecific.3p	2012-10-20 02:15:30.475238553 +0400
+@@ -1 +1 @@
+-.so man3p/pthread_getspecific.3p
++.so man3/pthread_getspecific.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pthread_sigmask.3p man-pages-posix-2003-a/man3p/pthread_sigmask.3p
+--- man-pages-posix-2003-a.orig/man3p/pthread_sigmask.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/pthread_sigmask.3p	2012-10-20 02:15:30.475238553 +0400
+@@ -1 +1 @@
+-.so man3p/sigprocmask.3p
++.so man3/sigprocmask.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pthread_spin_destroy.3p man-pages-posix-2003-a/man3p/pthread_spin_destroy.3p
+--- man-pages-posix-2003-a.orig/man3p/pthread_spin_destroy.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/pthread_spin_destroy.3p	2012-10-20 02:15:30.475238553 +0400
+@@ -1 +1 @@
+-.so man3p/pthread_spin_init.3p
++.so man3/pthread_spin_init.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pthread_spin_trylock.3p man-pages-posix-2003-a/man3p/pthread_spin_trylock.3p
+--- man-pages-posix-2003-a.orig/man3p/pthread_spin_trylock.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/pthread_spin_trylock.3p	2012-10-20 02:15:30.478571886 +0400
+@@ -1 +1 @@
+-.so man3p/pthread_spin_lock.3p
++.so man3/pthread_spin_lock.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/putchar_unlocked.3p man-pages-posix-2003-a/man3p/putchar_unlocked.3p
+--- man-pages-posix-2003-a.orig/man3p/putchar_unlocked.3p	2012-10-20 02:12:42.418581069 +0400
++++ man-pages-posix-2003-a/man3p/putchar_unlocked.3p	2012-10-20 02:15:30.478571886 +0400
+@@ -1 +1 @@
+-.so man3p/getchar_unlocked.3p
++.so man3/getchar_unlocked.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/putc_unlocked.3p man-pages-posix-2003-a/man3p/putc_unlocked.3p
+--- man-pages-posix-2003-a.orig/man3p/putc_unlocked.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/putc_unlocked.3p	2012-10-20 02:15:30.478571886 +0400
+@@ -1 +1 @@
+-.so man3p/getchar_unlocked.3p
++.so man3/getchar_unlocked.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/putpmsg.3p man-pages-posix-2003-a/man3p/putpmsg.3p
+--- man-pages-posix-2003-a.orig/man3p/putpmsg.3p	2012-10-20 02:12:42.428581068 +0400
++++ man-pages-posix-2003-a/man3p/putpmsg.3p	2012-10-20 02:15:30.478571886 +0400
+@@ -1 +1 @@
+-.so man3p/putmsg.3p
++.so man3/putmsg.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pututxline.3p man-pages-posix-2003-a/man3p/pututxline.3p
+--- man-pages-posix-2003-a.orig/man3p/pututxline.3p	2012-10-20 02:12:42.425247735 +0400
++++ man-pages-posix-2003-a/man3p/pututxline.3p	2012-10-20 02:15:30.481905219 +0400
+@@ -1 +1 @@
+-.so man3p/getutxid.3p
++.so man3/getutxid.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/pwrite.3p man-pages-posix-2003-a/man3p/pwrite.3p
+--- man-pages-posix-2003-a.orig/man3p/pwrite.3p	2012-10-20 02:12:42.415247736 +0400
++++ man-pages-posix-2003-a/man3p/pwrite.3p	2012-10-20 02:15:30.481905219 +0400
+@@ -1 +1 @@
+-.so man3p/write.3p
++.so man3/write.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/rand_r.3p man-pages-posix-2003-a/man3p/rand_r.3p
+--- man-pages-posix-2003-a.orig/man3p/rand_r.3p	2012-10-20 02:12:42.428581068 +0400
++++ man-pages-posix-2003-a/man3p/rand_r.3p	2012-10-20 02:15:30.481905219 +0400
+@@ -1 +1 @@
+-.so man3p/rand.3p
++.so man3/rand.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/readdir_r.3p man-pages-posix-2003-a/man3p/readdir_r.3p
+--- man-pages-posix-2003-a.orig/man3p/readdir_r.3p	2012-10-20 02:12:42.425247735 +0400
++++ man-pages-posix-2003-a/man3p/readdir_r.3p	2012-10-20 02:15:30.485238552 +0400
+@@ -1 +1 @@
+-.so man3p/readdir.3p
++.so man3/readdir.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/regerror.3p man-pages-posix-2003-a/man3p/regerror.3p
+--- man-pages-posix-2003-a.orig/man3p/regerror.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/regerror.3p	2012-10-20 02:15:30.488571886 +0400
+@@ -1 +1 @@
+-.so man3p/regcomp.3p
++.so man3/regcomp.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/regexec.3p man-pages-posix-2003-a/man3p/regexec.3p
+--- man-pages-posix-2003-a.orig/man3p/regexec.3p	2012-10-20 02:12:42.425247735 +0400
++++ man-pages-posix-2003-a/man3p/regexec.3p	2012-10-20 02:15:30.488571886 +0400
+@@ -1 +1 @@
+-.so man3p/regcomp.3p
++.so man3/regcomp.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/regfree.3p man-pages-posix-2003-a/man3p/regfree.3p
+--- man-pages-posix-2003-a.orig/man3p/regfree.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/regfree.3p	2012-10-20 02:15:30.488571886 +0400
+@@ -1 +1 @@
+-.so man3p/regcomp.3p
++.so man3/regcomp.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/remainderf.3p man-pages-posix-2003-a/man3p/remainderf.3p
+--- man-pages-posix-2003-a.orig/man3p/remainderf.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/remainderf.3p	2012-10-20 02:15:30.491905219 +0400
+@@ -1 +1 @@
+-.so man3p/remainder.3p
++.so man3/remainder.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/remainderl.3p man-pages-posix-2003-a/man3p/remainderl.3p
+--- man-pages-posix-2003-a.orig/man3p/remainderl.3p	2012-10-20 02:12:42.425247735 +0400
++++ man-pages-posix-2003-a/man3p/remainderl.3p	2012-10-20 02:15:30.491905219 +0400
+@@ -1 +1 @@
+-.so man3p/remainder.3p
++.so man3/remainder.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/remque.3p man-pages-posix-2003-a/man3p/remque.3p
+--- man-pages-posix-2003-a.orig/man3p/remque.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/remque.3p	2012-10-20 02:15:30.491905219 +0400
+@@ -1 +1 @@
+-.so man3p/insque.3p
++.so man3/insque.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/remquof.3p man-pages-posix-2003-a/man3p/remquof.3p
+--- man-pages-posix-2003-a.orig/man3p/remquof.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/remquof.3p	2012-10-20 02:15:30.491905219 +0400
+@@ -1 +1 @@
+-.so man3p/remquo.3p
++.so man3/remquo.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/remquol.3p man-pages-posix-2003-a/man3p/remquol.3p
+--- man-pages-posix-2003-a.orig/man3p/remquol.3p	2012-10-20 02:12:42.441914401 +0400
++++ man-pages-posix-2003-a/man3p/remquol.3p	2012-10-20 02:15:30.491905219 +0400
+@@ -1 +1 @@
+-.so man3p/remquo.3p
++.so man3/remquo.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/rintf.3p man-pages-posix-2003-a/man3p/rintf.3p
+--- man-pages-posix-2003-a.orig/man3p/rintf.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/rintf.3p	2012-10-20 02:15:30.491905219 +0400
+@@ -1 +1 @@
+-.so man3p/rint.3p
++.so man3/rint.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/rintl.3p man-pages-posix-2003-a/man3p/rintl.3p
+--- man-pages-posix-2003-a.orig/man3p/rintl.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/rintl.3p	2012-10-20 02:15:30.491905219 +0400
+@@ -1 +1 @@
+-.so man3p/rint.3p
++.so man3/rint.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/roundf.3p man-pages-posix-2003-a/man3p/roundf.3p
+--- man-pages-posix-2003-a.orig/man3p/roundf.3p	2012-10-20 02:12:42.441914401 +0400
++++ man-pages-posix-2003-a/man3p/roundf.3p	2012-10-20 02:15:30.495238552 +0400
+@@ -1 +1 @@
+-.so man3p/round.3p
++.so man3/round.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/roundl.3p man-pages-posix-2003-a/man3p/roundl.3p
+--- man-pages-posix-2003-a.orig/man3p/roundl.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/roundl.3p	2012-10-20 02:15:30.495238552 +0400
+@@ -1 +1 @@
+-.so man3p/round.3p
++.so man3/round.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/scalbln.3p man-pages-posix-2003-a/man3p/scalbln.3p
+--- man-pages-posix-2003-a.orig/man3p/scalbln.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/scalbln.3p	2012-10-20 02:15:30.495238552 +0400
+@@ -1 +1 @@
+-.so man3p/scalbn.3p
++.so man3/scalbn.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/scalblnf.3p man-pages-posix-2003-a/man3p/scalblnf.3p
+--- man-pages-posix-2003-a.orig/man3p/scalblnf.3p	2012-10-20 02:12:42.418581069 +0400
++++ man-pages-posix-2003-a/man3p/scalblnf.3p	2012-10-20 02:15:30.495238552 +0400
+@@ -1 +1 @@
+-.so man3p/scalbn.3p
++.so man3/scalbn.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/scalblnl.3p man-pages-posix-2003-a/man3p/scalblnl.3p
+--- man-pages-posix-2003-a.orig/man3p/scalblnl.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/scalblnl.3p	2012-10-20 02:15:30.495238552 +0400
+@@ -1 +1 @@
+-.so man3p/scalbn.3p
++.so man3/scalbn.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/scalbnf.3p man-pages-posix-2003-a/man3p/scalbnf.3p
+--- man-pages-posix-2003-a.orig/man3p/scalbnf.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/scalbnf.3p	2012-10-20 02:15:30.495238552 +0400
+@@ -1 +1 @@
+-.so man3p/scalbn.3p
++.so man3/scalbn.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/scalbnl.3p man-pages-posix-2003-a/man3p/scalbnl.3p
+--- man-pages-posix-2003-a.orig/man3p/scalbnl.3p	2012-10-20 02:12:42.418581069 +0400
++++ man-pages-posix-2003-a/man3p/scalbnl.3p	2012-10-20 02:15:30.495238552 +0400
+@@ -1 +1 @@
+-.so man3p/scalbn.3p
++.so man3/scalbn.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/sched_get_priority_min.3p man-pages-posix-2003-a/man3p/sched_get_priority_min.3p
+--- man-pages-posix-2003-a.orig/man3p/sched_get_priority_min.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/sched_get_priority_min.3p	2012-10-20 02:15:30.495238552 +0400
+@@ -1 +1 @@
+-.so man3p/sched_get_priority_max.3p
++.so man3/sched_get_priority_max.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/seed48.3p man-pages-posix-2003-a/man3p/seed48.3p
+--- man-pages-posix-2003-a.orig/man3p/seed48.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/seed48.3p	2012-10-20 02:15:30.498571885 +0400
+@@ -1 +1 @@
+-.so man3p/drand48.3p
++.so man3/drand48.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/sem_trywait.3p man-pages-posix-2003-a/man3p/sem_trywait.3p
+--- man-pages-posix-2003-a.orig/man3p/sem_trywait.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/sem_trywait.3p	2012-10-20 02:15:30.501905218 +0400
+@@ -1 +1 @@
+-.so man3p/sem_wait.3p
++.so man3/sem_wait.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/setcontext.3p man-pages-posix-2003-a/man3p/setcontext.3p
+--- man-pages-posix-2003-a.orig/man3p/setcontext.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/setcontext.3p	2012-10-20 02:15:30.505238551 +0400
+@@ -1 +1 @@
+-.so man3p/getcontext.3p
++.so man3/getcontext.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/setgrent.3p man-pages-posix-2003-a/man3p/setgrent.3p
+--- man-pages-posix-2003-a.orig/man3p/setgrent.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/setgrent.3p	2012-10-20 02:15:30.508571884 +0400
+@@ -1 +1 @@
+-.so man3p/getgrent.3p
++.so man3/getgrent.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/sethostent.3p man-pages-posix-2003-a/man3p/sethostent.3p
+--- man-pages-posix-2003-a.orig/man3p/sethostent.3p	2012-10-20 02:12:42.411914402 +0400
++++ man-pages-posix-2003-a/man3p/sethostent.3p	2012-10-20 02:15:30.508571884 +0400
+@@ -1 +1 @@
+-.so man3p/gethostent.3p
++.so man3/gethostent.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/setitimer.3p man-pages-posix-2003-a/man3p/setitimer.3p
+--- man-pages-posix-2003-a.orig/man3p/setitimer.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/setitimer.3p	2012-10-20 02:15:30.508571884 +0400
+@@ -1 +1 @@
+-.so man3p/getitimer.3p
++.so man3/getitimer.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/setlogmask.3p man-pages-posix-2003-a/man3p/setlogmask.3p
+--- man-pages-posix-2003-a.orig/man3p/setlogmask.3p	2012-10-20 02:12:42.425247735 +0400
++++ man-pages-posix-2003-a/man3p/setlogmask.3p	2012-10-20 02:15:30.508571884 +0400
+@@ -1 +1 @@
+-.so man3p/syslog.3p
++.so man3/syslog.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/setnetent.3p man-pages-posix-2003-a/man3p/setnetent.3p
+--- man-pages-posix-2003-a.orig/man3p/setnetent.3p	2012-10-20 02:12:42.415247736 +0400
++++ man-pages-posix-2003-a/man3p/setnetent.3p	2012-10-20 02:15:30.508571884 +0400
+@@ -1 +1 @@
+-.so man3p/getnetent.3p
++.so man3/getnetent.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/setpriority.3p man-pages-posix-2003-a/man3p/setpriority.3p
+--- man-pages-posix-2003-a.orig/man3p/setpriority.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/setpriority.3p	2012-10-20 02:15:30.508571884 +0400
+@@ -1 +1 @@
+-.so man3p/getpriority.3p
++.so man3/getpriority.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/setprotoent.3p man-pages-posix-2003-a/man3p/setprotoent.3p
+--- man-pages-posix-2003-a.orig/man3p/setprotoent.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/setprotoent.3p	2012-10-20 02:15:30.508571884 +0400
+@@ -1 +1 @@
+-.so man3p/getprotoent.3p
++.so man3/getprotoent.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/setpwent.3p man-pages-posix-2003-a/man3p/setpwent.3p
+--- man-pages-posix-2003-a.orig/man3p/setpwent.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/setpwent.3p	2012-10-20 02:15:30.508571884 +0400
+@@ -1 +1 @@
+-.so man3p/getpwent.3p
++.so man3/getpwent.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/setrlimit.3p man-pages-posix-2003-a/man3p/setrlimit.3p
+--- man-pages-posix-2003-a.orig/man3p/setrlimit.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/setrlimit.3p	2012-10-20 02:15:30.511905218 +0400
+@@ -1 +1 @@
+-.so man3p/getrlimit.3p
++.so man3/getrlimit.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/setservent.3p man-pages-posix-2003-a/man3p/setservent.3p
+--- man-pages-posix-2003-a.orig/man3p/setservent.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/setservent.3p	2012-10-20 02:15:30.511905218 +0400
+@@ -1 +1 @@
+-.so man3p/getservent.3p
++.so man3/getservent.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/setstate.3p man-pages-posix-2003-a/man3p/setstate.3p
+--- man-pages-posix-2003-a.orig/man3p/setstate.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/setstate.3p	2012-10-20 02:15:30.511905218 +0400
+@@ -1 +1 @@
+-.so man3p/random.3p
++.so man3/random.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/setutxent.3p man-pages-posix-2003-a/man3p/setutxent.3p
+--- man-pages-posix-2003-a.orig/man3p/setutxent.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/setutxent.3p	2012-10-20 02:15:30.511905218 +0400
+@@ -1 +1 @@
+-.so man3p/getutxid.3p
++.so man3/getutxid.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/sighold.3p man-pages-posix-2003-a/man3p/sighold.3p
+--- man-pages-posix-2003-a.orig/man3p/sighold.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/sighold.3p	2012-10-20 02:15:30.518571884 +0400
+@@ -1 +1 @@
+-.so man3p/sigset.3p
++.so man3/sigset.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/sigignore.3p man-pages-posix-2003-a/man3p/sigignore.3p
+--- man-pages-posix-2003-a.orig/man3p/sigignore.3p	2012-10-20 02:12:42.418581069 +0400
++++ man-pages-posix-2003-a/man3p/sigignore.3p	2012-10-20 02:15:30.518571884 +0400
+@@ -1 +1 @@
+-.so man3p/sigset.3p
++.so man3/sigset.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/signgam.3p man-pages-posix-2003-a/man3p/signgam.3p
+--- man-pages-posix-2003-a.orig/man3p/signgam.3p	2012-10-20 02:12:42.425247735 +0400
++++ man-pages-posix-2003-a/man3p/signgam.3p	2012-10-20 02:15:30.521905217 +0400
+@@ -1 +1 @@
+-.so man3p/lgamma.3p
++.so man3/lgamma.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/sigpause.3p man-pages-posix-2003-a/man3p/sigpause.3p
+--- man-pages-posix-2003-a.orig/man3p/sigpause.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/sigpause.3p	2012-10-20 02:15:30.521905217 +0400
+@@ -1 +1 @@
+-.so man3p/sigset.3p
++.so man3/sigset.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/sigrelse.3p man-pages-posix-2003-a/man3p/sigrelse.3p
+--- man-pages-posix-2003-a.orig/man3p/sigrelse.3p	2012-10-20 02:12:42.405247736 +0400
++++ man-pages-posix-2003-a/man3p/sigrelse.3p	2012-10-20 02:15:30.521905217 +0400
+@@ -1 +1 @@
+-.so man3p/sigset.3p
++.so man3/sigset.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/sigtimedwait.3p man-pages-posix-2003-a/man3p/sigtimedwait.3p
+--- man-pages-posix-2003-a.orig/man3p/sigtimedwait.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/sigtimedwait.3p	2012-10-20 02:15:30.521905217 +0400
+@@ -1 +1 @@
+-.so man3p/sigwaitinfo.3p
++.so man3/sigwaitinfo.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/sinf.3p man-pages-posix-2003-a/man3p/sinf.3p
+--- man-pages-posix-2003-a.orig/man3p/sinf.3p	2012-10-20 02:12:42.415247736 +0400
++++ man-pages-posix-2003-a/man3p/sinf.3p	2012-10-20 02:15:30.525238550 +0400
+@@ -1 +1 @@
+-.so man3p/sin.3p
++.so man3/sin.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/sinhf.3p man-pages-posix-2003-a/man3p/sinhf.3p
+--- man-pages-posix-2003-a.orig/man3p/sinhf.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/sinhf.3p	2012-10-20 02:15:30.525238550 +0400
+@@ -1 +1 @@
+-.so man3p/sinh.3p
++.so man3/sinh.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/sinhl.3p man-pages-posix-2003-a/man3p/sinhl.3p
+--- man-pages-posix-2003-a.orig/man3p/sinhl.3p	2012-10-20 02:12:42.415247736 +0400
++++ man-pages-posix-2003-a/man3p/sinhl.3p	2012-10-20 02:15:30.525238550 +0400
+@@ -1 +1 @@
+-.so man3p/sinh.3p
++.so man3/sinh.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/sinl.3p man-pages-posix-2003-a/man3p/sinl.3p
+--- man-pages-posix-2003-a.orig/man3p/sinl.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/sinl.3p	2012-10-20 02:15:30.525238550 +0400
+@@ -1 +1 @@
+-.so man3p/sin.3p
++.so man3/sin.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/snprintf.3p man-pages-posix-2003-a/man3p/snprintf.3p
+--- man-pages-posix-2003-a.orig/man3p/snprintf.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/snprintf.3p	2012-10-20 02:15:30.525238550 +0400
+@@ -1 +1 @@
+-.so man3p/printf.3p
++.so man3/printf.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/sprintf.3p man-pages-posix-2003-a/man3p/sprintf.3p
+--- man-pages-posix-2003-a.orig/man3p/sprintf.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/sprintf.3p	2012-10-20 02:15:30.525238550 +0400
+@@ -1 +1 @@
+-.so man3p/printf.3p
++.so man3/printf.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/sqrtf.3p man-pages-posix-2003-a/man3p/sqrtf.3p
+--- man-pages-posix-2003-a.orig/man3p/sqrtf.3p	2012-10-20 02:12:42.441914401 +0400
++++ man-pages-posix-2003-a/man3p/sqrtf.3p	2012-10-20 02:15:30.525238550 +0400
+@@ -1 +1 @@
+-.so man3p/sqrt.3p
++.so man3/sqrt.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/sqrtl.3p man-pages-posix-2003-a/man3p/sqrtl.3p
+--- man-pages-posix-2003-a.orig/man3p/sqrtl.3p	2012-10-20 02:12:42.415247736 +0400
++++ man-pages-posix-2003-a/man3p/sqrtl.3p	2012-10-20 02:15:30.525238550 +0400
+@@ -1 +1 @@
+-.so man3p/sqrt.3p
++.so man3/sqrt.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/srand.3p man-pages-posix-2003-a/man3p/srand.3p
+--- man-pages-posix-2003-a.orig/man3p/srand.3p	2012-10-20 02:12:42.441914401 +0400
++++ man-pages-posix-2003-a/man3p/srand.3p	2012-10-20 02:15:30.525238550 +0400
+@@ -1 +1 @@
+-.so man3p/rand.3p
++.so man3/rand.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/srand48.3p man-pages-posix-2003-a/man3p/srand48.3p
+--- man-pages-posix-2003-a.orig/man3p/srand48.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/srand48.3p	2012-10-20 02:15:30.525238550 +0400
+@@ -1 +1 @@
+-.so man3p/drand48.3p
++.so man3/drand48.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/srandom.3p man-pages-posix-2003-a/man3p/srandom.3p
+--- man-pages-posix-2003-a.orig/man3p/srandom.3p	2012-10-20 02:12:42.415247736 +0400
++++ man-pages-posix-2003-a/man3p/srandom.3p	2012-10-20 02:15:30.528571883 +0400
+@@ -1 +1 @@
+-.so man3p/random.3p
++.so man3/random.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/sscanf.3p man-pages-posix-2003-a/man3p/sscanf.3p
+--- man-pages-posix-2003-a.orig/man3p/sscanf.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/sscanf.3p	2012-10-20 02:15:30.528571883 +0400
+@@ -1 +1 @@
+-.so man3p/scanf.3p
++.so man3/scanf.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/stderr.3p man-pages-posix-2003-a/man3p/stderr.3p
+--- man-pages-posix-2003-a.orig/man3p/stderr.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/stderr.3p	2012-10-20 02:15:30.528571883 +0400
+@@ -1 +1 @@
+-.so man3p/stdin.3p
++.so man3/stdin.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/stdout.3p man-pages-posix-2003-a/man3p/stdout.3p
+--- man-pages-posix-2003-a.orig/man3p/stdout.3p	2012-10-20 02:12:42.421914402 +0400
++++ man-pages-posix-2003-a/man3p/stdout.3p	2012-10-20 02:15:30.528571883 +0400
+@@ -1 +1 @@
+-.so man3p/stdin.3p
++.so man3/stdin.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/strerror_r.3p man-pages-posix-2003-a/man3p/strerror_r.3p
+--- man-pages-posix-2003-a.orig/man3p/strerror_r.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/strerror_r.3p	2012-10-20 02:15:30.531905217 +0400
+@@ -1 +1 @@
+-.so man3p/strerror.3p
++.so man3/strerror.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/strncasecmp.3p man-pages-posix-2003-a/man3p/strncasecmp.3p
+--- man-pages-posix-2003-a.orig/man3p/strncasecmp.3p	2012-10-20 02:12:42.418581069 +0400
++++ man-pages-posix-2003-a/man3p/strncasecmp.3p	2012-10-20 02:15:30.531905217 +0400
+@@ -1 +1 @@
+-.so man3p/strcasecmp.3p
++.so man3/strcasecmp.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/strtof.3p man-pages-posix-2003-a/man3p/strtof.3p
+--- man-pages-posix-2003-a.orig/man3p/strtof.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/strtof.3p	2012-10-20 02:15:30.535238550 +0400
+@@ -1 +1 @@
+-.so man3p/strtod.3p
++.so man3/strtod.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/strtok_r.3p man-pages-posix-2003-a/man3p/strtok_r.3p
+--- man-pages-posix-2003-a.orig/man3p/strtok_r.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/strtok_r.3p	2012-10-20 02:15:30.535238550 +0400
+@@ -1 +1 @@
+-.so man3p/strtok.3p
++.so man3/strtok.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/strtold.3p man-pages-posix-2003-a/man3p/strtold.3p
+--- man-pages-posix-2003-a.orig/man3p/strtold.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/strtold.3p	2012-10-20 02:15:30.535238550 +0400
+@@ -1 +1 @@
+-.so man3p/strtod.3p
++.so man3/strtod.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/strtoll.3p man-pages-posix-2003-a/man3p/strtoll.3p
+--- man-pages-posix-2003-a.orig/man3p/strtoll.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/strtoll.3p	2012-10-20 02:15:30.535238550 +0400
+@@ -1 +1 @@
+-.so man3p/strtol.3p
++.so man3/strtol.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/strtoull.3p man-pages-posix-2003-a/man3p/strtoull.3p
+--- man-pages-posix-2003-a.orig/man3p/strtoull.3p	2012-10-20 02:12:42.441914401 +0400
++++ man-pages-posix-2003-a/man3p/strtoull.3p	2012-10-20 02:15:30.538571883 +0400
+@@ -1 +1 @@
+-.so man3p/strtoul.3p
++.so man3/strtoul.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/strtoumax.3p man-pages-posix-2003-a/man3p/strtoumax.3p
+--- man-pages-posix-2003-a.orig/man3p/strtoumax.3p	2012-10-20 02:12:42.428581068 +0400
++++ man-pages-posix-2003-a/man3p/strtoumax.3p	2012-10-20 02:15:30.538571883 +0400
+@@ -1 +1 @@
+-.so man3p/strtoimax.3p
++.so man3/strtoimax.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/swapcontext.3p man-pages-posix-2003-a/man3p/swapcontext.3p
+--- man-pages-posix-2003-a.orig/man3p/swapcontext.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/swapcontext.3p	2012-10-20 02:15:30.538571883 +0400
+@@ -1 +1 @@
+-.so man3p/makecontext.3p
++.so man3/makecontext.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/swprintf.3p man-pages-posix-2003-a/man3p/swprintf.3p
+--- man-pages-posix-2003-a.orig/man3p/swprintf.3p	2012-10-20 02:12:42.418581069 +0400
++++ man-pages-posix-2003-a/man3p/swprintf.3p	2012-10-20 02:15:30.538571883 +0400
+@@ -1 +1 @@
+-.so man3p/wprintf.3p
++.so man3/wprintf.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/swscanf.3p man-pages-posix-2003-a/man3p/swscanf.3p
+--- man-pages-posix-2003-a.orig/man3p/swscanf.3p	2012-10-20 02:12:42.421914402 +0400
++++ man-pages-posix-2003-a/man3p/swscanf.3p	2012-10-20 02:15:30.538571883 +0400
+@@ -1 +1 @@
+-.so man3p/wscanf.3p
++.so man3/wscanf.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/tanf.3p man-pages-posix-2003-a/man3p/tanf.3p
+--- man-pages-posix-2003-a.orig/man3p/tanf.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/tanf.3p	2012-10-20 02:15:30.541905216 +0400
+@@ -1 +1 @@
+-.so man3p/tan.3p
++.so man3/tan.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/tanhf.3p man-pages-posix-2003-a/man3p/tanhf.3p
+--- man-pages-posix-2003-a.orig/man3p/tanhf.3p	2012-10-20 02:12:42.421914402 +0400
++++ man-pages-posix-2003-a/man3p/tanhf.3p	2012-10-20 02:15:30.541905216 +0400
+@@ -1 +1 @@
+-.so man3p/tanh.3p
++.so man3/tanh.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/tanhl.3p man-pages-posix-2003-a/man3p/tanhl.3p
+--- man-pages-posix-2003-a.orig/man3p/tanhl.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/tanhl.3p	2012-10-20 02:15:30.541905216 +0400
+@@ -1 +1 @@
+-.so man3p/tanh.3p
++.so man3/tanh.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/tanl.3p man-pages-posix-2003-a/man3p/tanl.3p
+--- man-pages-posix-2003-a.orig/man3p/tanl.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/tanl.3p	2012-10-20 02:15:30.541905216 +0400
+@@ -1 +1 @@
+-.so man3p/tan.3p
++.so man3/tan.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/tdelete.3p man-pages-posix-2003-a/man3p/tdelete.3p
+--- man-pages-posix-2003-a.orig/man3p/tdelete.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/tdelete.3p	2012-10-20 02:15:30.545238549 +0400
+@@ -1 +1 @@
+-.so man3p/tsearch.3p
++.so man3/tsearch.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/tfind.3p man-pages-posix-2003-a/man3p/tfind.3p
+--- man-pages-posix-2003-a.orig/man3p/tfind.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/tfind.3p	2012-10-20 02:15:30.545238549 +0400
+@@ -1 +1 @@
+-.so man3p/tsearch.3p
++.so man3/tsearch.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/tgammaf.3p man-pages-posix-2003-a/man3p/tgammaf.3p
+--- man-pages-posix-2003-a.orig/man3p/tgammaf.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/tgammaf.3p	2012-10-20 02:15:30.545238549 +0400
+@@ -1 +1 @@
+-.so man3p/tgamma.3p
++.so man3/tgamma.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/tgammal.3p man-pages-posix-2003-a/man3p/tgammal.3p
+--- man-pages-posix-2003-a.orig/man3p/tgammal.3p	2012-10-20 02:12:42.418581069 +0400
++++ man-pages-posix-2003-a/man3p/tgammal.3p	2012-10-20 02:15:30.545238549 +0400
+@@ -1 +1 @@
+-.so man3p/tgamma.3p
++.so man3/tgamma.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/timer_getoverrun.3p man-pages-posix-2003-a/man3p/timer_getoverrun.3p
+--- man-pages-posix-2003-a.orig/man3p/timer_getoverrun.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/timer_getoverrun.3p	2012-10-20 02:15:30.545238549 +0400
+@@ -1 +1 @@
+-.so man3p/timer_gettime.3p
++.so man3/timer_gettime.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/timer_settime.3p man-pages-posix-2003-a/man3p/timer_settime.3p
+--- man-pages-posix-2003-a.orig/man3p/timer_settime.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/timer_settime.3p	2012-10-20 02:15:30.548571882 +0400
+@@ -1 +1 @@
+-.so man3p/timer_gettime.3p
++.so man3/timer_gettime.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/timezone.3p man-pages-posix-2003-a/man3p/timezone.3p
+--- man-pages-posix-2003-a.orig/man3p/timezone.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/timezone.3p	2012-10-20 02:15:30.548571882 +0400
+@@ -1 +1 @@
+-.so man3p/tzset.3p
++.so man3/tzset.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/truncf.3p man-pages-posix-2003-a/man3p/truncf.3p
+--- man-pages-posix-2003-a.orig/man3p/truncf.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/truncf.3p	2012-10-20 02:15:30.551905215 +0400
+@@ -1 +1 @@
+-.so man3p/trunc.3p
++.so man3/trunc.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/truncl.3p man-pages-posix-2003-a/man3p/truncl.3p
+--- man-pages-posix-2003-a.orig/man3p/truncl.3p	2012-10-20 02:12:42.418581069 +0400
++++ man-pages-posix-2003-a/man3p/truncl.3p	2012-10-20 02:15:30.551905215 +0400
+@@ -1 +1 @@
+-.so man3p/trunc.3p
++.so man3/trunc.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/ttyname_r.3p man-pages-posix-2003-a/man3p/ttyname_r.3p
+--- man-pages-posix-2003-a.orig/man3p/ttyname_r.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/ttyname_r.3p	2012-10-20 02:15:30.551905215 +0400
+@@ -1 +1 @@
+-.so man3p/ttyname.3p
++.so man3/ttyname.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/twalk.3p man-pages-posix-2003-a/man3p/twalk.3p
+--- man-pages-posix-2003-a.orig/man3p/twalk.3p	2012-10-20 02:12:42.405247736 +0400
++++ man-pages-posix-2003-a/man3p/twalk.3p	2012-10-20 02:15:30.551905215 +0400
+@@ -1 +1 @@
+-.so man3p/tsearch.3p
++.so man3/tsearch.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/tzname.3p man-pages-posix-2003-a/man3p/tzname.3p
+--- man-pages-posix-2003-a.orig/man3p/tzname.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/tzname.3p	2012-10-20 02:15:30.555238549 +0400
+@@ -1 +1 @@
+-.so man3p/tzset.3p
++.so man3/tzset.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/va_copy.3p man-pages-posix-2003-a/man3p/va_copy.3p
+--- man-pages-posix-2003-a.orig/man3p/va_copy.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/va_copy.3p	2012-10-20 02:15:30.558571882 +0400
+@@ -1 +1 @@
+-.so man3p/va_arg.3p
++.so man3/va_arg.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/va_end.3p man-pages-posix-2003-a/man3p/va_end.3p
+--- man-pages-posix-2003-a.orig/man3p/va_end.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/va_end.3p	2012-10-20 02:15:30.558571882 +0400
+@@ -1 +1 @@
+-.so man3p/va_arg.3p
++.so man3/va_arg.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/va_start.3p man-pages-posix-2003-a/man3p/va_start.3p
+--- man-pages-posix-2003-a.orig/man3p/va_start.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/va_start.3p	2012-10-20 02:15:30.558571882 +0400
+@@ -1 +1 @@
+-.so man3p/va_arg.3p
++.so man3/va_arg.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/vfprintf.3p man-pages-posix-2003-a/man3p/vfprintf.3p
+--- man-pages-posix-2003-a.orig/man3p/vfprintf.3p	2012-10-20 02:12:42.438581068 +0400
++++ man-pages-posix-2003-a/man3p/vfprintf.3p	2012-10-20 02:15:30.558571882 +0400
+@@ -1 +1 @@
+-.so man3p/vprintf.3p
++.so man3/vprintf.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/vfscanf.3p man-pages-posix-2003-a/man3p/vfscanf.3p
+--- man-pages-posix-2003-a.orig/man3p/vfscanf.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/vfscanf.3p	2012-10-20 02:15:30.558571882 +0400
+@@ -1 +1 @@
+-.so man3p/vscanf.3p
++.so man3/vscanf.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/vfwprintf.3p man-pages-posix-2003-a/man3p/vfwprintf.3p
+--- man-pages-posix-2003-a.orig/man3p/vfwprintf.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/vfwprintf.3p	2012-10-20 02:15:30.558571882 +0400
+@@ -1 +1 @@
+-.so man3p/vwprintf.3p
++.so man3/vwprintf.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/vfwscanf.3p man-pages-posix-2003-a/man3p/vfwscanf.3p
+--- man-pages-posix-2003-a.orig/man3p/vfwscanf.3p	2012-10-20 02:12:42.418581069 +0400
++++ man-pages-posix-2003-a/man3p/vfwscanf.3p	2012-10-20 02:15:30.558571882 +0400
+@@ -1 +1 @@
+-.so man3p/vwscanf.3p
++.so man3/vwscanf.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/vsnprintf.3p man-pages-posix-2003-a/man3p/vsnprintf.3p
+--- man-pages-posix-2003-a.orig/man3p/vsnprintf.3p	2012-10-20 02:12:42.421914402 +0400
++++ man-pages-posix-2003-a/man3p/vsnprintf.3p	2012-10-20 02:15:30.558571882 +0400
+@@ -1 +1 @@
+-.so man3p/vprintf.3p
++.so man3/vprintf.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/vsprintf.3p man-pages-posix-2003-a/man3p/vsprintf.3p
+--- man-pages-posix-2003-a.orig/man3p/vsprintf.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/vsprintf.3p	2012-10-20 02:15:30.558571882 +0400
+@@ -1 +1 @@
+-.so man3p/vprintf.3p
++.so man3/vprintf.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/vsscanf.3p man-pages-posix-2003-a/man3p/vsscanf.3p
+--- man-pages-posix-2003-a.orig/man3p/vsscanf.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/vsscanf.3p	2012-10-20 02:15:30.558571882 +0400
+@@ -1 +1 @@
+-.so man3p/vscanf.3p
++.so man3/vscanf.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/vswprintf.3p man-pages-posix-2003-a/man3p/vswprintf.3p
+--- man-pages-posix-2003-a.orig/man3p/vswprintf.3p	2012-10-20 02:12:42.415247736 +0400
++++ man-pages-posix-2003-a/man3p/vswprintf.3p	2012-10-20 02:15:30.558571882 +0400
+@@ -1 +1 @@
+-.so man3p/vwprintf.3p
++.so man3/vwprintf.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/vswscanf.3p man-pages-posix-2003-a/man3p/vswscanf.3p
+--- man-pages-posix-2003-a.orig/man3p/vswscanf.3p	2012-10-20 02:12:42.431914401 +0400
++++ man-pages-posix-2003-a/man3p/vswscanf.3p	2012-10-20 02:15:30.558571882 +0400
+@@ -1 +1 @@
+-.so man3p/vwscanf.3p
++.so man3/vwscanf.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/waitpid.3p man-pages-posix-2003-a/man3p/waitpid.3p
+--- man-pages-posix-2003-a.orig/man3p/waitpid.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/waitpid.3p	2012-10-20 02:15:30.561905215 +0400
+@@ -1 +1 @@
+-.so man3p/wait.3p
++.so man3/wait.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/wcstof.3p man-pages-posix-2003-a/man3p/wcstof.3p
+--- man-pages-posix-2003-a.orig/man3p/wcstof.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/wcstof.3p	2012-10-20 02:15:30.565238548 +0400
+@@ -1 +1 @@
+-.so man3p/wcstod.3p
++.so man3/wcstod.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/wcstold.3p man-pages-posix-2003-a/man3p/wcstold.3p
+--- man-pages-posix-2003-a.orig/man3p/wcstold.3p	2012-10-20 02:12:42.428581068 +0400
++++ man-pages-posix-2003-a/man3p/wcstold.3p	2012-10-20 02:15:30.568571881 +0400
+@@ -1 +1 @@
+-.so man3p/wcstod.3p
++.so man3/wcstod.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/wcstoll.3p man-pages-posix-2003-a/man3p/wcstoll.3p
+--- man-pages-posix-2003-a.orig/man3p/wcstoll.3p	2012-10-20 02:12:42.435247735 +0400
++++ man-pages-posix-2003-a/man3p/wcstoll.3p	2012-10-20 02:15:30.568571881 +0400
+@@ -1 +1 @@
+-.so man3p/wcstol.3p
++.so man3/wcstol.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/wcstoull.3p man-pages-posix-2003-a/man3p/wcstoull.3p
+--- man-pages-posix-2003-a.orig/man3p/wcstoull.3p	2012-10-20 02:12:42.411914402 +0400
++++ man-pages-posix-2003-a/man3p/wcstoull.3p	2012-10-20 02:15:30.568571881 +0400
+@@ -1 +1 @@
+-.so man3p/wcstoul.3p
++.so man3/wcstoul.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/wcstoumax.3p man-pages-posix-2003-a/man3p/wcstoumax.3p
+--- man-pages-posix-2003-a.orig/man3p/wcstoumax.3p	2012-10-20 02:12:42.425247735 +0400
++++ man-pages-posix-2003-a/man3p/wcstoumax.3p	2012-10-20 02:15:30.568571881 +0400
+@@ -1 +1 @@
+-.so man3p/wcstoimax.3p
++.so man3/wcstoimax.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/wordfree.3p man-pages-posix-2003-a/man3p/wordfree.3p
+--- man-pages-posix-2003-a.orig/man3p/wordfree.3p	2012-10-20 02:12:42.441914401 +0400
++++ man-pages-posix-2003-a/man3p/wordfree.3p	2012-10-20 02:15:30.571905214 +0400
+@@ -1 +1 @@
+-.so man3p/wordexp.3p
++.so man3/wordexp.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/y1.3p man-pages-posix-2003-a/man3p/y1.3p
+--- man-pages-posix-2003-a.orig/man3p/y1.3p	2012-10-20 02:12:42.428581068 +0400
++++ man-pages-posix-2003-a/man3p/y1.3p	2012-10-20 02:15:30.575238548 +0400
+@@ -1 +1 @@
+-.so man3p/y0.3p
++.so man3/y0.3p
+diff -Naur man-pages-posix-2003-a.orig/man3p/yn.3p man-pages-posix-2003-a/man3p/yn.3p
+--- man-pages-posix-2003-a.orig/man3p/yn.3p	2012-10-20 02:12:42.408581069 +0400
++++ man-pages-posix-2003-a/man3p/yn.3p	2012-10-20 02:15:30.575238548 +0400
+@@ -1 +1 @@
+-.so man3p/y0.3p
++.so man3/y0.3p

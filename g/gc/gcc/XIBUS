@@ -7,11 +7,11 @@ license = "GPL"
 url = "http://gcc.gnu.org/"
 depends = ["readline>=6.1", "glibc"]
 makedepends = ["binutils>=2.22", "libmpc"]
-source = "ftp://gcc.gnu.org/pub/gcc/releases/{0}-{1}/{0}-{1}.tar.bz2".format(name, version)
-md5sum = "cc308a0891e778cfda7a151ab8a6e762"
-sha1sum = "a464ba0f26eef24c29bcd1e7489421117fb9ee35"
-sha256sum = "8a9283d7010fb9fe5ece3ca507e0af5c19412626384f8a5e9434251ae100b084"
-sha512sum = "689ce92d0c93e5ca5268d9757acffc6e5a7931fc7ad99ee9beefa6ce02d201ed9dade08240cb5623525e19362f90a245792e95d4e90b067fee61013a03288e32"
+source = "ftp://gcc.gnu.org/pub/gcc/releases/{0}-{1}/{0}-{1}.tar.gz".format(name, version)
+md5sum = "5199d34506d4fa6528778ddba362d3f4"
+sha1sum = "39b5662c4bdffa8d8b8f31f61764de2a9e3b69b0"
+sha256sum = "5638db234601f4d88aa2a70e0e38f71a2702b02be214b6d83297567f7868f7fb"
+sha512sum = "4783a23de46902429a74b54322970d346e32f7d5890b401f01818e4ebcd2ae7f69f2098fd8ea66e4c4e7438e7f2c1837213918fa0e431e3feaee040b0dec8395"
 API_VERSION = 1
 
 def build():

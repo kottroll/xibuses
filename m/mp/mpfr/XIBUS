@@ -20,13 +20,16 @@ API_VERSION = 1
 
 def build():
     cd(name + "-" + version, 0)
-    configure("--prefix=/usr --enable-thread-safe --docdir=/usr/share/doc/mpfr-3.1.1")
+    configure("--prefix=/usr --enable-thread-safe --docdir=/usr/share/doc/{0}-{1}".format(name, version))
     make("")
     make("check")
     
 def package():
     cd(name + "-" + version, 0)
     make_install("")
+    
+    # Removing docs
+    rmdir(PKGDIR + "/usr/share/doc/")
 
 def build_mpfr_doc():
     name = "mpfr-doc"
@@ -37,5 +40,5 @@ def build_mpfr_doc():
     make("html")
     
 def package_mpfr_doc():
-    cd(name + "-" + version, 0)
+    cd("mpfr-" + version, 0)
     make("DESTDIR={0} install-html".format(PKGDIR))

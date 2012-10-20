@@ -20,21 +20,28 @@ API_VERSION = 1
 def build():
     cd(name + "-" + version, 0)
     mkdir("man0")
+    cd("../" + name + "-posix-" + posixversion, 0)
+    apply_patch("9000", "-p1")
     sect = ["0", "1", "3"]
     for s in sect:
-        sed("-i", "/^\.so /s/man" + s + "p/man$sect/", SRCDIR + "/" + name + "-posix-" + posixversion + "/man" + s + "p/*")
-        mv(SRCDIR + "/" + name + "-posix-" + posixversion + "/man" + s + "p/*", SRCDIR + "/" + name + "-" + version + "/man" + s + "/")
+        orig_dir = SRCDIR + "/" + name + "-posix-" + posixversion + "/man" + s + "p/"
+        dest_dir = SRCDIR + "/" + name + "-" + version + "/man" + s + "/"
+        moveable = ls(orig_dir)
+        for file in moveable:
+            mv(orig_dir + "/" + file, dest_dir + file[:-1])
 
 def package():
     cd (name + "-" + version, 0)
     make("prefix=" + PKGDIR + "/usr install")
     cd(PKGDIR + "/usr/share/man", 0)
-    # these are included in coreutils
-    rmdir("man1/{chgrp,chmod,chown,cp,dir,dd,df,dircolors,du,install,ln,ls,mkdir,mkfifo,mknod,mv,rm,rmdir,touch,vdir}.1")
+    # they are included in coreutils
+    dublicates_coreutils = ["chgrp", "chmod", "chown", "cp", "dd", "df", "du", "ln", "ls", "mkdir", "mkfifo", "mv", "rm", "rmdir", "touch"]
+    for man in dublicates_coreutils:
+        rm("man1/" + man + ".1")
     # this is included in shadow
-    rmdir("man5/passwd.5")
-    rmdir("man3/getspnam.3")
+    rm("man5/passwd.5")
+    rm("man3/getspnam.3")
     # this is included in diffutils
-    rmdir("man1/diff.1")
+    rm("man1/diff.1")
     # this is included in xf86-input-mouse
-    rmdir("man4/mouse.4")
+    rm("man4/mouse.4")
